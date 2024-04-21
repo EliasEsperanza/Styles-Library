@@ -1,0 +1,29 @@
+@import 'color-pokemon.scss';
+
+$colores: (
+    Ground: $colorGround,
+    Flying: $colorFlying,
+    Psychi: $colorPsychi,
+    Bug: $colorBug,
+    Rock: $colorRock,
+    Dragon: $colorDragon,
+    Dark: $colorDark,
+    Steel: $colorSteel,
+    Hada: $colorHada,
+    Fire: $colorFire,
+    Water: $colorWater,
+    Grass: $colorGrass,
+    Electric: $colorElectric,
+    Ice: $colorIce,
+    Fighting: $colorFighting,
+    Poison: $colorPoison,
+    Ghost: $colorGhost
+);
+$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost;
+
+//basicamente use el mismo que en shadow-utils.scss xD
+@each $tipo in $tipos{
+    .bgc-#{$tipo}{
+        background-color: map-get($colores,$tipo);
+    }
+}
