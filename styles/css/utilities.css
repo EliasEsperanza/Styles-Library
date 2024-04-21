@@ -348,4 +348,20 @@
   padding: -1rem;
 }
 
+.sh-leftNormal {
+  box-shadow: 5px 0px 5px #a8a77a;
+}
+
+.sh-rightDown5 {
+  box-shadow: 0px 5px 5px #a8a77a;
+}
+
+.sh-leftUp2 {
+  box-shadow: 2px 0px 2px #705746;
+}
+
+.sh-rightDown2 {
+  box-shadow: 0px 2px 2px #705746;
+}
+
 /*# sourceMappingURL=utilities.css.map */
