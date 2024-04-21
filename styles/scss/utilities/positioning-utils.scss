@@ -1,0 +1,83 @@
+.position-absolute{
+    position: absolute;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-fixed{
+    position: fixed;
+}
+
+.position-static{
+    position: static;
+}
+
+.center-horizontal{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.center-vertical{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.margin-auto{
+    margin: auto;
+}
+
+.aling-left{
+    text-align: left;
+}
+
+.aling-right{
+    text-align: right;
+}
+
+.aling-center{
+    text-align: center;
+}
+
+.aling-top{
+    vertical-align: top;
+}
+
+.aling-middle{
+    vertical-align: middle;
+}
+
+.aling-bottom{
+    vertical-align: bottom;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.visible{
+    visibility: visible !important;
+}
+
+.invisible{
+    visibility: hidden !important;
+}
+
+.transparent{
+    opacity: 0;
+}
+
+.opacity-0{
+    opacity: 0;
+}
+
+.opacity-1{
+    opacity: 1;
+}
