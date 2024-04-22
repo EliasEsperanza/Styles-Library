@@ -1,0 +1,208 @@
+@import "color-pokemon";
+
+$colorBasico : #fff;
+$pdng : 5px 10px;  
+$marginR : 10px; 
+$marginBTN : 10px;
+$BR : 20px;
+
+// Encabezados
+.Textos {
+  h1, h2, h3, h4, h5, h6 {
+    color: $colorNormal;
+    span.badge {
+      color: $colorBasico;
+      padding: $pdng;
+    }
+  }
+  h1 span.badge.text-Fire {
+    background-color: $colorFire;
+  }
+  h2 span.badge.text-Rock {
+    background-color: $colorRock;
+  }
+  h3 span.badge.text-Water {
+    background-color: $colorWater;
+  }
+  h4 span.badge.text-Electric {
+    background-color: $colorElectric;
+  }
+  h5 span.badge.text-Ice {
+    background-color: $colorIce;
+  }
+  h6 span.badge.text-Dragon {
+    background-color: $colorDragon;
+  }
+}
+
+// Boton de notificacion
+.Boton-notificacion {
+  button {
+    background-color: $colorNormal;
+    border: 1px solid $colorNormal;
+    color: $colorBasico;
+    padding: $pdng;
+    margin-bottom: $marginBTN;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    span.badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 12px;
+      padding: 3px 6px;
+    }
+  }
+  button.btn-Fire {
+    background-color: $colorFire;
+    border: 1px solid $colorFire;
+  }
+  button.btn-Fire span.badge {
+    background-color: $colorFire;
+  }
+}
+
+// Botones normales 
+.Botones {
+  display: flex;
+  flex-wrap: wrap;
+
+  .badge {
+    margin-right: $marginR; 
+    padding: $pdng; 
+    border-radius: 5px; 
+    background-color: $colorNormal; 
+    color: $colorBasico; 
+    margin-bottom: $marginBTN;
+    cursor: pointer;
+    font-size: 20px;
+
+    &.text-Normal {
+      background-color: $colorNormal;
+    }
+    &.text-Fire {
+      background-color: $colorFire;
+    }
+    &.text-Water {
+      background-color: $colorWater;
+    }
+    &.text-Grass {
+      background-color: $colorGrass;
+    }
+    &.text-Electric {
+      background-color: $colorElectric;
+    }
+    &.text-Ice {
+      background-color: $colorIce;
+    }
+    &.text-Fighting {
+      background-color: $colorFighting;
+    }
+    &.text-Poison {
+      background-color: $colorPoison;
+    }
+    &.text-Ground {
+      background-color: $colorGround;
+    }
+    &.text-Flying {
+      background-color: $colorFlying;
+    }
+    &.text-Psychi {
+      background-color: $colorPsychi;
+    }
+    &.text-Bug {
+      background-color: $colorBug;
+    }
+    &.text-Rock {
+      background-color: $colorRock;
+    }
+    &.text-Ghost {
+      background-color: $colorGhost;
+    }
+    &.text-Dragon {
+      background-color: $colorDragon;
+    }
+    &.text-Dark {
+      background-color: $colorDark;
+    }
+    &.text-Steel {
+      background-color: $colorSteel;
+    }
+    &.text-Hada {
+      background-color: $colorHada;
+    }
+  }
+}
+
+
+
+// Botones redondeados
+.BotonesRedondeados {
+  display: flex;
+  flex-wrap: wrap;
+  .badge {
+    margin-right: $marginR;
+    margin-bottom: $marginBTN;
+    padding: $pdng;
+    border-radius: $BR;
+    color: $colorBasico;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .rounded {
+    border-radius: 30px;
+  }
+
+  .text-Fire {
+    background-color: $colorFire;
+  }
+  .text-Water {
+    background-color: $colorWater;
+  }
+  .text-Grass {
+    background-color: $colorGrass;
+  }
+  .text-Electric {
+    background-color: $colorElectric;
+  }
+  .text-Ice {
+    background-color: $colorIce;
+  }
+  .text-Fighting {
+    background-color: $colorFighting;
+  }
+  .text-Poison {
+    background-color: $colorPoison;
+  }
+  .text-Ground {
+    background-color: $colorGround;
+  }
+  .text-Flying {
+    background-color: $colorFlying;
+  }
+  .text-Psychi {
+    background-color: $colorPsychi;
+  }
+  .text-Bug {
+    background-color: $colorBug;
+  }
+  .text-Rock {
+    background-color: $colorRock;
+  }
+  .text-Ghost {
+    background-color: $colorGhost;
+  }
+  .text-Dragon {
+    background-color: $colorDragon;
+  }
+  .text-Dark {
+    background-color: $colorDark;
+  }
+  .text-Steel {
+    background-color: $colorSteel;
+  }
+  .text-Hada {
+    background-color: $colorHada;
+  }
+}

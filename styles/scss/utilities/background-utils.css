@@ -1,0 +1,68 @@
+/*Los colores de los que si quere cambiar uno aqui venimos y evitamos ir en cada apartado a cambiarlo :v*/
+.bgc-Ground {
+  background-color: #e2bf65;
+}
+
+.bgc-Flying {
+  background-color: #a98ff3;
+}
+
+.bgc-Psychi {
+  background-color: #f95587;
+}
+
+.bgc-Bug {
+  background-color: #a6b91a;
+}
+
+.bgc-Rock {
+  background-color: #b6a136;
+}
+
+.bgc-Dragon {
+  background-color: #6f35fc;
+}
+
+.bgc-Dark {
+  background-color: #705746;
+}
+
+.bgc-Steel {
+  background-color: #b7b7ce;
+}
+
+.bgc-Hada {
+  background-color: #d685ad;
+}
+
+.bgc-Fire {
+  background-color: #ee8130;
+}
+
+.bgc-Water {
+  background-color: #6390f0;
+}
+
+.bgc-Grass {
+  background-color: #7ac74c;
+}
+
+.bgc-Electric {
+  background-color: #f7d02c;
+}
+
+.bgc-Ice {
+  background-color: #96d9d6;
+}
+
+.bgc-Fighting {
+  background-color: #c22e28;
+}
+
+.bgc-Poison {
+  background-color: #a33ea1;
+}
+
+.bgc-Ghost {
+  background-color: #735797;
+}/*# sourceMappingURL=background-utils.css.map */
