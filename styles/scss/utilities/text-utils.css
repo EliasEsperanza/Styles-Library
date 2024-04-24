@@ -1,0 +1,269 @@
+/*Los colores de los que si quere cambiar uno aqui venimos y evitamos ir en cada apartado a cambiarlo :v*/
+.text-small {
+  font-size: 0.8rem;
+}
+
+.text-large {
+  font-size: 1.2rem;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.text-overline {
+  text-decoration: overline;
+}
+
+.text-underline-dotted {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+.text-underline-double {
+  -webkit-text-decoration: underline double;
+          text-decoration: underline double;
+}
+
+.text-underline-wavy {
+  -webkit-text-decoration: underline wavy;
+          text-decoration: underline wavy;
+}
+
+.text-underline-dashed {
+  -webkit-text-decoration: underline dashed;
+          text-decoration: underline dashed;
+}
+
+.text-underline-solid {
+  -webkit-text-decoration: underline solid;
+          text-decoration: underline solid;
+}
+
+.text-underline-dotted {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+.text-underline-dashed {
+  -webkit-text-decoration: underline dashed;
+          text-decoration: underline dashed;
+}
+
+.text-underline-solid {
+  -webkit-text-decoration: underline solid;
+          text-decoration: underline solid;
+}
+
+.text-underline-double {
+  -webkit-text-decoration: underline double;
+          text-decoration: underline double;
+}
+
+.text-underline-wavy {
+  -webkit-text-decoration: underline wavy;
+          text-decoration: underline wavy;
+}
+
+.text-underline-thick {
+  -webkit-text-decoration: underline thick;
+          text-decoration: underline thick;
+}
+
+.text-underline-thin {
+  -webkit-text-decoration: underline thin;
+          text-decoration: underline thin;
+}
+
+.text-underline-medium {
+  -webkit-text-decoration: underline medium;
+          text-decoration: underline medium;
+}
+
+.text-underline-light {
+  -webkit-text-decoration: underline light;
+          text-decoration: underline light;
+}
+
+.text-underline-heavy {
+  -webkit-text-decoration: underline heavy;
+          text-decoration: underline heavy;
+}
+
+.text-underline-3px {
+  -webkit-text-decoration: underline 3px;
+          text-decoration: underline 3px;
+}
+
+.text-underline-2px {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}
+
+.text-underline-1px {
+  -webkit-text-decoration: underline 1px;
+          text-decoration: underline 1px;
+}
+
+.text-underline-4px {
+  -webkit-text-decoration: underline 4px;
+          text-decoration: underline 4px;
+}
+
+.text-underline-5px {
+  -webkit-text-decoration: underline 5px;
+          text-decoration: underline 5px;
+}
+
+.text-underline-6px {
+  -webkit-text-decoration: underline 6px;
+          text-decoration: underline 6px;
+}
+
+.text-underline-7px {
+  -webkit-text-decoration: underline 7px;
+          text-decoration: underline 7px;
+}
+
+.text-underline-8px {
+  -webkit-text-decoration: underline 8px;
+          text-decoration: underline 8px;
+}
+
+.text-underline-9px {
+  -webkit-text-decoration: underline 9px;
+          text-decoration: underline 9px;
+}
+
+.text-underline-10px {
+  -webkit-text-decoration: underline 10px;
+          text-decoration: underline 10px;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-Ground {
+  color: #e2bf65;
+}
+
+.text-Flying {
+  color: #a98ff3;
+}
+
+.text-Psychi {
+  color: #f95587;
+}
+
+.text-Bug {
+  color: #a6b91a;
+}
+
+.text-Rock {
+  color: #b6a136;
+}
+
+.text-Dragon {
+  color: #6f35fc;
+}
+
+.text-Dark {
+  color: #705746;
+}
+
+.text-Steel {
+  color: #b7b7ce;
+}
+
+.text-Hada {
+  color: #d685ad;
+}
+
+.text-Fire {
+  color: #ee8130;
+}
+
+.text-Water {
+  color: #6390f0;
+}
+
+.text-Grass {
+  color: #7ac74c;
+}
+
+.text-Electric {
+  color: #f7d02c;
+}
+
+.text-Ice {
+  color: #96d9d6;
+}
+
+.text-Fighting {
+  color: #c22e28;
+}
+
+.text-Poison {
+  color: #a33ea1;
+}
+
+.text-Ghost {
+  color: #735797;
+}/*# sourceMappingURL=text-utils.css.map */

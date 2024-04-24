@@ -1,0 +1,3373 @@
+@charset "UTF-8";
+/*Los colores de los que si quere cambiar uno aqui venimos y evitamos ir en cada apartado a cambiarlo :v*/
+.text-small {
+  font-size: 0.8rem;
+}
+
+.text-large {
+  font-size: 1.2rem;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.text-overline {
+  text-decoration: overline;
+}
+
+.text-underline-dotted {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+.text-underline-double {
+  -webkit-text-decoration: underline double;
+          text-decoration: underline double;
+}
+
+.text-underline-wavy {
+  -webkit-text-decoration: underline wavy;
+          text-decoration: underline wavy;
+}
+
+.text-underline-dashed {
+  -webkit-text-decoration: underline dashed;
+          text-decoration: underline dashed;
+}
+
+.text-underline-solid {
+  -webkit-text-decoration: underline solid;
+          text-decoration: underline solid;
+}
+
+.text-underline-dotted {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+.text-underline-dashed {
+  -webkit-text-decoration: underline dashed;
+          text-decoration: underline dashed;
+}
+
+.text-underline-solid {
+  -webkit-text-decoration: underline solid;
+          text-decoration: underline solid;
+}
+
+.text-underline-double {
+  -webkit-text-decoration: underline double;
+          text-decoration: underline double;
+}
+
+.text-underline-wavy {
+  -webkit-text-decoration: underline wavy;
+          text-decoration: underline wavy;
+}
+
+.text-underline-thick {
+  -webkit-text-decoration: underline thick;
+          text-decoration: underline thick;
+}
+
+.text-underline-thin {
+  -webkit-text-decoration: underline thin;
+          text-decoration: underline thin;
+}
+
+.text-underline-medium {
+  -webkit-text-decoration: underline medium;
+          text-decoration: underline medium;
+}
+
+.text-underline-light {
+  -webkit-text-decoration: underline light;
+          text-decoration: underline light;
+}
+
+.text-underline-heavy {
+  -webkit-text-decoration: underline heavy;
+          text-decoration: underline heavy;
+}
+
+.text-underline-3px {
+  -webkit-text-decoration: underline 3px;
+          text-decoration: underline 3px;
+}
+
+.text-underline-2px {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}
+
+.text-underline-1px {
+  -webkit-text-decoration: underline 1px;
+          text-decoration: underline 1px;
+}
+
+.text-underline-4px {
+  -webkit-text-decoration: underline 4px;
+          text-decoration: underline 4px;
+}
+
+.text-underline-5px {
+  -webkit-text-decoration: underline 5px;
+          text-decoration: underline 5px;
+}
+
+.text-underline-6px {
+  -webkit-text-decoration: underline 6px;
+          text-decoration: underline 6px;
+}
+
+.text-underline-7px {
+  -webkit-text-decoration: underline 7px;
+          text-decoration: underline 7px;
+}
+
+.text-underline-8px {
+  -webkit-text-decoration: underline 8px;
+          text-decoration: underline 8px;
+}
+
+.text-underline-9px {
+  -webkit-text-decoration: underline 9px;
+          text-decoration: underline 9px;
+}
+
+.text-underline-10px {
+  -webkit-text-decoration: underline 10px;
+          text-decoration: underline 10px;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-Ground {
+  color: #e2bf65;
+}
+
+.text-Flying {
+  color: #a98ff3;
+}
+
+.text-Psychi {
+  color: #f95587;
+}
+
+.text-Bug {
+  color: #a6b91a;
+}
+
+.text-Rock {
+  color: #b6a136;
+}
+
+.text-Dragon {
+  color: #6f35fc;
+}
+
+.text-Dark {
+  color: #705746;
+}
+
+.text-Steel {
+  color: #b7b7ce;
+}
+
+.text-Hada {
+  color: #d685ad;
+}
+
+.text-Fire {
+  color: #ee8130;
+}
+
+.text-Water {
+  color: #6390f0;
+}
+
+.text-Grass {
+  color: #7ac74c;
+}
+
+.text-Electric {
+  color: #f7d02c;
+}
+
+.text-Ice {
+  color: #96d9d6;
+}
+
+.text-Fighting {
+  color: #c22e28;
+}
+
+.text-Poison {
+  color: #a33ea1;
+}
+
+.text-Ghost {
+  color: #735797;
+}
+
+.margin-top {
+  margin-top: 1rem;
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.margin-left {
+  margin-left: 1rem;
+}
+
+.margin-right {
+  margin-right: 1rem;
+}
+
+.margin-x {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.margin-y {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.padding-top {
+  padding-top: 1rem;
+}
+
+.padding-bottom {
+  padding-bottom: 1rem;
+}
+
+.padding-left {
+  padding-left: 1rem;
+}
+
+.padding-right {
+  padding-right: 1rem;
+}
+
+.padding-x {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.padding-y {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.margin-x-small {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.margin-y-small {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.padding-x-small {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.padding-y-small {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.center-x {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-y {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.center {
+  margin: auto;
+}
+
+.margin-large {
+  margin: 2rem;
+}
+
+.padding-large {
+  padding: 2rem;
+}
+
+.margin-negative {
+  margin: -1rem;
+}
+
+.padding-negative {
+  padding: -1rem;
+}
+
+/*Los colores de los que si quere cambiar uno aqui venimos y evitamos ir en cada apartado a cambiarlo :v*/
+/*.sh-leftNormal{
+    box-shadow: -5px 0px 5px $colorNormal;
+}
+.sh-rightNormal{
+    box-shadow: 5px 0px 5px $colorNormal;
+}
+.sh-upNormal{
+    box-shadow: 0 -5px 5px $colorNormal;
+}
+.sh-downNormal{
+    box-shadow: 0 5px 5px $colorNormal;
+}
+
+.sh-leftFire{
+    box-shadow: -5px 0 5px $colorFire;
+}
+.sh-rightFire{
+    box-shadow: 5px 0 5px $colorFire;
+}
+.sh-upFire{
+    box-shadow: 0 -5px 5px $colorFire;
+}
+.sh-downFire{
+    box-shadow: 0 5px 5px $colorFire;
+}
+
+.sh-leftWater{
+    box-shadow: -5px 0 5px $colorWater;
+}
+.sh-rightWater{
+    box-shadow: 5px 0 5px $colorWater;
+}
+.sh-upWater{
+    box-shadow: 0 -5px 5px $colorWater;
+}
+.sh-downWater{
+    box-shadow: 0 5px 5px $colorWater;
+}
+
+.sh-leftGrass{
+    box-shadow: -5px 0 5px $colorGrass;
+}
+.sh-rightGrass{
+    box-shadow: 5px 0 5px $colorGrass;
+}
+.sh-upGrass{
+    box-shadow: 0 -5px 5px $colorGrass;
+}
+.sh-downGrass{
+    box-shadow: 0 5px 5px $colorGrass;
+}
+
+.sh-leftElectric{
+    box-shadow: -5px 0 5px $colorElectric;
+}
+.sh-rightElectric{
+    box-shadow: 5px 0 5px $colorElectric;
+}
+.sh-upElectric{
+    box-shadow: 0 -5px 5px $colorElectric;
+}
+.sh-downElectric{
+    box-shadow: 0 5px 5px $colorElectric;
+}
+
+.sh-leftIce{
+    box-shadow: -5px 0 5px $colorIce;
+}
+.sh-rightIce{
+    box-shadow: 5px 0 5px $colorIce;
+}
+.sh-upIce{
+    box-shadow: 0 -5px 5px $colorIce;
+}
+.sh-downIce{
+    box-shadow: 0 5px 5px $colorIce;
+}
+
+.sh-leftFighting{
+    box-shadow: -5px 0 5px $colorFighting;
+}
+.sh-rightFighting{
+    box-shadow: 5px 0 5px $colorFighting;
+}
+.sh-upFighting{
+    box-shadow: 0 -5px 5px $colorFighting;
+}
+.sh-downFighting{
+    box-shadow: 0 5px 5px $colorFighting;
+}
+
+.sh-leftPoison{
+    box-shadow: -5px 0 5px $colorPoison;
+}
+.sh-rightPoison{
+    box-shadow: 5px 0 5px $colorPoison;
+}
+.sh-upPoison{
+    box-shadow: 0 -5px 5px $colorPoison;
+}
+.sh-downPoison{
+    box-shadow: 0 5px 5px $colorPoison;
+}
+*/
+/*El bucle @each en SASS te permite iterar sobre una lista o un mapa y ejecutar un bloque de código para cada 
+*elemento de esa lista o mapa. Es una forma poderosa de generar código repetitivo de manera más eficiente y
+*menos propensa a errores.
+*/
+.sh-leftGround {
+  box-shadow: -5px 0 5px #e2bf65;
+}
+
+.sh-rightGround {
+  box-shadow: 5px 0 5px #e2bf65;
+}
+
+.sh-upGround {
+  box-shadow: 0 -5px 5px #e2bf65;
+}
+
+.sh-downGround {
+  box-shadow: 0 5px 5px #e2bf65;
+}
+
+.sh-l-dGround {
+  box-shadow: 5px -5px 10px #e2bf65;
+}
+
+.sh-l-uGround {
+  box-shadow: -5px -5px 10px #e2bf65;
+}
+
+.sh-r-dGround {
+  box-shadow: 5px 5px 10px #e2bf65;
+}
+
+.sh-r-uGround {
+  box-shadow: -5px 5px 10px #e2bf65;
+}
+
+.sh-u-dGround {
+  box-shadow: 0px 5px 10px -5px #e2bf65, 0px -5px 10px -5px #e2bf65;
+}
+
+.sh-l-rGround {
+  box-shadow: 5px 0px 10px -5px #e2bf65, -5px 0px 10px -5px #e2bf65;
+}
+
+.sh-gGround {
+  box-shadow: 0px 0px 10px #e2bf65;
+}
+
+.sh-leftFlying {
+  box-shadow: -5px 0 5px #a98ff3;
+}
+
+.sh-rightFlying {
+  box-shadow: 5px 0 5px #a98ff3;
+}
+
+.sh-upFlying {
+  box-shadow: 0 -5px 5px #a98ff3;
+}
+
+.sh-downFlying {
+  box-shadow: 0 5px 5px #a98ff3;
+}
+
+.sh-l-dFlying {
+  box-shadow: 5px -5px 10px #a98ff3;
+}
+
+.sh-l-uFlying {
+  box-shadow: -5px -5px 10px #a98ff3;
+}
+
+.sh-r-dFlying {
+  box-shadow: 5px 5px 10px #a98ff3;
+}
+
+.sh-r-uFlying {
+  box-shadow: -5px 5px 10px #a98ff3;
+}
+
+.sh-u-dFlying {
+  box-shadow: 0px 5px 10px -5px #a98ff3, 0px -5px 10px -5px #a98ff3;
+}
+
+.sh-l-rFlying {
+  box-shadow: 5px 0px 10px -5px #a98ff3, -5px 0px 10px -5px #a98ff3;
+}
+
+.sh-gFlying {
+  box-shadow: 0px 0px 10px #a98ff3;
+}
+
+.sh-leftPsychi {
+  box-shadow: -5px 0 5px #f95587;
+}
+
+.sh-rightPsychi {
+  box-shadow: 5px 0 5px #f95587;
+}
+
+.sh-upPsychi {
+  box-shadow: 0 -5px 5px #f95587;
+}
+
+.sh-downPsychi {
+  box-shadow: 0 5px 5px #f95587;
+}
+
+.sh-l-dPsychi {
+  box-shadow: 5px -5px 10px #f95587;
+}
+
+.sh-l-uPsychi {
+  box-shadow: -5px -5px 10px #f95587;
+}
+
+.sh-r-dPsychi {
+  box-shadow: 5px 5px 10px #f95587;
+}
+
+.sh-r-uPsychi {
+  box-shadow: -5px 5px 10px #f95587;
+}
+
+.sh-u-dPsychi {
+  box-shadow: 0px 5px 10px -5px #f95587, 0px -5px 10px -5px #f95587;
+}
+
+.sh-l-rPsychi {
+  box-shadow: 5px 0px 10px -5px #f95587, -5px 0px 10px -5px #f95587;
+}
+
+.sh-gPsychi {
+  box-shadow: 0px 0px 10px #f95587;
+}
+
+.sh-leftBug {
+  box-shadow: -5px 0 5px #a6b91a;
+}
+
+.sh-rightBug {
+  box-shadow: 5px 0 5px #a6b91a;
+}
+
+.sh-upBug {
+  box-shadow: 0 -5px 5px #a6b91a;
+}
+
+.sh-downBug {
+  box-shadow: 0 5px 5px #a6b91a;
+}
+
+.sh-l-dBug {
+  box-shadow: 5px -5px 10px #a6b91a;
+}
+
+.sh-l-uBug {
+  box-shadow: -5px -5px 10px #a6b91a;
+}
+
+.sh-r-dBug {
+  box-shadow: 5px 5px 10px #a6b91a;
+}
+
+.sh-r-uBug {
+  box-shadow: -5px 5px 10px #a6b91a;
+}
+
+.sh-u-dBug {
+  box-shadow: 0px 5px 10px -5px #a6b91a, 0px -5px 10px -5px #a6b91a;
+}
+
+.sh-l-rBug {
+  box-shadow: 5px 0px 10px -5px #a6b91a, -5px 0px 10px -5px #a6b91a;
+}
+
+.sh-gBug {
+  box-shadow: 0px 0px 10px #a6b91a;
+}
+
+.sh-leftRock {
+  box-shadow: -5px 0 5px #b6a136;
+}
+
+.sh-rightRock {
+  box-shadow: 5px 0 5px #b6a136;
+}
+
+.sh-upRock {
+  box-shadow: 0 -5px 5px #b6a136;
+}
+
+.sh-downRock {
+  box-shadow: 0 5px 5px #b6a136;
+}
+
+.sh-l-dRock {
+  box-shadow: 5px -5px 10px #b6a136;
+}
+
+.sh-l-uRock {
+  box-shadow: -5px -5px 10px #b6a136;
+}
+
+.sh-r-dRock {
+  box-shadow: 5px 5px 10px #b6a136;
+}
+
+.sh-r-uRock {
+  box-shadow: -5px 5px 10px #b6a136;
+}
+
+.sh-u-dRock {
+  box-shadow: 0px 5px 10px -5px #b6a136, 0px -5px 10px -5px #b6a136;
+}
+
+.sh-l-rRock {
+  box-shadow: 5px 0px 10px -5px #b6a136, -5px 0px 10px -5px #b6a136;
+}
+
+.sh-gRock {
+  box-shadow: 0px 0px 10px #b6a136;
+}
+
+.sh-leftDragon {
+  box-shadow: -5px 0 5px #6f35fc;
+}
+
+.sh-rightDragon {
+  box-shadow: 5px 0 5px #6f35fc;
+}
+
+.sh-upDragon {
+  box-shadow: 0 -5px 5px #6f35fc;
+}
+
+.sh-downDragon {
+  box-shadow: 0 5px 5px #6f35fc;
+}
+
+.sh-l-dDragon {
+  box-shadow: 5px -5px 10px #6f35fc;
+}
+
+.sh-l-uDragon {
+  box-shadow: -5px -5px 10px #6f35fc;
+}
+
+.sh-r-dDragon {
+  box-shadow: 5px 5px 10px #6f35fc;
+}
+
+.sh-r-uDragon {
+  box-shadow: -5px 5px 10px #6f35fc;
+}
+
+.sh-u-dDragon {
+  box-shadow: 0px 5px 10px -5px #6f35fc, 0px -5px 10px -5px #6f35fc;
+}
+
+.sh-l-rDragon {
+  box-shadow: 5px 0px 10px -5px #6f35fc, -5px 0px 10px -5px #6f35fc;
+}
+
+.sh-gDragon {
+  box-shadow: 0px 0px 10px #6f35fc;
+}
+
+.sh-leftDark {
+  box-shadow: -5px 0 5px #705746;
+}
+
+.sh-rightDark {
+  box-shadow: 5px 0 5px #705746;
+}
+
+.sh-upDark {
+  box-shadow: 0 -5px 5px #705746;
+}
+
+.sh-downDark {
+  box-shadow: 0 5px 5px #705746;
+}
+
+.sh-l-dDark {
+  box-shadow: 5px -5px 10px #705746;
+}
+
+.sh-l-uDark {
+  box-shadow: -5px -5px 10px #705746;
+}
+
+.sh-r-dDark {
+  box-shadow: 5px 5px 10px #705746;
+}
+
+.sh-r-uDark {
+  box-shadow: -5px 5px 10px #705746;
+}
+
+.sh-u-dDark {
+  box-shadow: 0px 5px 10px -5px #705746, 0px -5px 10px -5px #705746;
+}
+
+.sh-l-rDark {
+  box-shadow: 5px 0px 10px -5px #705746, -5px 0px 10px -5px #705746;
+}
+
+.sh-gDark {
+  box-shadow: 0px 0px 10px #705746;
+}
+
+.sh-leftSteel {
+  box-shadow: -5px 0 5px #b7b7ce;
+}
+
+.sh-rightSteel {
+  box-shadow: 5px 0 5px #b7b7ce;
+}
+
+.sh-upSteel {
+  box-shadow: 0 -5px 5px #b7b7ce;
+}
+
+.sh-downSteel {
+  box-shadow: 0 5px 5px #b7b7ce;
+}
+
+.sh-l-dSteel {
+  box-shadow: 5px -5px 10px #b7b7ce;
+}
+
+.sh-l-uSteel {
+  box-shadow: -5px -5px 10px #b7b7ce;
+}
+
+.sh-r-dSteel {
+  box-shadow: 5px 5px 10px #b7b7ce;
+}
+
+.sh-r-uSteel {
+  box-shadow: -5px 5px 10px #b7b7ce;
+}
+
+.sh-u-dSteel {
+  box-shadow: 0px 5px 10px -5px #b7b7ce, 0px -5px 10px -5px #b7b7ce;
+}
+
+.sh-l-rSteel {
+  box-shadow: 5px 0px 10px -5px #b7b7ce, -5px 0px 10px -5px #b7b7ce;
+}
+
+.sh-gSteel {
+  box-shadow: 0px 0px 10px #b7b7ce;
+}
+
+.sh-leftHada {
+  box-shadow: -5px 0 5px #d685ad;
+}
+
+.sh-rightHada {
+  box-shadow: 5px 0 5px #d685ad;
+}
+
+.sh-upHada {
+  box-shadow: 0 -5px 5px #d685ad;
+}
+
+.sh-downHada {
+  box-shadow: 0 5px 5px #d685ad;
+}
+
+.sh-l-dHada {
+  box-shadow: 5px -5px 10px #d685ad;
+}
+
+.sh-l-uHada {
+  box-shadow: -5px -5px 10px #d685ad;
+}
+
+.sh-r-dHada {
+  box-shadow: 5px 5px 10px #d685ad;
+}
+
+.sh-r-uHada {
+  box-shadow: -5px 5px 10px #d685ad;
+}
+
+.sh-u-dHada {
+  box-shadow: 0px 5px 10px -5px #d685ad, 0px -5px 10px -5px #d685ad;
+}
+
+.sh-l-rHada {
+  box-shadow: 5px 0px 10px -5px #d685ad, -5px 0px 10px -5px #d685ad;
+}
+
+.sh-gHada {
+  box-shadow: 0px 0px 10px #d685ad;
+}
+
+.sh-leftFire {
+  box-shadow: -5px 0 5px #ee8130;
+}
+
+.sh-rightFire {
+  box-shadow: 5px 0 5px #ee8130;
+}
+
+.sh-upFire {
+  box-shadow: 0 -5px 5px #ee8130;
+}
+
+.sh-downFire {
+  box-shadow: 0 5px 5px #ee8130;
+}
+
+.sh-l-dFire {
+  box-shadow: 5px -5px 10px #ee8130;
+}
+
+.sh-l-uFire {
+  box-shadow: -5px -5px 10px #ee8130;
+}
+
+.sh-r-dFire {
+  box-shadow: 5px 5px 10px #ee8130;
+}
+
+.sh-r-uFire {
+  box-shadow: -5px 5px 10px #ee8130;
+}
+
+.sh-u-dFire {
+  box-shadow: 0px 5px 10px -5px #ee8130, 0px -5px 10px -5px #ee8130;
+}
+
+.sh-l-rFire {
+  box-shadow: 5px 0px 10px -5px #ee8130, -5px 0px 10px -5px #ee8130;
+}
+
+.sh-gFire {
+  box-shadow: 0px 0px 10px #ee8130;
+}
+
+.sh-leftWater {
+  box-shadow: -5px 0 5px #6390f0;
+}
+
+.sh-rightWater {
+  box-shadow: 5px 0 5px #6390f0;
+}
+
+.sh-upWater {
+  box-shadow: 0 -5px 5px #6390f0;
+}
+
+.sh-downWater {
+  box-shadow: 0 5px 5px #6390f0;
+}
+
+.sh-l-dWater {
+  box-shadow: 5px -5px 10px #6390f0;
+}
+
+.sh-l-uWater {
+  box-shadow: -5px -5px 10px #6390f0;
+}
+
+.sh-r-dWater {
+  box-shadow: 5px 5px 10px #6390f0;
+}
+
+.sh-r-uWater {
+  box-shadow: -5px 5px 10px #6390f0;
+}
+
+.sh-u-dWater {
+  box-shadow: 0px 5px 10px -5px #6390f0, 0px -5px 10px -5px #6390f0;
+}
+
+.sh-l-rWater {
+  box-shadow: 5px 0px 10px -5px #6390f0, -5px 0px 10px -5px #6390f0;
+}
+
+.sh-gWater {
+  box-shadow: 0px 0px 10px #6390f0;
+}
+
+.sh-leftGrass {
+  box-shadow: -5px 0 5px #7ac74c;
+}
+
+.sh-rightGrass {
+  box-shadow: 5px 0 5px #7ac74c;
+}
+
+.sh-upGrass {
+  box-shadow: 0 -5px 5px #7ac74c;
+}
+
+.sh-downGrass {
+  box-shadow: 0 5px 5px #7ac74c;
+}
+
+.sh-l-dGrass {
+  box-shadow: 5px -5px 10px #7ac74c;
+}
+
+.sh-l-uGrass {
+  box-shadow: -5px -5px 10px #7ac74c;
+}
+
+.sh-r-dGrass {
+  box-shadow: 5px 5px 10px #7ac74c;
+}
+
+.sh-r-uGrass {
+  box-shadow: -5px 5px 10px #7ac74c;
+}
+
+.sh-u-dGrass {
+  box-shadow: 0px 5px 10px -5px #7ac74c, 0px -5px 10px -5px #7ac74c;
+}
+
+.sh-l-rGrass {
+  box-shadow: 5px 0px 10px -5px #7ac74c, -5px 0px 10px -5px #7ac74c;
+}
+
+.sh-gGrass {
+  box-shadow: 0px 0px 10px #7ac74c;
+}
+
+.sh-leftElectric {
+  box-shadow: -5px 0 5px #f7d02c;
+}
+
+.sh-rightElectric {
+  box-shadow: 5px 0 5px #f7d02c;
+}
+
+.sh-upElectric {
+  box-shadow: 0 -5px 5px #f7d02c;
+}
+
+.sh-downElectric {
+  box-shadow: 0 5px 5px #f7d02c;
+}
+
+.sh-l-dElectric {
+  box-shadow: 5px -5px 10px #f7d02c;
+}
+
+.sh-l-uElectric {
+  box-shadow: -5px -5px 10px #f7d02c;
+}
+
+.sh-r-dElectric {
+  box-shadow: 5px 5px 10px #f7d02c;
+}
+
+.sh-r-uElectric {
+  box-shadow: -5px 5px 10px #f7d02c;
+}
+
+.sh-u-dElectric {
+  box-shadow: 0px 5px 10px -5px #f7d02c, 0px -5px 10px -5px #f7d02c;
+}
+
+.sh-l-rElectric {
+  box-shadow: 5px 0px 10px -5px #f7d02c, -5px 0px 10px -5px #f7d02c;
+}
+
+.sh-gElectric {
+  box-shadow: 0px 0px 10px #f7d02c;
+}
+
+.sh-leftIce {
+  box-shadow: -5px 0 5px #96d9d6;
+}
+
+.sh-rightIce {
+  box-shadow: 5px 0 5px #96d9d6;
+}
+
+.sh-upIce {
+  box-shadow: 0 -5px 5px #96d9d6;
+}
+
+.sh-downIce {
+  box-shadow: 0 5px 5px #96d9d6;
+}
+
+.sh-l-dIce {
+  box-shadow: 5px -5px 10px #96d9d6;
+}
+
+.sh-l-uIce {
+  box-shadow: -5px -5px 10px #96d9d6;
+}
+
+.sh-r-dIce {
+  box-shadow: 5px 5px 10px #96d9d6;
+}
+
+.sh-r-uIce {
+  box-shadow: -5px 5px 10px #96d9d6;
+}
+
+.sh-u-dIce {
+  box-shadow: 0px 5px 10px -5px #96d9d6, 0px -5px 10px -5px #96d9d6;
+}
+
+.sh-l-rIce {
+  box-shadow: 5px 0px 10px -5px #96d9d6, -5px 0px 10px -5px #96d9d6;
+}
+
+.sh-gIce {
+  box-shadow: 0px 0px 10px #96d9d6;
+}
+
+.sh-leftFighting {
+  box-shadow: -5px 0 5px #c22e28;
+}
+
+.sh-rightFighting {
+  box-shadow: 5px 0 5px #c22e28;
+}
+
+.sh-upFighting {
+  box-shadow: 0 -5px 5px #c22e28;
+}
+
+.sh-downFighting {
+  box-shadow: 0 5px 5px #c22e28;
+}
+
+.sh-l-dFighting {
+  box-shadow: 5px -5px 10px #c22e28;
+}
+
+.sh-l-uFighting {
+  box-shadow: -5px -5px 10px #c22e28;
+}
+
+.sh-r-dFighting {
+  box-shadow: 5px 5px 10px #c22e28;
+}
+
+.sh-r-uFighting {
+  box-shadow: -5px 5px 10px #c22e28;
+}
+
+.sh-u-dFighting {
+  box-shadow: 0px 5px 10px -5px #c22e28, 0px -5px 10px -5px #c22e28;
+}
+
+.sh-l-rFighting {
+  box-shadow: 5px 0px 10px -5px #c22e28, -5px 0px 10px -5px #c22e28;
+}
+
+.sh-gFighting {
+  box-shadow: 0px 0px 10px #c22e28;
+}
+
+.sh-leftPoison {
+  box-shadow: -5px 0 5px #a33ea1;
+}
+
+.sh-rightPoison {
+  box-shadow: 5px 0 5px #a33ea1;
+}
+
+.sh-upPoison {
+  box-shadow: 0 -5px 5px #a33ea1;
+}
+
+.sh-downPoison {
+  box-shadow: 0 5px 5px #a33ea1;
+}
+
+.sh-l-dPoison {
+  box-shadow: 5px -5px 10px #a33ea1;
+}
+
+.sh-l-uPoison {
+  box-shadow: -5px -5px 10px #a33ea1;
+}
+
+.sh-r-dPoison {
+  box-shadow: 5px 5px 10px #a33ea1;
+}
+
+.sh-r-uPoison {
+  box-shadow: -5px 5px 10px #a33ea1;
+}
+
+.sh-u-dPoison {
+  box-shadow: 0px 5px 10px -5px #a33ea1, 0px -5px 10px -5px #a33ea1;
+}
+
+.sh-l-rPoison {
+  box-shadow: 5px 0px 10px -5px #a33ea1, -5px 0px 10px -5px #a33ea1;
+}
+
+.sh-gPoison {
+  box-shadow: 0px 0px 10px #a33ea1;
+}
+
+.sh-leftGhost {
+  box-shadow: -5px 0 5px #735797;
+}
+
+.sh-rightGhost {
+  box-shadow: 5px 0 5px #735797;
+}
+
+.sh-upGhost {
+  box-shadow: 0 -5px 5px #735797;
+}
+
+.sh-downGhost {
+  box-shadow: 0 5px 5px #735797;
+}
+
+.sh-l-dGhost {
+  box-shadow: 5px -5px 10px #735797;
+}
+
+.sh-l-uGhost {
+  box-shadow: -5px -5px 10px #735797;
+}
+
+.sh-r-dGhost {
+  box-shadow: 5px 5px 10px #735797;
+}
+
+.sh-r-uGhost {
+  box-shadow: -5px 5px 10px #735797;
+}
+
+.sh-u-dGhost {
+  box-shadow: 0px 5px 10px -5px #735797, 0px -5px 10px -5px #735797;
+}
+
+.sh-l-rGhost {
+  box-shadow: 5px 0px 10px -5px #735797, -5px 0px 10px -5px #735797;
+}
+
+.sh-gGhost {
+  box-shadow: 0px 0px 10px #735797;
+}
+
+/*Los colores de los que si quere cambiar uno aqui venimos y evitamos ir en cada apartado a cambiarlo :v*/
+/* Explicacion time:
+1.En el bucle interno @each, $tamKey y $tamValue representan cada clave y valor del mapa colores.
+2.En el bucle exterior @each, $sizeKey y $sizeValue representan cada clave y valor del mapa size.
+3.En el bucle interno @each, $tipoKey y $tipoValue representan cada clave y valor del mapa colores.
+4.Usamos map-get($ListadeListas, size) y map-get($ListadeListas, colores) para obtener los mapas internos size y colores de ListadeListas.
+5.Finalmente, usamos estas variables para generar las clases de borde con los tamaños y colores correspondientes.*/
+.brd-xxs-s-Ground {
+  border: 1px solid #e2bf65;
+}
+
+.brd-xxs-s-Flying {
+  border: 1px solid #a98ff3;
+}
+
+.brd-xxs-s-Psychi {
+  border: 1px solid #f95587;
+}
+
+.brd-xxs-s-Bug {
+  border: 1px solid #a6b91a;
+}
+
+.brd-xxs-s-Rock {
+  border: 1px solid #b6a136;
+}
+
+.brd-xxs-s-Dragon {
+  border: 1px solid #6f35fc;
+}
+
+.brd-xxs-s-Dark {
+  border: 1px solid #705746;
+}
+
+.brd-xxs-s-Steel {
+  border: 1px solid #b7b7ce;
+}
+
+.brd-xxs-s-Hada {
+  border: 1px solid #d685ad;
+}
+
+.brd-xxs-s-Fire {
+  border: 1px solid #ee8130;
+}
+
+.brd-xxs-s-Water {
+  border: 1px solid #6390f0;
+}
+
+.brd-xxs-s-Grass {
+  border: 1px solid #7ac74c;
+}
+
+.brd-xxs-s-Electric {
+  border: 1px solid #f7d02c;
+}
+
+.brd-xxs-s-Ice {
+  border: 1px solid #96d9d6;
+}
+
+.brd-xxs-s-Fighting {
+  border: 1px solid #c22e28;
+}
+
+.brd-xxs-s-Poison {
+  border: 1px solid #a33ea1;
+}
+
+.brd-xxs-s-Ghost {
+  border: 1px solid #735797;
+}
+
+.brd-xxs-da-Ground {
+  border: 1px dashed #e2bf65;
+}
+
+.brd-xxs-da-Flying {
+  border: 1px dashed #a98ff3;
+}
+
+.brd-xxs-da-Psychi {
+  border: 1px dashed #f95587;
+}
+
+.brd-xxs-da-Bug {
+  border: 1px dashed #a6b91a;
+}
+
+.brd-xxs-da-Rock {
+  border: 1px dashed #b6a136;
+}
+
+.brd-xxs-da-Dragon {
+  border: 1px dashed #6f35fc;
+}
+
+.brd-xxs-da-Dark {
+  border: 1px dashed #705746;
+}
+
+.brd-xxs-da-Steel {
+  border: 1px dashed #b7b7ce;
+}
+
+.brd-xxs-da-Hada {
+  border: 1px dashed #d685ad;
+}
+
+.brd-xxs-da-Fire {
+  border: 1px dashed #ee8130;
+}
+
+.brd-xxs-da-Water {
+  border: 1px dashed #6390f0;
+}
+
+.brd-xxs-da-Grass {
+  border: 1px dashed #7ac74c;
+}
+
+.brd-xxs-da-Electric {
+  border: 1px dashed #f7d02c;
+}
+
+.brd-xxs-da-Ice {
+  border: 1px dashed #96d9d6;
+}
+
+.brd-xxs-da-Fighting {
+  border: 1px dashed #c22e28;
+}
+
+.brd-xxs-da-Poison {
+  border: 1px dashed #a33ea1;
+}
+
+.brd-xxs-da-Ghost {
+  border: 1px dashed #735797;
+}
+
+.brd-xxs-dot-Ground {
+  border: 1px dotted #e2bf65;
+}
+
+.brd-xxs-dot-Flying {
+  border: 1px dotted #a98ff3;
+}
+
+.brd-xxs-dot-Psychi {
+  border: 1px dotted #f95587;
+}
+
+.brd-xxs-dot-Bug {
+  border: 1px dotted #a6b91a;
+}
+
+.brd-xxs-dot-Rock {
+  border: 1px dotted #b6a136;
+}
+
+.brd-xxs-dot-Dragon {
+  border: 1px dotted #6f35fc;
+}
+
+.brd-xxs-dot-Dark {
+  border: 1px dotted #705746;
+}
+
+.brd-xxs-dot-Steel {
+  border: 1px dotted #b7b7ce;
+}
+
+.brd-xxs-dot-Hada {
+  border: 1px dotted #d685ad;
+}
+
+.brd-xxs-dot-Fire {
+  border: 1px dotted #ee8130;
+}
+
+.brd-xxs-dot-Water {
+  border: 1px dotted #6390f0;
+}
+
+.brd-xxs-dot-Grass {
+  border: 1px dotted #7ac74c;
+}
+
+.brd-xxs-dot-Electric {
+  border: 1px dotted #f7d02c;
+}
+
+.brd-xxs-dot-Ice {
+  border: 1px dotted #96d9d6;
+}
+
+.brd-xxs-dot-Fighting {
+  border: 1px dotted #c22e28;
+}
+
+.brd-xxs-dot-Poison {
+  border: 1px dotted #a33ea1;
+}
+
+.brd-xxs-dot-Ghost {
+  border: 1px dotted #735797;
+}
+
+.brd-xxs-dou-Ground {
+  border: 1px double #e2bf65;
+}
+
+.brd-xxs-dou-Flying {
+  border: 1px double #a98ff3;
+}
+
+.brd-xxs-dou-Psychi {
+  border: 1px double #f95587;
+}
+
+.brd-xxs-dou-Bug {
+  border: 1px double #a6b91a;
+}
+
+.brd-xxs-dou-Rock {
+  border: 1px double #b6a136;
+}
+
+.brd-xxs-dou-Dragon {
+  border: 1px double #6f35fc;
+}
+
+.brd-xxs-dou-Dark {
+  border: 1px double #705746;
+}
+
+.brd-xxs-dou-Steel {
+  border: 1px double #b7b7ce;
+}
+
+.brd-xxs-dou-Hada {
+  border: 1px double #d685ad;
+}
+
+.brd-xxs-dou-Fire {
+  border: 1px double #ee8130;
+}
+
+.brd-xxs-dou-Water {
+  border: 1px double #6390f0;
+}
+
+.brd-xxs-dou-Grass {
+  border: 1px double #7ac74c;
+}
+
+.brd-xxs-dou-Electric {
+  border: 1px double #f7d02c;
+}
+
+.brd-xxs-dou-Ice {
+  border: 1px double #96d9d6;
+}
+
+.brd-xxs-dou-Fighting {
+  border: 1px double #c22e28;
+}
+
+.brd-xxs-dou-Poison {
+  border: 1px double #a33ea1;
+}
+
+.brd-xxs-dou-Ghost {
+  border: 1px double #735797;
+}
+
+.brd-xs-s-Ground {
+  border: 2px solid #e2bf65;
+}
+
+.brd-xs-s-Flying {
+  border: 2px solid #a98ff3;
+}
+
+.brd-xs-s-Psychi {
+  border: 2px solid #f95587;
+}
+
+.brd-xs-s-Bug {
+  border: 2px solid #a6b91a;
+}
+
+.brd-xs-s-Rock {
+  border: 2px solid #b6a136;
+}
+
+.brd-xs-s-Dragon {
+  border: 2px solid #6f35fc;
+}
+
+.brd-xs-s-Dark {
+  border: 2px solid #705746;
+}
+
+.brd-xs-s-Steel {
+  border: 2px solid #b7b7ce;
+}
+
+.brd-xs-s-Hada {
+  border: 2px solid #d685ad;
+}
+
+.brd-xs-s-Fire {
+  border: 2px solid #ee8130;
+}
+
+.brd-xs-s-Water {
+  border: 2px solid #6390f0;
+}
+
+.brd-xs-s-Grass {
+  border: 2px solid #7ac74c;
+}
+
+.brd-xs-s-Electric {
+  border: 2px solid #f7d02c;
+}
+
+.brd-xs-s-Ice {
+  border: 2px solid #96d9d6;
+}
+
+.brd-xs-s-Fighting {
+  border: 2px solid #c22e28;
+}
+
+.brd-xs-s-Poison {
+  border: 2px solid #a33ea1;
+}
+
+.brd-xs-s-Ghost {
+  border: 2px solid #735797;
+}
+
+.brd-xs-da-Ground {
+  border: 2px dashed #e2bf65;
+}
+
+.brd-xs-da-Flying {
+  border: 2px dashed #a98ff3;
+}
+
+.brd-xs-da-Psychi {
+  border: 2px dashed #f95587;
+}
+
+.brd-xs-da-Bug {
+  border: 2px dashed #a6b91a;
+}
+
+.brd-xs-da-Rock {
+  border: 2px dashed #b6a136;
+}
+
+.brd-xs-da-Dragon {
+  border: 2px dashed #6f35fc;
+}
+
+.brd-xs-da-Dark {
+  border: 2px dashed #705746;
+}
+
+.brd-xs-da-Steel {
+  border: 2px dashed #b7b7ce;
+}
+
+.brd-xs-da-Hada {
+  border: 2px dashed #d685ad;
+}
+
+.brd-xs-da-Fire {
+  border: 2px dashed #ee8130;
+}
+
+.brd-xs-da-Water {
+  border: 2px dashed #6390f0;
+}
+
+.brd-xs-da-Grass {
+  border: 2px dashed #7ac74c;
+}
+
+.brd-xs-da-Electric {
+  border: 2px dashed #f7d02c;
+}
+
+.brd-xs-da-Ice {
+  border: 2px dashed #96d9d6;
+}
+
+.brd-xs-da-Fighting {
+  border: 2px dashed #c22e28;
+}
+
+.brd-xs-da-Poison {
+  border: 2px dashed #a33ea1;
+}
+
+.brd-xs-da-Ghost {
+  border: 2px dashed #735797;
+}
+
+.brd-xs-dot-Ground {
+  border: 2px dotted #e2bf65;
+}
+
+.brd-xs-dot-Flying {
+  border: 2px dotted #a98ff3;
+}
+
+.brd-xs-dot-Psychi {
+  border: 2px dotted #f95587;
+}
+
+.brd-xs-dot-Bug {
+  border: 2px dotted #a6b91a;
+}
+
+.brd-xs-dot-Rock {
+  border: 2px dotted #b6a136;
+}
+
+.brd-xs-dot-Dragon {
+  border: 2px dotted #6f35fc;
+}
+
+.brd-xs-dot-Dark {
+  border: 2px dotted #705746;
+}
+
+.brd-xs-dot-Steel {
+  border: 2px dotted #b7b7ce;
+}
+
+.brd-xs-dot-Hada {
+  border: 2px dotted #d685ad;
+}
+
+.brd-xs-dot-Fire {
+  border: 2px dotted #ee8130;
+}
+
+.brd-xs-dot-Water {
+  border: 2px dotted #6390f0;
+}
+
+.brd-xs-dot-Grass {
+  border: 2px dotted #7ac74c;
+}
+
+.brd-xs-dot-Electric {
+  border: 2px dotted #f7d02c;
+}
+
+.brd-xs-dot-Ice {
+  border: 2px dotted #96d9d6;
+}
+
+.brd-xs-dot-Fighting {
+  border: 2px dotted #c22e28;
+}
+
+.brd-xs-dot-Poison {
+  border: 2px dotted #a33ea1;
+}
+
+.brd-xs-dot-Ghost {
+  border: 2px dotted #735797;
+}
+
+.brd-xs-dou-Ground {
+  border: 2px double #e2bf65;
+}
+
+.brd-xs-dou-Flying {
+  border: 2px double #a98ff3;
+}
+
+.brd-xs-dou-Psychi {
+  border: 2px double #f95587;
+}
+
+.brd-xs-dou-Bug {
+  border: 2px double #a6b91a;
+}
+
+.brd-xs-dou-Rock {
+  border: 2px double #b6a136;
+}
+
+.brd-xs-dou-Dragon {
+  border: 2px double #6f35fc;
+}
+
+.brd-xs-dou-Dark {
+  border: 2px double #705746;
+}
+
+.brd-xs-dou-Steel {
+  border: 2px double #b7b7ce;
+}
+
+.brd-xs-dou-Hada {
+  border: 2px double #d685ad;
+}
+
+.brd-xs-dou-Fire {
+  border: 2px double #ee8130;
+}
+
+.brd-xs-dou-Water {
+  border: 2px double #6390f0;
+}
+
+.brd-xs-dou-Grass {
+  border: 2px double #7ac74c;
+}
+
+.brd-xs-dou-Electric {
+  border: 2px double #f7d02c;
+}
+
+.brd-xs-dou-Ice {
+  border: 2px double #96d9d6;
+}
+
+.brd-xs-dou-Fighting {
+  border: 2px double #c22e28;
+}
+
+.brd-xs-dou-Poison {
+  border: 2px double #a33ea1;
+}
+
+.brd-xs-dou-Ghost {
+  border: 2px double #735797;
+}
+
+.brd-s-s-Ground {
+  border: 3px solid #e2bf65;
+}
+
+.brd-s-s-Flying {
+  border: 3px solid #a98ff3;
+}
+
+.brd-s-s-Psychi {
+  border: 3px solid #f95587;
+}
+
+.brd-s-s-Bug {
+  border: 3px solid #a6b91a;
+}
+
+.brd-s-s-Rock {
+  border: 3px solid #b6a136;
+}
+
+.brd-s-s-Dragon {
+  border: 3px solid #6f35fc;
+}
+
+.brd-s-s-Dark {
+  border: 3px solid #705746;
+}
+
+.brd-s-s-Steel {
+  border: 3px solid #b7b7ce;
+}
+
+.brd-s-s-Hada {
+  border: 3px solid #d685ad;
+}
+
+.brd-s-s-Fire {
+  border: 3px solid #ee8130;
+}
+
+.brd-s-s-Water {
+  border: 3px solid #6390f0;
+}
+
+.brd-s-s-Grass {
+  border: 3px solid #7ac74c;
+}
+
+.brd-s-s-Electric {
+  border: 3px solid #f7d02c;
+}
+
+.brd-s-s-Ice {
+  border: 3px solid #96d9d6;
+}
+
+.brd-s-s-Fighting {
+  border: 3px solid #c22e28;
+}
+
+.brd-s-s-Poison {
+  border: 3px solid #a33ea1;
+}
+
+.brd-s-s-Ghost {
+  border: 3px solid #735797;
+}
+
+.brd-s-da-Ground {
+  border: 3px dashed #e2bf65;
+}
+
+.brd-s-da-Flying {
+  border: 3px dashed #a98ff3;
+}
+
+.brd-s-da-Psychi {
+  border: 3px dashed #f95587;
+}
+
+.brd-s-da-Bug {
+  border: 3px dashed #a6b91a;
+}
+
+.brd-s-da-Rock {
+  border: 3px dashed #b6a136;
+}
+
+.brd-s-da-Dragon {
+  border: 3px dashed #6f35fc;
+}
+
+.brd-s-da-Dark {
+  border: 3px dashed #705746;
+}
+
+.brd-s-da-Steel {
+  border: 3px dashed #b7b7ce;
+}
+
+.brd-s-da-Hada {
+  border: 3px dashed #d685ad;
+}
+
+.brd-s-da-Fire {
+  border: 3px dashed #ee8130;
+}
+
+.brd-s-da-Water {
+  border: 3px dashed #6390f0;
+}
+
+.brd-s-da-Grass {
+  border: 3px dashed #7ac74c;
+}
+
+.brd-s-da-Electric {
+  border: 3px dashed #f7d02c;
+}
+
+.brd-s-da-Ice {
+  border: 3px dashed #96d9d6;
+}
+
+.brd-s-da-Fighting {
+  border: 3px dashed #c22e28;
+}
+
+.brd-s-da-Poison {
+  border: 3px dashed #a33ea1;
+}
+
+.brd-s-da-Ghost {
+  border: 3px dashed #735797;
+}
+
+.brd-s-dot-Ground {
+  border: 3px dotted #e2bf65;
+}
+
+.brd-s-dot-Flying {
+  border: 3px dotted #a98ff3;
+}
+
+.brd-s-dot-Psychi {
+  border: 3px dotted #f95587;
+}
+
+.brd-s-dot-Bug {
+  border: 3px dotted #a6b91a;
+}
+
+.brd-s-dot-Rock {
+  border: 3px dotted #b6a136;
+}
+
+.brd-s-dot-Dragon {
+  border: 3px dotted #6f35fc;
+}
+
+.brd-s-dot-Dark {
+  border: 3px dotted #705746;
+}
+
+.brd-s-dot-Steel {
+  border: 3px dotted #b7b7ce;
+}
+
+.brd-s-dot-Hada {
+  border: 3px dotted #d685ad;
+}
+
+.brd-s-dot-Fire {
+  border: 3px dotted #ee8130;
+}
+
+.brd-s-dot-Water {
+  border: 3px dotted #6390f0;
+}
+
+.brd-s-dot-Grass {
+  border: 3px dotted #7ac74c;
+}
+
+.brd-s-dot-Electric {
+  border: 3px dotted #f7d02c;
+}
+
+.brd-s-dot-Ice {
+  border: 3px dotted #96d9d6;
+}
+
+.brd-s-dot-Fighting {
+  border: 3px dotted #c22e28;
+}
+
+.brd-s-dot-Poison {
+  border: 3px dotted #a33ea1;
+}
+
+.brd-s-dot-Ghost {
+  border: 3px dotted #735797;
+}
+
+.brd-s-dou-Ground {
+  border: 3px double #e2bf65;
+}
+
+.brd-s-dou-Flying {
+  border: 3px double #a98ff3;
+}
+
+.brd-s-dou-Psychi {
+  border: 3px double #f95587;
+}
+
+.brd-s-dou-Bug {
+  border: 3px double #a6b91a;
+}
+
+.brd-s-dou-Rock {
+  border: 3px double #b6a136;
+}
+
+.brd-s-dou-Dragon {
+  border: 3px double #6f35fc;
+}
+
+.brd-s-dou-Dark {
+  border: 3px double #705746;
+}
+
+.brd-s-dou-Steel {
+  border: 3px double #b7b7ce;
+}
+
+.brd-s-dou-Hada {
+  border: 3px double #d685ad;
+}
+
+.brd-s-dou-Fire {
+  border: 3px double #ee8130;
+}
+
+.brd-s-dou-Water {
+  border: 3px double #6390f0;
+}
+
+.brd-s-dou-Grass {
+  border: 3px double #7ac74c;
+}
+
+.brd-s-dou-Electric {
+  border: 3px double #f7d02c;
+}
+
+.brd-s-dou-Ice {
+  border: 3px double #96d9d6;
+}
+
+.brd-s-dou-Fighting {
+  border: 3px double #c22e28;
+}
+
+.brd-s-dou-Poison {
+  border: 3px double #a33ea1;
+}
+
+.brd-s-dou-Ghost {
+  border: 3px double #735797;
+}
+
+.brd-m-s-Ground {
+  border: 4px solid #e2bf65;
+}
+
+.brd-m-s-Flying {
+  border: 4px solid #a98ff3;
+}
+
+.brd-m-s-Psychi {
+  border: 4px solid #f95587;
+}
+
+.brd-m-s-Bug {
+  border: 4px solid #a6b91a;
+}
+
+.brd-m-s-Rock {
+  border: 4px solid #b6a136;
+}
+
+.brd-m-s-Dragon {
+  border: 4px solid #6f35fc;
+}
+
+.brd-m-s-Dark {
+  border: 4px solid #705746;
+}
+
+.brd-m-s-Steel {
+  border: 4px solid #b7b7ce;
+}
+
+.brd-m-s-Hada {
+  border: 4px solid #d685ad;
+}
+
+.brd-m-s-Fire {
+  border: 4px solid #ee8130;
+}
+
+.brd-m-s-Water {
+  border: 4px solid #6390f0;
+}
+
+.brd-m-s-Grass {
+  border: 4px solid #7ac74c;
+}
+
+.brd-m-s-Electric {
+  border: 4px solid #f7d02c;
+}
+
+.brd-m-s-Ice {
+  border: 4px solid #96d9d6;
+}
+
+.brd-m-s-Fighting {
+  border: 4px solid #c22e28;
+}
+
+.brd-m-s-Poison {
+  border: 4px solid #a33ea1;
+}
+
+.brd-m-s-Ghost {
+  border: 4px solid #735797;
+}
+
+.brd-m-da-Ground {
+  border: 4px dashed #e2bf65;
+}
+
+.brd-m-da-Flying {
+  border: 4px dashed #a98ff3;
+}
+
+.brd-m-da-Psychi {
+  border: 4px dashed #f95587;
+}
+
+.brd-m-da-Bug {
+  border: 4px dashed #a6b91a;
+}
+
+.brd-m-da-Rock {
+  border: 4px dashed #b6a136;
+}
+
+.brd-m-da-Dragon {
+  border: 4px dashed #6f35fc;
+}
+
+.brd-m-da-Dark {
+  border: 4px dashed #705746;
+}
+
+.brd-m-da-Steel {
+  border: 4px dashed #b7b7ce;
+}
+
+.brd-m-da-Hada {
+  border: 4px dashed #d685ad;
+}
+
+.brd-m-da-Fire {
+  border: 4px dashed #ee8130;
+}
+
+.brd-m-da-Water {
+  border: 4px dashed #6390f0;
+}
+
+.brd-m-da-Grass {
+  border: 4px dashed #7ac74c;
+}
+
+.brd-m-da-Electric {
+  border: 4px dashed #f7d02c;
+}
+
+.brd-m-da-Ice {
+  border: 4px dashed #96d9d6;
+}
+
+.brd-m-da-Fighting {
+  border: 4px dashed #c22e28;
+}
+
+.brd-m-da-Poison {
+  border: 4px dashed #a33ea1;
+}
+
+.brd-m-da-Ghost {
+  border: 4px dashed #735797;
+}
+
+.brd-m-dot-Ground {
+  border: 4px dotted #e2bf65;
+}
+
+.brd-m-dot-Flying {
+  border: 4px dotted #a98ff3;
+}
+
+.brd-m-dot-Psychi {
+  border: 4px dotted #f95587;
+}
+
+.brd-m-dot-Bug {
+  border: 4px dotted #a6b91a;
+}
+
+.brd-m-dot-Rock {
+  border: 4px dotted #b6a136;
+}
+
+.brd-m-dot-Dragon {
+  border: 4px dotted #6f35fc;
+}
+
+.brd-m-dot-Dark {
+  border: 4px dotted #705746;
+}
+
+.brd-m-dot-Steel {
+  border: 4px dotted #b7b7ce;
+}
+
+.brd-m-dot-Hada {
+  border: 4px dotted #d685ad;
+}
+
+.brd-m-dot-Fire {
+  border: 4px dotted #ee8130;
+}
+
+.brd-m-dot-Water {
+  border: 4px dotted #6390f0;
+}
+
+.brd-m-dot-Grass {
+  border: 4px dotted #7ac74c;
+}
+
+.brd-m-dot-Electric {
+  border: 4px dotted #f7d02c;
+}
+
+.brd-m-dot-Ice {
+  border: 4px dotted #96d9d6;
+}
+
+.brd-m-dot-Fighting {
+  border: 4px dotted #c22e28;
+}
+
+.brd-m-dot-Poison {
+  border: 4px dotted #a33ea1;
+}
+
+.brd-m-dot-Ghost {
+  border: 4px dotted #735797;
+}
+
+.brd-m-dou-Ground {
+  border: 4px double #e2bf65;
+}
+
+.brd-m-dou-Flying {
+  border: 4px double #a98ff3;
+}
+
+.brd-m-dou-Psychi {
+  border: 4px double #f95587;
+}
+
+.brd-m-dou-Bug {
+  border: 4px double #a6b91a;
+}
+
+.brd-m-dou-Rock {
+  border: 4px double #b6a136;
+}
+
+.brd-m-dou-Dragon {
+  border: 4px double #6f35fc;
+}
+
+.brd-m-dou-Dark {
+  border: 4px double #705746;
+}
+
+.brd-m-dou-Steel {
+  border: 4px double #b7b7ce;
+}
+
+.brd-m-dou-Hada {
+  border: 4px double #d685ad;
+}
+
+.brd-m-dou-Fire {
+  border: 4px double #ee8130;
+}
+
+.brd-m-dou-Water {
+  border: 4px double #6390f0;
+}
+
+.brd-m-dou-Grass {
+  border: 4px double #7ac74c;
+}
+
+.brd-m-dou-Electric {
+  border: 4px double #f7d02c;
+}
+
+.brd-m-dou-Ice {
+  border: 4px double #96d9d6;
+}
+
+.brd-m-dou-Fighting {
+  border: 4px double #c22e28;
+}
+
+.brd-m-dou-Poison {
+  border: 4px double #a33ea1;
+}
+
+.brd-m-dou-Ghost {
+  border: 4px double #735797;
+}
+
+.brd-l-s-Ground {
+  border: 5px solid #e2bf65;
+}
+
+.brd-l-s-Flying {
+  border: 5px solid #a98ff3;
+}
+
+.brd-l-s-Psychi {
+  border: 5px solid #f95587;
+}
+
+.brd-l-s-Bug {
+  border: 5px solid #a6b91a;
+}
+
+.brd-l-s-Rock {
+  border: 5px solid #b6a136;
+}
+
+.brd-l-s-Dragon {
+  border: 5px solid #6f35fc;
+}
+
+.brd-l-s-Dark {
+  border: 5px solid #705746;
+}
+
+.brd-l-s-Steel {
+  border: 5px solid #b7b7ce;
+}
+
+.brd-l-s-Hada {
+  border: 5px solid #d685ad;
+}
+
+.brd-l-s-Fire {
+  border: 5px solid #ee8130;
+}
+
+.brd-l-s-Water {
+  border: 5px solid #6390f0;
+}
+
+.brd-l-s-Grass {
+  border: 5px solid #7ac74c;
+}
+
+.brd-l-s-Electric {
+  border: 5px solid #f7d02c;
+}
+
+.brd-l-s-Ice {
+  border: 5px solid #96d9d6;
+}
+
+.brd-l-s-Fighting {
+  border: 5px solid #c22e28;
+}
+
+.brd-l-s-Poison {
+  border: 5px solid #a33ea1;
+}
+
+.brd-l-s-Ghost {
+  border: 5px solid #735797;
+}
+
+.brd-l-da-Ground {
+  border: 5px dashed #e2bf65;
+}
+
+.brd-l-da-Flying {
+  border: 5px dashed #a98ff3;
+}
+
+.brd-l-da-Psychi {
+  border: 5px dashed #f95587;
+}
+
+.brd-l-da-Bug {
+  border: 5px dashed #a6b91a;
+}
+
+.brd-l-da-Rock {
+  border: 5px dashed #b6a136;
+}
+
+.brd-l-da-Dragon {
+  border: 5px dashed #6f35fc;
+}
+
+.brd-l-da-Dark {
+  border: 5px dashed #705746;
+}
+
+.brd-l-da-Steel {
+  border: 5px dashed #b7b7ce;
+}
+
+.brd-l-da-Hada {
+  border: 5px dashed #d685ad;
+}
+
+.brd-l-da-Fire {
+  border: 5px dashed #ee8130;
+}
+
+.brd-l-da-Water {
+  border: 5px dashed #6390f0;
+}
+
+.brd-l-da-Grass {
+  border: 5px dashed #7ac74c;
+}
+
+.brd-l-da-Electric {
+  border: 5px dashed #f7d02c;
+}
+
+.brd-l-da-Ice {
+  border: 5px dashed #96d9d6;
+}
+
+.brd-l-da-Fighting {
+  border: 5px dashed #c22e28;
+}
+
+.brd-l-da-Poison {
+  border: 5px dashed #a33ea1;
+}
+
+.brd-l-da-Ghost {
+  border: 5px dashed #735797;
+}
+
+.brd-l-dot-Ground {
+  border: 5px dotted #e2bf65;
+}
+
+.brd-l-dot-Flying {
+  border: 5px dotted #a98ff3;
+}
+
+.brd-l-dot-Psychi {
+  border: 5px dotted #f95587;
+}
+
+.brd-l-dot-Bug {
+  border: 5px dotted #a6b91a;
+}
+
+.brd-l-dot-Rock {
+  border: 5px dotted #b6a136;
+}
+
+.brd-l-dot-Dragon {
+  border: 5px dotted #6f35fc;
+}
+
+.brd-l-dot-Dark {
+  border: 5px dotted #705746;
+}
+
+.brd-l-dot-Steel {
+  border: 5px dotted #b7b7ce;
+}
+
+.brd-l-dot-Hada {
+  border: 5px dotted #d685ad;
+}
+
+.brd-l-dot-Fire {
+  border: 5px dotted #ee8130;
+}
+
+.brd-l-dot-Water {
+  border: 5px dotted #6390f0;
+}
+
+.brd-l-dot-Grass {
+  border: 5px dotted #7ac74c;
+}
+
+.brd-l-dot-Electric {
+  border: 5px dotted #f7d02c;
+}
+
+.brd-l-dot-Ice {
+  border: 5px dotted #96d9d6;
+}
+
+.brd-l-dot-Fighting {
+  border: 5px dotted #c22e28;
+}
+
+.brd-l-dot-Poison {
+  border: 5px dotted #a33ea1;
+}
+
+.brd-l-dot-Ghost {
+  border: 5px dotted #735797;
+}
+
+.brd-l-dou-Ground {
+  border: 5px double #e2bf65;
+}
+
+.brd-l-dou-Flying {
+  border: 5px double #a98ff3;
+}
+
+.brd-l-dou-Psychi {
+  border: 5px double #f95587;
+}
+
+.brd-l-dou-Bug {
+  border: 5px double #a6b91a;
+}
+
+.brd-l-dou-Rock {
+  border: 5px double #b6a136;
+}
+
+.brd-l-dou-Dragon {
+  border: 5px double #6f35fc;
+}
+
+.brd-l-dou-Dark {
+  border: 5px double #705746;
+}
+
+.brd-l-dou-Steel {
+  border: 5px double #b7b7ce;
+}
+
+.brd-l-dou-Hada {
+  border: 5px double #d685ad;
+}
+
+.brd-l-dou-Fire {
+  border: 5px double #ee8130;
+}
+
+.brd-l-dou-Water {
+  border: 5px double #6390f0;
+}
+
+.brd-l-dou-Grass {
+  border: 5px double #7ac74c;
+}
+
+.brd-l-dou-Electric {
+  border: 5px double #f7d02c;
+}
+
+.brd-l-dou-Ice {
+  border: 5px double #96d9d6;
+}
+
+.brd-l-dou-Fighting {
+  border: 5px double #c22e28;
+}
+
+.brd-l-dou-Poison {
+  border: 5px double #a33ea1;
+}
+
+.brd-l-dou-Ghost {
+  border: 5px double #735797;
+}
+
+.brd-xl-s-Ground {
+  border: 6px solid #e2bf65;
+}
+
+.brd-xl-s-Flying {
+  border: 6px solid #a98ff3;
+}
+
+.brd-xl-s-Psychi {
+  border: 6px solid #f95587;
+}
+
+.brd-xl-s-Bug {
+  border: 6px solid #a6b91a;
+}
+
+.brd-xl-s-Rock {
+  border: 6px solid #b6a136;
+}
+
+.brd-xl-s-Dragon {
+  border: 6px solid #6f35fc;
+}
+
+.brd-xl-s-Dark {
+  border: 6px solid #705746;
+}
+
+.brd-xl-s-Steel {
+  border: 6px solid #b7b7ce;
+}
+
+.brd-xl-s-Hada {
+  border: 6px solid #d685ad;
+}
+
+.brd-xl-s-Fire {
+  border: 6px solid #ee8130;
+}
+
+.brd-xl-s-Water {
+  border: 6px solid #6390f0;
+}
+
+.brd-xl-s-Grass {
+  border: 6px solid #7ac74c;
+}
+
+.brd-xl-s-Electric {
+  border: 6px solid #f7d02c;
+}
+
+.brd-xl-s-Ice {
+  border: 6px solid #96d9d6;
+}
+
+.brd-xl-s-Fighting {
+  border: 6px solid #c22e28;
+}
+
+.brd-xl-s-Poison {
+  border: 6px solid #a33ea1;
+}
+
+.brd-xl-s-Ghost {
+  border: 6px solid #735797;
+}
+
+.brd-xl-da-Ground {
+  border: 6px dashed #e2bf65;
+}
+
+.brd-xl-da-Flying {
+  border: 6px dashed #a98ff3;
+}
+
+.brd-xl-da-Psychi {
+  border: 6px dashed #f95587;
+}
+
+.brd-xl-da-Bug {
+  border: 6px dashed #a6b91a;
+}
+
+.brd-xl-da-Rock {
+  border: 6px dashed #b6a136;
+}
+
+.brd-xl-da-Dragon {
+  border: 6px dashed #6f35fc;
+}
+
+.brd-xl-da-Dark {
+  border: 6px dashed #705746;
+}
+
+.brd-xl-da-Steel {
+  border: 6px dashed #b7b7ce;
+}
+
+.brd-xl-da-Hada {
+  border: 6px dashed #d685ad;
+}
+
+.brd-xl-da-Fire {
+  border: 6px dashed #ee8130;
+}
+
+.brd-xl-da-Water {
+  border: 6px dashed #6390f0;
+}
+
+.brd-xl-da-Grass {
+  border: 6px dashed #7ac74c;
+}
+
+.brd-xl-da-Electric {
+  border: 6px dashed #f7d02c;
+}
+
+.brd-xl-da-Ice {
+  border: 6px dashed #96d9d6;
+}
+
+.brd-xl-da-Fighting {
+  border: 6px dashed #c22e28;
+}
+
+.brd-xl-da-Poison {
+  border: 6px dashed #a33ea1;
+}
+
+.brd-xl-da-Ghost {
+  border: 6px dashed #735797;
+}
+
+.brd-xl-dot-Ground {
+  border: 6px dotted #e2bf65;
+}
+
+.brd-xl-dot-Flying {
+  border: 6px dotted #a98ff3;
+}
+
+.brd-xl-dot-Psychi {
+  border: 6px dotted #f95587;
+}
+
+.brd-xl-dot-Bug {
+  border: 6px dotted #a6b91a;
+}
+
+.brd-xl-dot-Rock {
+  border: 6px dotted #b6a136;
+}
+
+.brd-xl-dot-Dragon {
+  border: 6px dotted #6f35fc;
+}
+
+.brd-xl-dot-Dark {
+  border: 6px dotted #705746;
+}
+
+.brd-xl-dot-Steel {
+  border: 6px dotted #b7b7ce;
+}
+
+.brd-xl-dot-Hada {
+  border: 6px dotted #d685ad;
+}
+
+.brd-xl-dot-Fire {
+  border: 6px dotted #ee8130;
+}
+
+.brd-xl-dot-Water {
+  border: 6px dotted #6390f0;
+}
+
+.brd-xl-dot-Grass {
+  border: 6px dotted #7ac74c;
+}
+
+.brd-xl-dot-Electric {
+  border: 6px dotted #f7d02c;
+}
+
+.brd-xl-dot-Ice {
+  border: 6px dotted #96d9d6;
+}
+
+.brd-xl-dot-Fighting {
+  border: 6px dotted #c22e28;
+}
+
+.brd-xl-dot-Poison {
+  border: 6px dotted #a33ea1;
+}
+
+.brd-xl-dot-Ghost {
+  border: 6px dotted #735797;
+}
+
+.brd-xl-dou-Ground {
+  border: 6px double #e2bf65;
+}
+
+.brd-xl-dou-Flying {
+  border: 6px double #a98ff3;
+}
+
+.brd-xl-dou-Psychi {
+  border: 6px double #f95587;
+}
+
+.brd-xl-dou-Bug {
+  border: 6px double #a6b91a;
+}
+
+.brd-xl-dou-Rock {
+  border: 6px double #b6a136;
+}
+
+.brd-xl-dou-Dragon {
+  border: 6px double #6f35fc;
+}
+
+.brd-xl-dou-Dark {
+  border: 6px double #705746;
+}
+
+.brd-xl-dou-Steel {
+  border: 6px double #b7b7ce;
+}
+
+.brd-xl-dou-Hada {
+  border: 6px double #d685ad;
+}
+
+.brd-xl-dou-Fire {
+  border: 6px double #ee8130;
+}
+
+.brd-xl-dou-Water {
+  border: 6px double #6390f0;
+}
+
+.brd-xl-dou-Grass {
+  border: 6px double #7ac74c;
+}
+
+.brd-xl-dou-Electric {
+  border: 6px double #f7d02c;
+}
+
+.brd-xl-dou-Ice {
+  border: 6px double #96d9d6;
+}
+
+.brd-xl-dou-Fighting {
+  border: 6px double #c22e28;
+}
+
+.brd-xl-dou-Poison {
+  border: 6px double #a33ea1;
+}
+
+.brd-xl-dou-Ghost {
+  border: 6px double #735797;
+}
+
+.brd-xxl-s-Ground {
+  border: 7px solid #e2bf65;
+}
+
+.brd-xxl-s-Flying {
+  border: 7px solid #a98ff3;
+}
+
+.brd-xxl-s-Psychi {
+  border: 7px solid #f95587;
+}
+
+.brd-xxl-s-Bug {
+  border: 7px solid #a6b91a;
+}
+
+.brd-xxl-s-Rock {
+  border: 7px solid #b6a136;
+}
+
+.brd-xxl-s-Dragon {
+  border: 7px solid #6f35fc;
+}
+
+.brd-xxl-s-Dark {
+  border: 7px solid #705746;
+}
+
+.brd-xxl-s-Steel {
+  border: 7px solid #b7b7ce;
+}
+
+.brd-xxl-s-Hada {
+  border: 7px solid #d685ad;
+}
+
+.brd-xxl-s-Fire {
+  border: 7px solid #ee8130;
+}
+
+.brd-xxl-s-Water {
+  border: 7px solid #6390f0;
+}
+
+.brd-xxl-s-Grass {
+  border: 7px solid #7ac74c;
+}
+
+.brd-xxl-s-Electric {
+  border: 7px solid #f7d02c;
+}
+
+.brd-xxl-s-Ice {
+  border: 7px solid #96d9d6;
+}
+
+.brd-xxl-s-Fighting {
+  border: 7px solid #c22e28;
+}
+
+.brd-xxl-s-Poison {
+  border: 7px solid #a33ea1;
+}
+
+.brd-xxl-s-Ghost {
+  border: 7px solid #735797;
+}
+
+.brd-xxl-da-Ground {
+  border: 7px dashed #e2bf65;
+}
+
+.brd-xxl-da-Flying {
+  border: 7px dashed #a98ff3;
+}
+
+.brd-xxl-da-Psychi {
+  border: 7px dashed #f95587;
+}
+
+.brd-xxl-da-Bug {
+  border: 7px dashed #a6b91a;
+}
+
+.brd-xxl-da-Rock {
+  border: 7px dashed #b6a136;
+}
+
+.brd-xxl-da-Dragon {
+  border: 7px dashed #6f35fc;
+}
+
+.brd-xxl-da-Dark {
+  border: 7px dashed #705746;
+}
+
+.brd-xxl-da-Steel {
+  border: 7px dashed #b7b7ce;
+}
+
+.brd-xxl-da-Hada {
+  border: 7px dashed #d685ad;
+}
+
+.brd-xxl-da-Fire {
+  border: 7px dashed #ee8130;
+}
+
+.brd-xxl-da-Water {
+  border: 7px dashed #6390f0;
+}
+
+.brd-xxl-da-Grass {
+  border: 7px dashed #7ac74c;
+}
+
+.brd-xxl-da-Electric {
+  border: 7px dashed #f7d02c;
+}
+
+.brd-xxl-da-Ice {
+  border: 7px dashed #96d9d6;
+}
+
+.brd-xxl-da-Fighting {
+  border: 7px dashed #c22e28;
+}
+
+.brd-xxl-da-Poison {
+  border: 7px dashed #a33ea1;
+}
+
+.brd-xxl-da-Ghost {
+  border: 7px dashed #735797;
+}
+
+.brd-xxl-dot-Ground {
+  border: 7px dotted #e2bf65;
+}
+
+.brd-xxl-dot-Flying {
+  border: 7px dotted #a98ff3;
+}
+
+.brd-xxl-dot-Psychi {
+  border: 7px dotted #f95587;
+}
+
+.brd-xxl-dot-Bug {
+  border: 7px dotted #a6b91a;
+}
+
+.brd-xxl-dot-Rock {
+  border: 7px dotted #b6a136;
+}
+
+.brd-xxl-dot-Dragon {
+  border: 7px dotted #6f35fc;
+}
+
+.brd-xxl-dot-Dark {
+  border: 7px dotted #705746;
+}
+
+.brd-xxl-dot-Steel {
+  border: 7px dotted #b7b7ce;
+}
+
+.brd-xxl-dot-Hada {
+  border: 7px dotted #d685ad;
+}
+
+.brd-xxl-dot-Fire {
+  border: 7px dotted #ee8130;
+}
+
+.brd-xxl-dot-Water {
+  border: 7px dotted #6390f0;
+}
+
+.brd-xxl-dot-Grass {
+  border: 7px dotted #7ac74c;
+}
+
+.brd-xxl-dot-Electric {
+  border: 7px dotted #f7d02c;
+}
+
+.brd-xxl-dot-Ice {
+  border: 7px dotted #96d9d6;
+}
+
+.brd-xxl-dot-Fighting {
+  border: 7px dotted #c22e28;
+}
+
+.brd-xxl-dot-Poison {
+  border: 7px dotted #a33ea1;
+}
+
+.brd-xxl-dot-Ghost {
+  border: 7px dotted #735797;
+}
+
+.brd-xxl-dou-Ground {
+  border: 7px double #e2bf65;
+}
+
+.brd-xxl-dou-Flying {
+  border: 7px double #a98ff3;
+}
+
+.brd-xxl-dou-Psychi {
+  border: 7px double #f95587;
+}
+
+.brd-xxl-dou-Bug {
+  border: 7px double #a6b91a;
+}
+
+.brd-xxl-dou-Rock {
+  border: 7px double #b6a136;
+}
+
+.brd-xxl-dou-Dragon {
+  border: 7px double #6f35fc;
+}
+
+.brd-xxl-dou-Dark {
+  border: 7px double #705746;
+}
+
+.brd-xxl-dou-Steel {
+  border: 7px double #b7b7ce;
+}
+
+.brd-xxl-dou-Hada {
+  border: 7px double #d685ad;
+}
+
+.brd-xxl-dou-Fire {
+  border: 7px double #ee8130;
+}
+
+.brd-xxl-dou-Water {
+  border: 7px double #6390f0;
+}
+
+.brd-xxl-dou-Grass {
+  border: 7px double #7ac74c;
+}
+
+.brd-xxl-dou-Electric {
+  border: 7px double #f7d02c;
+}
+
+.brd-xxl-dou-Ice {
+  border: 7px double #96d9d6;
+}
+
+.brd-xxl-dou-Fighting {
+  border: 7px double #c22e28;
+}
+
+.brd-xxl-dou-Poison {
+  border: 7px double #a33ea1;
+}
+
+.brd-xxl-dou-Ghost {
+  border: 7px double #735797;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-static {
+  position: static;
+}
+
+.center-horizontal {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center-vertical {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.aling-left {
+  text-align: left;
+}
+
+.aling-right {
+  text-align: right;
+}
+
+.aling-center {
+  text-align: center;
+}
+
+.aling-top {
+  vertical-align: top;
+}
+
+.aling-middle {
+  vertical-align: middle;
+}
+
+.aling-bottom {
+  vertical-align: bottom;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
+
+/*Los colores de los que si quere cambiar uno aqui venimos y evitamos ir en cada apartado a cambiarlo :v*/
+.bgc-Ground {
+  background-color: #e2bf65;
+}
+
+.bgc-Flying {
+  background-color: #a98ff3;
+}
+
+.bgc-Psychi {
+  background-color: #f95587;
+}
+
+.bgc-Bug {
+  background-color: #a6b91a;
+}
+
+.bgc-Rock {
+  background-color: #b6a136;
+}
+
+.bgc-Dragon {
+  background-color: #6f35fc;
+}
+
+.bgc-Dark {
+  background-color: #705746;
+}
+
+.bgc-Steel {
+  background-color: #b7b7ce;
+}
+
+.bgc-Hada {
+  background-color: #d685ad;
+}
+
+.bgc-Fire {
+  background-color: #ee8130;
+}
+
+.bgc-Water {
+  background-color: #6390f0;
+}
+
+.bgc-Grass {
+  background-color: #7ac74c;
+}
+
+.bgc-Electric {
+  background-color: #f7d02c;
+}
+
+.bgc-Ice {
+  background-color: #96d9d6;
+}
+
+.bgc-Fighting {
+  background-color: #c22e28;
+}
+
+.bgc-Poison {
+  background-color: #a33ea1;
+}
+
+.bgc-Ghost {
+  background-color: #735797;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 1rem;
+}
+
+.rounded-2xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-top-left {
+  border-top-left-radius: 0.25rem;
+}
+
+.rounded-top-right {
+  border-top-right-radius: 0.25rem;
+}
+
+.rounded-bottom-left {
+  border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-bottom-right {
+  border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-top {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.rounded-bottom {
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-left {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-right {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-none {
+  border-radius: 0;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.rounded-smooth {
+  border-radius: 0.5rem;
+}
+
+.rounded-sharp {
+  border-radius: 0.1rem;
+}
+
+.rounded-asymmetrical {
+  border-radius: 2rem 0.5rem;
+}
+
+.rounded-parcial {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.rounded-progressive {
+  border-radius: 0 0.5rem 1rem 1.5rem;
+}/*# sourceMappingURL=utilities.css.map */
