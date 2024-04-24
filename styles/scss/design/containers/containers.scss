@@ -1,0 +1,931 @@
+$colorNormal : #a8a77a;
+$colorFire : #ee8130;
+$colorWater : #6390f0;
+$colorGrass : #7ac74c;
+$colorElectric : #f7d02c;
+$colorIce : #96d9d6;
+$colorFighting : #c22e28;
+$colorPoison : #a33ea1;
+$colorGround : #e2bf65;
+$colorFlying : #a98ff3;
+$colorPsychi : #f95587;
+$colorBug : #a6b91a;
+$colorRock : #b6a136;
+$colorGhost : #735797;
+$colorDragon : #6f35fc;
+$colorDark : #705746;
+$colorSteel : #b7b7ce;
+$colorHada :#d685ad;
+
+//Estos serian las variables para los diferentes responsive
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-extra-large: 1100px;
+$breakpoint-extra-extra-large: 1400px;
+
+//Para cada color de tipo de pokemon Small
+.container-small-Normal {
+  background-color: $colorNormal;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Fire {
+  background-color: $colorFire;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Water {
+  background-color: $colorWater;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Grass {
+  background-color: $colorGrass;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Electric {
+  background-color: $colorElectric;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Ice {
+  background-color: $colorIce;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Poison {
+  background-color: $colorPoison;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Ground {
+  background-color: $colorGround;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Flying {
+  background-color: $colorFlying;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Psychi {
+  background-color: $colorPsychi;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Bug {
+  background-color: $colorBug;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Rock {
+  background-color: $colorRock;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Ghost {
+  background-color: $colorGhost;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Dragon {
+  background-color: $colorDragon;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Dark {
+  background-color: $colorDark;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Steel {
+  background-color: $colorSteel;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Hada {
+  background-color: $colorHada;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+.container-small-Fightin {
+  background-color: $colorFighting;
+  width: $breakpoint-small;
+  text-align: center;
+  margin: 0 auto;
+  @media (max-width: $breakpoint-small) {
+    width: auto;
+  }
+}
+
+//Para cada color de tipo de pokemon Medium
+.container-medium-Normal {
+  width: $breakpoint-medium;
+  background-color: $colorNormal;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Fire {
+  width: $breakpoint-medium;
+  background-color: $colorFire;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Water {
+  width: $breakpoint-medium;
+  background-color: $colorWater;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Grass {
+  width: $breakpoint-medium;
+  background-color: $colorGrass;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Electric {
+  width: $breakpoint-medium;
+  background-color: $colorElectric;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Ice {
+  width: $breakpoint-medium;
+  background-color: $colorIce;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Fighting {
+  width: $breakpoint-medium;
+  background-color: $colorFighting;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Poison {
+  width: $breakpoint-medium;
+  background-color: $colorPoison;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Ground {
+  width: $breakpoint-medium;
+  background-color: $colorGround;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Flying {
+  width: $breakpoint-medium;
+  background-color: $colorFlying;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Psychi {
+  width: $breakpoint-medium;
+  background-color: $colorPsychi;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Bug {
+  width: $breakpoint-medium;
+  background-color: $colorBug;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Rock {
+  width: $breakpoint-medium;
+  background-color: $colorRock;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Ghost {
+  width: $breakpoint-medium;
+  background-color: $colorGhost;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Dragon {
+  width: $breakpoint-medium;
+  background-color: $colorDragon;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Dark {
+  width: $breakpoint-medium;
+  background-color: $colorDark;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Steel {
+  width: $breakpoint-medium;
+  background-color: $colorSteel;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+.container-medium-Hada {
+  width: $breakpoint-medium;
+  background-color: $colorHada;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-medium) {
+    width: auto;
+  }
+}
+
+//Para cada color de tipo de pokemon Large
+.container-large-Normal {
+  background-color: $colorNormal;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Fire {
+  background-color: $colorFire;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Water {
+  background-color: $colorWater;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Grass {
+  background-color: $colorGrass;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Electric {
+  background-color: $colorElectric;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Ice {
+  background-color: $colorIce;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Fighting {
+  background-color: $colorFighting;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Poison {
+  background-color: $colorPoison;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Ground {
+  background-color: $colorGround;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Flying {
+  background-color: $colorFlying;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Psychi {
+  background-color: $colorPsychi;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Bug {
+  background-color: $colorBug;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Rock {
+  background-color: $colorRock;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Ghost {
+  background-color: $colorGhost;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Dragon {
+  background-color: $colorDragon;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Dark {
+  background-color: $colorDark;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Steel {
+  background-color: $colorSteel;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+.container-large-Hada {
+  background-color: $colorHada;
+  width: $breakpoint-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+  }
+}
+
+
+//Para cada color de tipo de pokemon Extra Large
+.container-xl-Normal {
+  background-color: $colorNormal;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Fire {
+  background-color: $colorFire;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Water {
+  background-color: $colorWater;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Grass {
+  background-color: $colorGrass;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Electric {
+  background-color: $colorElectric;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Ice {
+  background-color: $colorIce;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Fighting {
+  background-color: $colorFighting;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Poison {
+  background-color: $colorPoison;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Ground {
+  background-color: $colorGround;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Flying {
+  background-color: $colorFlying;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Psychi {
+  background-color: $colorPsychi;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Bug {
+  background-color: $colorBug;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Rock {
+  background-color: $colorRock;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Ghost {
+  background-color: $colorGhost;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Dragon {
+  background-color: $colorDragon;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Dark {
+  background-color: $colorDark;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Steel {
+  background-color: $colorSteel;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xl-Hada {
+  background-color: $colorNormal;
+  width: $breakpoint-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: $breakpoint-extra-large) {
+    width: auto;
+  }
+}
+
+//Para cada color de tipo de pokemon Extra Extra Large
+.container-xxl-Normal {
+  background-color: $colorNormal;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Fire {
+  background-color: $colorFire;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Water {
+  background-color: $colorWater;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Grass {
+  background-color: $colorGrass;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Electric {
+  background-color: $colorElectric;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Ice {
+  background-color: $colorIce;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Fithting {
+  background-color: $colorFighting;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Poison {
+  background-color: $colorPoison;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Ground {
+  background-color: $colorGround;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Flying {
+  background-color: $colorFlying;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Psychi {
+  background-color: $colorPsychi;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Bug {
+  background-color: $colorBug;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Rock {
+  background-color: $colorRock;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Ghost {
+  background-color: $colorGhost;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Dragon {
+  background-color: $colorDragon;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Dark {
+  background-color: $colorDark;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Steel {
+  background-color: $colorSteel;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
+
+.container-xxl-Hada {
+  background-color: $colorHada;
+  width: $breakpoint-extra-extra-large;
+  margin: 0 auto;
+  text-align: center;
+  @media (min-width: $breakpoint-extra-extra-large) {
+    width: auto;
+  }
+}
