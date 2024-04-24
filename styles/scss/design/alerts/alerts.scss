@@ -1,0 +1,288 @@
+//Librerias importadas para poder agregarle iconos a los div desde un archivo Sass
+@use "sass:map";
+@use "sass:meta";
+@use "sass:math";
+@use "sass:color";
+@use "sass:string";
+@use "sass:list";
+
+$colorNormal: #a8a77a;
+$colorFire: #ee8130;
+$colorWater: #6390f0;
+$colorGrass: #7ac74c;
+$colorElectric: #f7d02c;
+$colorIce: #96d9d6;
+$colorFighting: #c22e28;
+$colorPoison: #a33ea1;
+$colorGround: #e2bf65;
+$colorFlying: #a98ff3;
+$colorPsychic: #f95587;
+$colorBug: #a6b91a;
+$colorRock: #b6a136;
+$colorGhost: #735797;
+$colorDragon: #6f35fc;
+$colorDark: #705746;
+$colorSteel: #b7b7ce;
+$colorFairy: #d685ad;
+
+//Este metodo recibe como parametro un color de los tipos de pokemon
+@mixin pokemon-alert($color) {
+  //Lo agrega como color de fondo, le agrega un color de borde y un color de texto descomponiendo un poco ese mismo color
+  //Para que todo se observe con claridad y que mantenga un buen estilo
+  background-color: $color;
+  border: 1px solid darken($color, 20%);
+  color: darken($color, 40%);
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 10px;
+  position: relative;
+  margin: 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  width: 500px;
+}
+
+.alert-Normal {
+  @include pokemon-alert($colorNormal);
+}
+
+.alert-Fire {
+  @include pokemon-alert($colorFire);
+}
+
+.alert-Water {
+  @include pokemon-alert($colorWater);
+}
+
+.alert-Grass {
+  @include pokemon-alert($colorGrass);
+}
+
+.alert-Electric {
+  @include pokemon-alert($colorElectric);
+}
+
+.alert-Ice {
+  @include pokemon-alert($colorIce);
+}
+
+.alert-Fighting {
+  @include pokemon-alert($colorFighting);
+}
+
+.alert-Poison {
+  @include pokemon-alert($colorPoison);
+}
+
+.alert-Ground {
+  @include pokemon-alert($colorGround);
+}
+
+.alert-Flying {
+  @include pokemon-alert($colorFlying);
+}
+
+.alert-Psychi {
+  @include pokemon-alert($colorPsychic);
+}
+
+.alert-Bug {
+  @include pokemon-alert($colorBug);
+}
+
+.alert-Rock {
+  @include pokemon-alert($colorRock);
+}
+
+.alert-Ghost {
+  @include pokemon-alert($colorGhost);
+}
+
+.alert-Dragon{
+  @include pokemon-alert($colorDragon);
+}
+
+.alert-Dark {
+  @include pokemon-alert($colorDark);
+}
+
+.alert-Steel {
+  @include pokemon-alert($colorSteel);
+}
+
+.alert-Hada {
+  @include pokemon-alert($colorFairy);
+}
+
+//Alertas con links
+
+.alert {
+  & a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+.alert-Normal-Link {
+  @include pokemon-alert($colorNormal);
+}
+
+.alert-Fire-Link {
+  @include pokemon-alert($colorFire);
+}
+
+.alert-Water-Link {
+  @include pokemon-alert($colorWater);
+}
+
+.alert-Grass-Link {
+  @include pokemon-alert($colorGrass);
+}
+
+.alert-Electric-Link {
+  @include pokemon-alert($colorElectric);
+}
+
+.alert-Ice-Link {
+  @include pokemon-alert($colorIce);
+}
+
+.alert-Fighting-Link {
+  @include pokemon-alert($colorFighting);
+}
+
+.alert-Poison-Link {
+  @include pokemon-alert($colorPoison);
+}
+
+.alert-Ground-Link {
+  @include pokemon-alert($colorGround);
+}
+
+.alert-Flying-Link {
+  @include pokemon-alert($colorFlying);
+}
+
+.alert-Psychi-Link {
+  @include pokemon-alert($colorPsychic);
+}
+
+.alert-Bug-Link {
+  @include pokemon-alert($colorBug);
+}
+
+.alert-Rock-Link {
+  @include pokemon-alert($colorRock);
+}
+
+.alert-Ghost-Link {
+  @include pokemon-alert($colorGhost);
+}
+
+.alert-Dragon-Link {
+  @include pokemon-alert($colorDragon);
+}
+
+.alert-Dark-Link {
+  @include pokemon-alert($colorDark);
+}
+
+.alert-Steel-Link {
+  @include pokemon-alert($colorSteel);
+}
+
+.alert-Hada-Link {
+  @include pokemon-alert($colorFairy);
+}
+
+//Faltarian para las alertar con iconos
+
+
+// Definir un mapa de iconos
+$icon-map: (
+  normal: "\f1b0",
+  fire: "\f06d",
+  water: "\f043",
+  grass: "\f06c",
+  electric: "\f0e7",
+  fighting: "\f6de",
+  poison: "\f6e3",
+  ground: "\f0c8",
+  bug: "\f188",
+  ghost: "\f6e2",
+  dragon: "\f6d5",
+  dark: "\f186",
+);
+
+// Mixin para aplicar estilos de iconos
+@mixin icon($type) {
+  &:before {
+    font-family: "Font Awesome 5 Free";
+    content: map.get($icon-map, $type);
+  }
+}
+
+.alert {
+  padding-left: 30px; // Ajusta el espacio para el icono
+  font-size: 18px; // Tamaño del icono
+  &:before {
+    margin-right: 10px; // Espacio entre el icono y el texto
+  }
+}
+
+.alert-Normal-Icon {
+  @include pokemon-alert($colorNormal);
+  @include icon(normal);
+}
+
+.alert-Fire-Icon {
+  @include pokemon-alert($colorFire);
+  @include icon(fire);
+}
+
+.alert-Water-Icon {
+  @include pokemon-alert($colorWater);
+  @include icon(water);
+}
+
+.alert-Grass-Icon {
+  @include pokemon-alert($colorGrass);
+  @include icon(grass);
+}
+
+.alert-Electric-Icon {
+  @include pokemon-alert($colorElectric);
+  @include icon(electric);
+}
+
+.alert-Fighting-Icon {
+  @include pokemon-alert($colorFighting);
+  @include icon(fighting);
+}
+
+.alert-Ground-Icon {
+  @include pokemon-alert($colorGround);
+  @include icon(ground);
+}
+
+.alert-Bug-Icon {
+  @include pokemon-alert($colorBug);
+  @include icon(bug);
+}
+
+.alert-Ghost-Icon {
+  @include pokemon-alert($colorGhost);
+  @include icon(ghost);
+}
+
+.alert-Dragon-Icon {
+  @include pokemon-alert($colorDragon);
+  @include icon(dragon);
+}
+
+.alert-Dark-Icon {
+  @include pokemon-alert($colorDark);
+  @include icon(dark);
+}
