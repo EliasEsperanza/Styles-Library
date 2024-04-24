@@ -1,4 +1,4 @@
-@import "/styles/scss/utilities/color-pokemon.scss";
+@import "../../utilities/color-pokemon.scss";
 
 
 .btn {
@@ -987,7 +987,7 @@ $button-border-width: 4px; // Ancho del borde al presionar
     border-radius: 5px;
 }
 
-&.btn-md {
+.btn-md {
     height: 30px;
     line-height: 1.5;
     width: 150px;
@@ -995,7 +995,7 @@ $button-border-width: 4px; // Ancho del borde al presionar
     border-radius: 5px;
 }
 
-&.btn-sm {
+.btn-sm {
     height: 25px;
     line-height: 1.5;
     width: 100px;

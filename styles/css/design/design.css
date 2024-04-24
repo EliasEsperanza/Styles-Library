@@ -1,0 +1,1111 @@
+/*Los colores de los que si quere cambiar uno aqui venimos y evitamos ir en cada apartado a cambiarlo :v*/
+.Textos h1, .Textos h2, .Textos h3, .Textos h4, .Textos h5, .Textos h6 {
+  color: #a8a77a;
+}
+.Textos h1 span.badge, .Textos h2 span.badge, .Textos h3 span.badge, .Textos h4 span.badge, .Textos h5 span.badge, .Textos h6 span.badge {
+  color: #fff;
+  padding: 5px 10px;
+}
+.Textos h1 span.badge.text-Fire {
+  background-color: #ee8130;
+}
+.Textos h2 span.badge.text-Rock {
+  background-color: #b6a136;
+}
+.Textos h3 span.badge.text-Water {
+  background-color: #6390f0;
+}
+.Textos h4 span.badge.text-Electric {
+  background-color: #f7d02c;
+}
+.Textos h5 span.badge.text-Ice {
+  background-color: #96d9d6;
+}
+.Textos h6 span.badge.text-Dragon {
+  background-color: #6f35fc;
+}
+
+.Boton-notificacion button {
+  background-color: #a8a77a;
+  border: 1px solid #a8a77a;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.Boton-notificacion button span.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  padding: 3px 6px;
+}
+.Boton-notificacion button.btn-Fire {
+  background-color: #ee8130;
+  border: 1px solid #ee8130;
+}
+.Boton-notificacion button.btn-Fire span.badge {
+  background-color: #ee8130;
+}
+
+.Botones {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Botones .badge {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #a8a77a;
+  color: #fff;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.Botones .badge.text-Normal {
+  background-color: #a8a77a;
+}
+.Botones .badge.text-Fire {
+  background-color: #ee8130;
+}
+.Botones .badge.text-Water {
+  background-color: #6390f0;
+}
+.Botones .badge.text-Grass {
+  background-color: #7ac74c;
+}
+.Botones .badge.text-Electric {
+  background-color: #f7d02c;
+}
+.Botones .badge.text-Ice {
+  background-color: #96d9d6;
+}
+.Botones .badge.text-Fighting {
+  background-color: #c22e28;
+}
+.Botones .badge.text-Poison {
+  background-color: #a33ea1;
+}
+.Botones .badge.text-Ground {
+  background-color: #e2bf65;
+}
+.Botones .badge.text-Flying {
+  background-color: #a98ff3;
+}
+.Botones .badge.text-Psychi {
+  background-color: #f95587;
+}
+.Botones .badge.text-Bug {
+  background-color: #a6b91a;
+}
+.Botones .badge.text-Rock {
+  background-color: #b6a136;
+}
+.Botones .badge.text-Ghost {
+  background-color: #735797;
+}
+.Botones .badge.text-Dragon {
+  background-color: #6f35fc;
+}
+.Botones .badge.text-Dark {
+  background-color: #705746;
+}
+.Botones .badge.text-Steel {
+  background-color: #b7b7ce;
+}
+.Botones .badge.text-Hada {
+  background-color: #d685ad;
+}
+
+.BotonesRedondeados {
+  display: flex;
+  flex-wrap: wrap;
+}
+.BotonesRedondeados .badge {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.BotonesRedondeados .rounded {
+  border-radius: 30px;
+}
+.BotonesRedondeados .text-Fire {
+  background-color: #ee8130;
+}
+.BotonesRedondeados .text-Water {
+  background-color: #6390f0;
+}
+.BotonesRedondeados .text-Grass {
+  background-color: #7ac74c;
+}
+.BotonesRedondeados .text-Electric {
+  background-color: #f7d02c;
+}
+.BotonesRedondeados .text-Ice {
+  background-color: #96d9d6;
+}
+.BotonesRedondeados .text-Fighting {
+  background-color: #c22e28;
+}
+.BotonesRedondeados .text-Poison {
+  background-color: #a33ea1;
+}
+.BotonesRedondeados .text-Ground {
+  background-color: #e2bf65;
+}
+.BotonesRedondeados .text-Flying {
+  background-color: #a98ff3;
+}
+.BotonesRedondeados .text-Psychi {
+  background-color: #f95587;
+}
+.BotonesRedondeados .text-Bug {
+  background-color: #a6b91a;
+}
+.BotonesRedondeados .text-Rock {
+  background-color: #b6a136;
+}
+.BotonesRedondeados .text-Ghost {
+  background-color: #735797;
+}
+.BotonesRedondeados .text-Dragon {
+  background-color: #6f35fc;
+}
+.BotonesRedondeados .text-Dark {
+  background-color: #705746;
+}
+.BotonesRedondeados .text-Steel {
+  background-color: #b7b7ce;
+}
+.BotonesRedondeados .text-Hada {
+  background-color: #d685ad;
+}
+
+/*Los colores de los que si quere cambiar uno aqui venimos y evitamos ir en cada apartado a cambiarlo :v*/
+.btn {
+  height: 30px;
+  width: 120px;
+  line-height: 7px;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.btn-Pokemon-Normal {
+  background-color: #a8a77a;
+  color: white;
+  border: 2px solid #72714a;
+}
+.btn-Pokemon-Normal:hover {
+  background-color: #72714a;
+  border-color: #343422;
+}
+
+.btn-Pokemon-Fire {
+  background-color: #ee8130;
+  color: white;
+  border: 2px solid #aa510e;
+}
+.btn-Pokemon-Fire:hover {
+  background-color: #aa510e;
+  border-color: #4c2406;
+}
+
+.btn-Pokemon-Water {
+  background-color: #6390f0;
+  color: white;
+  border: 2px solid #1553d8;
+}
+.btn-Pokemon-Water:hover {
+  background-color: #1553d8;
+  border-color: #0c2f7b;
+}
+
+.btn-Pokemon-Grass {
+  background-color: #7ac74c;
+  color: white;
+  border: 2px solid #4b8429;
+}
+.btn-Pokemon-Grass:hover {
+  background-color: #4b8429;
+  border-color: #1f3611;
+}
+
+.btn-Pokemon-Electric {
+  background-color: #f7d02c;
+  color: black;
+  border: 2px solid #b69407;
+}
+.btn-Pokemon-Electric:hover {
+  background-color: #b69407;
+  border-color: #544403;
+}
+
+.btn-Pokemon-Ice {
+  background-color: #96d9d6;
+  color: black;
+  border: 2px solid #4bbeb9;
+}
+.btn-Pokemon-Ice:hover {
+  background-color: #4bbeb9;
+  border-color: #2b7874;
+}
+
+.btn-Pokemon-Fighting {
+  background-color: #c22e28;
+  color: white;
+  border: 2px solid #6d1a17;
+}
+.btn-Pokemon-Fighting:hover {
+  background-color: #6d1a17;
+  border-color: #190605;
+}
+
+.btn-Pokemon-Poison {
+  background-color: #a33ea1;
+  color: white;
+  border: 2px solid #592258;
+}
+.btn-Pokemon-Poison:hover {
+  background-color: #592258;
+  border-color: #0f060f;
+}
+
+.btn-Pokemon-Ground {
+  background-color: #e2bf65;
+  color: black;
+  border: 2px solid #bd9224;
+}
+.btn-Pokemon-Ground:hover {
+  background-color: #bd9224;
+  border-color: #685013;
+}
+
+.btn-Pokemon-Flying {
+  background-color: #a98ff3;
+  color: black;
+  border: 2px solid #6233e9;
+}
+.btn-Pokemon-Flying:hover {
+  background-color: #6233e9;
+  border-color: #3812a4;
+}
+
+.btn-Pokemon-Psychic {
+  background-color: #f95587;
+  color: white;
+  border: 2px solid #e0084a;
+}
+.btn-Pokemon-Psychic:hover {
+  background-color: #e0084a;
+  border-color: #7e0429;
+}
+
+.btn-Pokemon-Bug {
+  background-color: #a6b91a;
+  color: black;
+  border: 2px solid #56600d;
+}
+.btn-Pokemon-Bug:hover {
+  background-color: #56600d;
+  border-color: #060601;
+}
+
+.btn-Pokemon-Rock {
+  background-color: #b6a136;
+  color: white;
+  border: 2px solid #675b1f;
+}
+.btn-Pokemon-Rock:hover {
+  background-color: #675b1f;
+  border-color: #191607;
+}
+
+.btn-Pokemon-Ghost {
+  background-color: #735797;
+  color: white;
+  border: 2px solid #423256;
+}
+.btn-Pokemon-Ghost:hover {
+  background-color: #423256;
+  border-color: #100c16;
+}
+
+.btn-Pokemon-Dragon {
+  background-color: #6f35fc;
+  color: white;
+  border: 2px solid #3c03c8;
+}
+.btn-Pokemon-Dragon:hover {
+  background-color: #3c03c8;
+  border-color: #1e0164;
+}
+
+.btn-Pokemon-Dark {
+  background-color: #705746;
+  color: white;
+  border: 2px solid #31261f;
+}
+.btn-Pokemon-Dark:hover {
+  background-color: #31261f;
+  border-color: black;
+}
+
+.btn-Pokemon-Steel {
+  background-color: #b7b7ce;
+  color: black;
+  border: 2px solid #7a7aa5;
+}
+.btn-Pokemon-Steel:hover {
+  background-color: #7a7aa5;
+  border-color: #4b4b6e;
+}
+
+.btn-Pokemon-Hada {
+  background-color: #d685ad;
+  color: white;
+  border: 2px solid #b73e7a;
+}
+.btn-Pokemon-Hada:hover {
+  background-color: #b73e7a;
+  border-color: #6b2447;
+}
+
+.btnLink-Pokemon-Normal {
+  background: transparent;
+  text-decoration: underline;
+  color: #a8a77a;
+}
+.btnLink-Pokemon-Normal:hover {
+  border: 2px solid #72714a;
+}
+
+.btnLink-Pokemon-Fire {
+  background-color: transparent;
+  color: #ee8130;
+  text-decoration: underline;
+}
+.btnLink-Pokemon-Fire:hover {
+  border: 2px solid #aa510e;
+}
+
+.btnLink-Pokemon-Water {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #6390f0;
+}
+.btnLink-Pokemon-Water:hover {
+  border: 2px solid #1553d8;
+}
+
+.btnLink-Pokemon-Grass {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #7ac74c;
+}
+.btnLink-Pokemon-Grass:hover {
+  border: 2px solid #4b8429;
+}
+
+.btnLink-Pokemon-Electric {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #f7d02c;
+}
+.btnLink-Pokemon-Electric:hover {
+  border: 2px solid #b69407;
+}
+
+.btnLink-Pokemon-Ice {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #96d9d6;
+}
+.btnLink-Pokemon-Ice:hover {
+  border: 2px solid #4bbeb9;
+}
+
+.btnLink-Pokemon-Fighting {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #c22e28;
+}
+.btnLink-Pokemon-Fighting:hover {
+  border: 2px solid #6d1a17;
+}
+
+.btnLink-Pokemon-Poison {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #a33ea1;
+}
+.btnLink-Pokemon-Poison:hover {
+  border: 2px solid #592258;
+}
+
+.btnLink-Pokemon-Ground {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #e2bf65;
+}
+.btnLink-Pokemon-Ground:hover {
+  border: 2px solid #bd9224;
+}
+
+.btnLink-Pokemon-Flying {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #a98ff3;
+}
+.btnLink-Pokemon-Flying:hover {
+  border: 2px solid #6233e9;
+}
+
+.btnLink-Pokemon-Psychic {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #f95587;
+}
+.btnLink-Pokemon-Psychic:hover {
+  border: 2px solid #e0084a;
+}
+
+.btnLink-Pokemon-Bug {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #a6b91a;
+}
+.btnLink-Pokemon-Bug:hover {
+  border: 2px solid #56600d;
+}
+
+.btnLink-Pokemon-Rock {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #b6a136;
+}
+.btnLink-Pokemon-Rock:hover {
+  border: 2px solid #675b1f;
+}
+
+.btnLink-Pokemon-Ghost {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #735797;
+}
+.btnLink-Pokemon-Ghost:hover {
+  border: 2px solid #423256;
+}
+
+.btnLink-Pokemon-Dragon {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #6f35fc;
+}
+.btnLink-Pokemon-Dragon:hover {
+  border: 2px solid #3c03c8;
+}
+
+.btnLink-Pokemon-Dark {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #705746;
+}
+.btnLink-Pokemon-Dark:hover {
+  border: 2px solid #31261f;
+}
+
+.btnLink-Pokemon-Steel {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #b7b7ce;
+}
+.btnLink-Pokemon-Steel:hover {
+  border: 2px solid #7a7aa5;
+}
+
+.btnLink-Pokemon-Hada {
+  background-color: transparent;
+  text-decoration: underline;
+  color: #d685ad;
+}
+.btnLink-Pokemon-Hada:hover {
+  border: 2px solid #7a7aa5;
+}
+
+.btn-ButtonTag-Normal {
+  background-color: #a8a77a;
+  color: white;
+  border: 2px solid #72714a;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Normal:hover {
+  background-color: #72714a;
+  border-color: #343422;
+}
+.btn-ButtonTag-Normal:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Fire {
+  background-color: #ee8130;
+  color: white;
+  border: 2px solid #aa510e;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Fire:hover {
+  background-color: #aa510e;
+  border-color: #4c2406;
+}
+.btn-ButtonTag-Fire:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Water {
+  background-color: #6390f0;
+  color: white;
+  border: 2px solid #1553d8;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Water:hover {
+  background-color: #1553d8;
+  border-color: #0c2f7b;
+}
+.btn-ButtonTag-Water:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Grass {
+  background-color: #7ac74c;
+  color: white;
+  border: 2px solid #4b8429;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Grass:hover {
+  background-color: #4b8429;
+  border-color: #1f3611;
+}
+.btn-ButtonTag-Grass:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Electric {
+  background-color: #f7d02c;
+  color: black;
+  border: 2px solid #b69407;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Electric:hover {
+  background-color: #b69407;
+  border-color: #544403;
+}
+.btn-ButtonTag-Electric:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Ice {
+  background-color: #96d9d6;
+  color: black;
+  border: 2px solid #4bbeb9;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Ice:hover {
+  background-color: #4bbeb9;
+  border-color: #2b7874;
+}
+.btn-ButtonTag-Ice:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Fighting {
+  background-color: #c22e28;
+  color: white;
+  border: 2px solid #6d1a17;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Fighting:hover {
+  background-color: #6d1a17;
+  border-color: #190605;
+}
+.btn-ButtonTag-Fighting:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Poison {
+  background-color: #a33ea1;
+  color: white;
+  border: 2px solid #592258;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Poison:hover {
+  background-color: #592258;
+  border-color: #0f060f;
+}
+.btn-ButtonTag-Poison:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Ground {
+  background-color: #e2bf65;
+  color: black;
+  border: 2px solid #bd9224;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Ground:hover {
+  background-color: #bd9224;
+  border-color: #685013;
+}
+.btn-ButtonTag-Ground:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Flying {
+  background-color: #a98ff3;
+  color: black;
+  border: 2px solid #6233e9;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Flying:hover {
+  background-color: #6233e9;
+  border-color: #3812a4;
+}
+.btn-ButtonTag-Flying:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Psychic {
+  background-color: #f95587;
+  color: white;
+  border: 2px solid #e0084a;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Psychic:hover {
+  background-color: #e0084a;
+  border-color: #7e0429;
+}
+.btn-ButtonTag-Psychic:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Bug {
+  background-color: #a6b91a;
+  color: white;
+  border: 2px solid #56600d;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Bug:hover {
+  background-color: #56600d;
+  border-color: #060601;
+}
+.btn-ButtonTag-Bug:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Rock {
+  background-color: #b6a136;
+  color: black;
+  border: 2px solid #675b1f;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Rock:hover {
+  background-color: #675b1f;
+  border-color: #191607;
+}
+.btn-ButtonTag-Rock:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Ghost {
+  background-color: #735797;
+  color: white;
+  border: 2px solid #423256;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Ghost:hover {
+  background-color: #423256;
+  border-color: #100c16;
+}
+.btn-ButtonTag-Ghost:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Dragon {
+  background-color: #6f35fc;
+  color: white;
+  border: 2px solid #3c03c8;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Dragon:hover {
+  background-color: #3c03c8;
+  border-color: #1e0164;
+}
+.btn-ButtonTag-Dragon:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Dark {
+  background-color: #705746;
+  color: white;
+  border: 2px solid #31261f;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Dark:hover {
+  background-color: #31261f;
+  border-color: black;
+}
+.btn-ButtonTag-Dark:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Steel {
+  background-color: #b7b7ce;
+  color: black;
+  border: 2px solid #7a7aa5;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Steel:hover {
+  background-color: #7a7aa5;
+  border-color: #4b4b6e;
+}
+.btn-ButtonTag-Steel:active {
+  border-width: 4px;
+}
+
+.btn-ButtonTag-Hada {
+  background-color: #d685ad;
+  color: white;
+  border: 2px solid #b73e7a;
+  text-decoration: none;
+  outline: none;
+}
+.btn-ButtonTag-Hada:hover {
+  background-color: #b73e7a;
+  border-color: #6b2447;
+}
+.btn-ButtonTag-Hada:active {
+  border-width: 4px;
+}
+
+.btn-outline-Normal {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #a8a77a;
+}
+.btn-outline-Normal:active {
+  border: 4px solid #908f5f;
+  outline: none;
+}
+.btn-outline-Normal:hover {
+  background-color: #bcbb99;
+  border-color: #908f5f;
+  color: white;
+}
+
+.btn-outline-Fire {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #ee8130;
+}
+.btn-outline-Fire:active {
+  border: 4px solid #d96712;
+  outline: none;
+}
+.btn-outline-Fire:hover {
+  background-color: #f29e5f;
+  border-color: #d96712;
+  color: white;
+}
+
+.btn-outline-Water {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #6390f0;
+}
+.btn-outline-Water:active {
+  border: 4px solid #346fec;
+  outline: none;
+}
+.btn-outline-Water:hover {
+  background-color: #92b1f4;
+  border-color: #346fec;
+  color: white;
+}
+
+.btn-outline-Grass {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #7ac74c;
+}
+.btn-outline-Grass:active {
+  border: 4px solid #61ab35;
+  outline: none;
+}
+.btn-outline-Grass:hover {
+  background-color: #97d373;
+  border-color: #61ab35;
+  color: white;
+}
+
+.btn-outline-Electric {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #f7d02c;
+}
+.btn-outline-Electric:active {
+  border: 4px solid #e7bc09;
+  outline: none;
+}
+.btn-outline-Electric:hover {
+  background-color: #f9db5d;
+  border-color: #e7bc09;
+  color: white;
+}
+
+.btn-outline-Ice {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #96d9d6;
+}
+.btn-outline-Ice:active {
+  border: 4px solid #71cbc7;
+  outline: none;
+}
+.btn-outline-Ice:hover {
+  background-color: #bbe7e5;
+  border-color: #71cbc7;
+  color: white;
+}
+
+.btn-outline-Fighting {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #c22e28;
+}
+.btn-outline-Fighting:active {
+  border: 4px solid #98241f;
+  outline: none;
+}
+.btn-outline-Fighting:hover {
+  background-color: #d94a44;
+  border-color: #98241f;
+  color: white;
+}
+
+.btn-outline-Poison {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #a33ea1;
+}
+.btn-outline-Poison:active {
+  border: 4px solid #7e307d;
+  outline: none;
+}
+.btn-outline-Poison:hover {
+  background-color: #bf55bc;
+  border-color: #7e307d;
+  color: white;
+}
+
+.btn-outline-Ground {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #e2bf65;
+}
+.btn-outline-Ground:active {
+  border: 4px solid #daad3a;
+  outline: none;
+}
+.btn-outline-Ground:hover {
+  background-color: #ead190;
+  border-color: #daad3a;
+  color: white;
+}
+
+.btn-outline-Flying {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #a98ff3;
+}
+.btn-outline-Flying:active {
+  border: 4px solid #8661ee;
+  outline: none;
+}
+.btn-outline-Flying:hover {
+  background-color: #ccbdf8;
+  border-color: #8661ee;
+  color: white;
+}
+
+.btn-outline-Psychic {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #f95587;
+}
+.btn-outline-Psychic:active {
+  border: 4px solid #f72464;
+  outline: none;
+}
+.btn-outline-Psychic:hover {
+  background-color: #fb86aa;
+  border-color: #f72464;
+  color: white;
+}
+
+.btn-outline-Bug {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #a6b91a;
+}
+.btn-outline-Bug:active {
+  border: 4px solid #7e8c14;
+  outline: none;
+}
+.btn-outline-Bug:hover {
+  background-color: #cae026;
+  border-color: #7e8c14;
+  color: white;
+}
+
+.btn-outline-Rock {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #b6a136;
+}
+.btn-outline-Rock:active {
+  border: 4px solid #8f7e2a;
+  outline: none;
+}
+.btn-outline-Rock:hover {
+  background-color: #ccb853;
+  border-color: #8f7e2a;
+  color: white;
+}
+
+.btn-outline-Ghost {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #735797;
+}
+.btn-outline-Ghost:active {
+  border: 4px solid #5a4477;
+  outline: none;
+}
+.btn-outline-Ghost:hover {
+  background-color: #8d73ae;
+  border-color: #5a4477;
+  color: white;
+}
+
+.btn-outline-Dragon {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #6f35fc;
+}
+.btn-outline-Dragon:active {
+  border: 4px solid #4c04fa;
+  outline: none;
+}
+.btn-outline-Dragon:hover {
+  background-color: #9367fd;
+  border-color: #4c04fa;
+  color: white;
+}
+
+.btn-outline-Dark {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #705746;
+}
+.btn-outline-Dark:active {
+  border: 4px solid #513f32;
+  outline: none;
+}
+.btn-outline-Dark:hover {
+  background-color: #8f6f5a;
+  border-color: #513f32;
+  color: white;
+}
+
+.btn-outline-Steel {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #b7b7ce;
+}
+.btn-outline-Steel:active {
+  border: 4px solid #9999b9;
+  outline: none;
+}
+.btn-outline-Steel:hover {
+  background-color: #d5d5e3;
+  border-color: #9999b9;
+  color: white;
+}
+
+.btn-outline-Hada {
+  background-color: transparent;
+  color: black;
+  border: 2px solid #d685ad;
+}
+.btn-outline-Hada:active {
+  border: 4px solid #c95f93;
+  outline: none;
+}
+.btn-outline-Hada:hover {
+  background-color: #e3abc7;
+  border-color: #c95f93;
+  color: white;
+}
+
+.btn-lg {
+  height: 40px;
+  line-height: 1.5;
+  width: 200px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.btn-md {
+  height: 30px;
+  line-height: 1.5;
+  width: 150px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.btn-sm {
+  height: 25px;
+  line-height: 1.5;
+  width: 100px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=design.css.map */
