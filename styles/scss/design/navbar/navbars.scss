@@ -1,0 +1,500 @@
+@import url("/scss/utilities/text-utils.scss");
+//Librerias importadas para poder agregarle iconos a los div desde un archivo Sass
+$colorNormal : #a8a77a;
+$colorFire : #ee8130;
+$colorWater : #6390f0;
+$colorGrass : #7ac74c;
+$colorElectric : #f7d02c;
+$colorIce : #96d9d6;
+$colorFighting : #c22e28;
+$colorPoison : #a33ea1;
+$colorGround : #e2bf65;
+$colorFlying : #a98ff3;
+$colorPsychi : #f95587;
+$colorBug : #a6b91a;
+$colorRock : #b6a136;
+$colorGhost : #735797;
+$colorDragon : #6f35fc;
+$colorDark : #705746;
+$colorSteel : #b7b7ce;
+$colorHada :#d685ad;
+
+$colorTransparente: transparent;
+
+//Primeramente resolveriamos los Bran, se nos presentan 2
+//Un Bran para links y el otro Bran para heading
+
+//Esto seria para los navbar-links
+@mixin color-combinacion($color)
+{
+    padding: 10px 20px;
+    background-color: $color;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 15px;
+    color: #fff;
+
+    &:hover {
+    background-color: darken($color, 10%);
+    }
+}
+
+.navbar-links {
+  .container-fluid {
+    padding: 15px;
+
+    // Estilos para el color Normal
+    .navbar-normal {
+      @include color-combinacion($colorNormal);
+    }
+
+    // Estilos para el color Fire
+    .navbar-fire {
+      @include color-combinacion($colorFire);
+    }
+
+    // Estilos para el color Water
+    .navbar-water {
+      @include color-combinacion($colorWater);
+    }
+
+    // Estilos para el color Grass
+    .navbar-grass {
+      @include color-combinacion($colorGrass);
+    }
+
+    // Estilos para el color Electric
+    .navbar-electric {
+      @include color-combinacion($colorElectric);
+    }
+
+    // Estilos para el color Ice
+    .navbar-ice {
+      @include color-combinacion($colorIce);
+    }
+
+    // Estilos para el color Fighting
+    .navbar-fighting {
+      @include color-combinacion($colorFighting);
+    }
+
+    // Estilos para el color Poison
+    .navbar-poison {
+      @include color-combinacion($colorPoison);
+    }
+
+    // Estilos para el color Ground
+    .navbar-ground {
+      @include color-combinacion($colorGround);
+    }
+
+    // Estilos para el color Flying
+    .navbar-flying {
+      @include color-combinacion($colorFlying);
+    }
+
+    // Estilos para el color Psychi
+    .navbar-psychi {
+      @include color-combinacion($colorPsychi);
+    }
+
+    // Estilos para el color Bug
+    .navbar-bug {
+      @include color-combinacion($colorBug);
+    }
+
+    // Estilos para el color Rock
+    .navbar-rock {
+      @include color-combinacion($colorRock);
+    }
+
+    // Estilos para el color Ghost
+    .navbar-ghost {
+      @include color-combinacion($colorGhost);
+    }
+
+    // Estilos para el color Dragon
+    .navbar-dragon {
+      @include color-combinacion($colorDragon);
+    }
+
+    // Estilos para el color Dark
+    .navbar-dark {
+      @include color-combinacion($colorDark);
+    }
+
+    // Estilos para el color Steel
+    .navbar-steel {
+      @include color-combinacion($colorSteel);
+    }
+
+    // Estilos para el color Fairy
+    .navbar-hada {
+      @include color-combinacion($colorHada);
+    }
+  }
+}
+
+//Ahora para los Heading
+@mixin color-combi($color) {
+    background-color: white;
+    color: $color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid darken($color, 20%);
+    margin: 15px;
+
+    &:hover {
+        background-color: $color;
+        color: white;
+    }
+}
+
+.navbar-heading {
+    .container-fluid {
+        padding: 15px;
+
+        // Estilos para el color Normal
+        .navbar-normal {
+            @include color-combi($colorNormal);
+        }
+
+        // Estilos para el color Fire
+        .navbar-fire {
+            @include color-combi($colorFire);
+        }
+
+        // Estilos para el color Water
+        .navbar-water {
+            @include color-combi($colorWater);
+        }
+
+        // Estilos para el color Grass
+        .navbar-grass {
+            @include color-combi($colorGrass);
+        }
+
+        // Estilos para el color Electric
+        .navbar-electric {
+            @include color-combi($colorElectric);
+        }
+
+        // Estilos para el color Ice
+        .navbar-ice {
+            @include color-combi($colorIce);
+        }
+
+        // Estilos para el color Fighting
+        .navbar-fighting {
+            @include color-combi($colorFighting);
+        }
+
+        // Estilos para el color Poison
+        .navbar-poison {
+            @include color-combi($colorPoison);
+        }
+
+        // Estilos para el color Ground
+        .navbar-ground {
+            @include color-combi($colorGround);
+        }
+
+        // Estilos para el color Flying
+        .navbar-flying {
+            @include color-combi($colorFlying);
+        }
+
+        // Estilos para el color Psychic
+        .navbar-psychi {
+            @include color-combi($colorPsychi);
+        }
+
+        // Estilos para el color Bug
+        .navbar-bug {
+            @include color-combi($colorBug);
+        }
+
+        // Estilos para el color Rock
+        .navbar-rock {
+            @include color-combi($colorRock);
+        }
+
+        // Estilos para el color Ghost
+        .navbar-ghost {
+            @include color-combi($colorGhost);
+        }
+
+        // Estilos para el color Dragon
+        .navbar-dragon {
+            @include color-combi($colorDragon);
+        }
+
+        // Estilos para el color Dark
+        .navbar-dark {
+            @include color-combi($colorDark);
+        }
+
+        // Estilos para el color Steel
+        .navbar-steel {
+            @include color-combi($colorSteel);
+        }
+
+        // Estilos para el color Fairy
+        .navbar-hada {
+            @include color-combi($colorHada);
+        }
+    }
+}
+
+//Ahora seguiria la parte de los iconos con texto en navbar
+@mixin color-icon($color, $icon) {
+  background-color: $color;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+
+  &:hover {
+      background-color: darken($color, 10%);
+  }
+
+  &::before {
+      font-family: 'Font Awesome 5 Free';
+      content: $icon;
+      margin-right: 8px;
+  }
+}
+
+.navbar {
+  margin: 20px;
+  .container-fluid {
+      padding: 0;
+
+      // Estilos para el color Fire
+      .navbar-fire {
+        @include color-icon($colorFire, '\f06d'); // Icono de llama
+    }
+
+    // Estilos para el color Water
+    .navbar-water {
+        @include color-icon($colorWater, '\f773'); // Icono de gota de agua
+    }
+
+    // Estilos para el color Grass
+    .navbar-grass {
+        @include color-icon($colorGrass, '\f52f'); // Icono de hoja
+    }
+
+    // Estilos para el color Electric
+    .navbar-electric {
+        @include color-icon($colorElectric, '\f0e7'); // Icono de rayo
+    }
+
+    // Estilos para el color Ice
+    .navbar-ice {
+        @include color-icon($colorIce, '\f2dc'); // Icono de copo de nieve
+    }
+
+    // Estilos para el color Fighting
+    .navbar-fighting {
+        @include color-icon($colorFighting, '\f6de'); // Icono de puño
+    }
+
+    // Estilos para el color Poison
+    .navbar-poison {
+        @include color-icon($colorPoison, '\f6e0'); // Icono de calavera y huesos cruzados
+    }
+
+    // Estilos para el color Ground
+    .navbar-ground {
+        @include color-icon($colorGround, '\f5fb'); // Icono de montaña
+    }
+
+    // Estilos para el color Flying
+    .navbar-flying {
+        @include color-icon($colorFlying, '\f6d9'); // Icono de pájaro
+    }
+
+    // Estilos para el color Psychic
+    .navbar-psychi {
+        @include color-icon($colorPsychi, '\f21b'); // Icono de ojo
+    }
+
+    // Estilos para el color Bug
+    .navbar-bug {
+        @include color-icon($colorBug, '\f188'); // Icono de insecto
+    }
+
+    // Estilos para el color Rock
+    .navbar-rock {
+        @include color-icon($colorRock, '\f255'); // Icono de roca
+    }
+
+    // Estilos para el color Ghost
+    .navbar-ghost {
+        @include color-icon($colorGhost, '\f6e2'); // Icono de fantasma
+    }
+
+    // Estilos para el color Dragon
+    .navbar-dragon {
+        @include color-icon($colorDragon, '\f6d5'); // Icono de dragón
+    }
+
+    // Estilos para el color Dark
+    .navbar-dark {
+        @include color-icon($colorDark, '\f186'); // Icono de luna
+    }
+
+    // Estilos para el color Steel
+    .navbar-steel {
+        @include color-icon($colorSteel, '\f0c1'); // Icono de engranaje
+    }
+
+    // Estilos para el color Fairy
+    .navbar-hada {
+        @include color-icon($colorHada, '\f0d0'); // Icono de varita mágica
+    }
+  }
+}
+
+//Navbar con formulario
+@mixin formu-controles($color)
+{
+  background-color: $colorTransparente;
+  border: 2px solid $color;
+
+  &:focus {
+    outline: none;
+    border-color: $color;
+  }
+}
+
+.navbar {
+  .formulario {
+    margin: 10px;
+    padding: 10px;
+    input[type="search"] {
+      &.form-control-normal {
+        @include formu-controles($colorNormal);
+      }
+      &.form-control-fire {
+        @include formu-controles($colorFire);
+      }
+      &.form-control-water {
+        @include formu-controles($colorWater);
+      }
+      &.form-control-grass {
+        @include formu-controles($colorGrass);
+      }
+      &.form-control-electric {
+        @include formu-controles($colorElectric);
+      }
+      &.form-control-ice {
+        @include formu-controles($colorIce);
+      }
+      &.form-control-fighting {
+        @include formu-controles($colorFighting);
+      }
+      &.form-control-poison {
+        @include formu-controles($colorPoison);
+      }
+      &.form-control-ground {
+        @include formu-controles($colorGround);
+      }
+      &.form-control-flying {
+        @include formu-controles($colorFlying);
+      }
+      &.form-control-psychi {
+        @include formu-controles($colorPsychi);
+      }
+      &.form-control-bug {
+        @include formu-controles($colorBug);
+      }
+      &.form-control-rock {
+        @include formu-controles($colorRock);
+      }
+      &.form-control-ghost {
+        @include formu-controles($colorGhost);
+      }
+      &.form-control-dragon {
+        @include formu-controles($colorDragon);
+      }
+      &.form-control-dark {
+        @include formu-controles($colorDark);
+      }
+      &.form-control-steel {
+        @include formu-controles($colorSteel);
+      }
+      &.form-control-hada {
+        @include formu-controles($colorHada);
+      }
+    
+      padding: 5px 10px;
+      border-radius: 5px;
+
+    }
+
+    .btn {
+      color: white;
+      &.btn-normal {
+        background-color: $colorNormal;
+      }
+      &.btn-fire {
+        background-color: $colorFire;
+      }
+      &.btn-water {
+        background-color: $colorWater;
+      }
+      &.btn-grass {
+        background-color: $colorGrass;
+      }
+      &.btn-electric {
+        background-color: $colorElectric;
+      }
+      &.btn-ice {
+        background-color: $colorIce;
+      }
+      &.btn-fighting {
+        background-color: $colorFighting;
+      }
+      &.btn-poison {
+        background-color: $colorPoison;
+      }
+      &.btn-ground {
+        background-color: $colorGround;
+      }
+      &.btn-flying {
+        background-color: $colorFlying;
+      }
+      &.btn-psychi {
+        background-color: $colorPsychi;
+      }
+      &.btn-bug {
+        background-color: $colorBug;
+      }
+      &.btn-rock {
+        background-color: $colorRock;
+      }
+      &.btn-ghost {
+        background-color: $colorGhost;
+      }
+      &.btn-dragon {
+        background-color: $colorDragon;
+      }
+      &.btn-dark {
+        background-color: $colorDark;
+      }
+      &.btn-steel {
+        background-color: $colorSteel;
+      }
+      &.btn-hada {
+        background-color: $colorHada;
+      }
+      
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
