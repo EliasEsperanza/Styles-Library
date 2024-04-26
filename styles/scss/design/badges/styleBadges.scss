@@ -1,208 +1,285 @@
-@import '../../utilities/color-pokemon.scss';
+$colorNormal : #a8a77a;
+$colorFire : #ee8130;
+$colorWater : #6390f0;
+$colorGrass : #7ac74c;
+$colorElectric : #f7d02c;
+$colorIce : #96d9d6;
+$colorFighting : #c22e28;
+$colorPoison : #a33ea1;
+$colorGround : #e2bf65;
+$colorFlying : #a98ff3;
+$colorPsychi : #f95587;
+$colorBug : #a6b91a;
+$colorRock : #b6a136;
+$colorGhost : #735797;
+$colorDragon : #6f35fc;
+$colorDark : #705746;
+$colorSteel : #b7b7ce;
+$colorHada :#d685ad;
 
-$colorBasico : #fff;
-$pdng : 5px 10px;  
-$marginR : 10px; 
-$marginBTN : 10px;
-$BR : 20px;
+//Encabezados
 
-// Encabezados
-.Textos {
-  h1, h2, h3, h4, h5, h6 {
-    color: $colorNormal;
-    span.badge {
-      color: $colorBasico;
-      padding: $pdng;
-    }
-  }
-  h1 span.badge.text-Fire {
-    background-color: $colorFire;
-  }
-  h2 span.badge.text-Rock {
-    background-color: $colorRock;
-  }
-  h3 span.badge.text-Water {
-    background-color: $colorWater;
-  }
-  h4 span.badge.text-Electric {
-    background-color: $colorElectric;
-  }
-  h5 span.badge.text-Ice {
-    background-color: $colorIce;
-  }
-  h6 span.badge.text-Dragon {
-    background-color: $colorDragon;
-  }
+.content
+{
+  background-color: rgb(71, 71, 71);
+  width: 460px;
+  padding: 5px;
 }
 
-// Boton de notificacion
-.Boton-notificacion {
-  button {
-    background-color: $colorNormal;
-    border: 1px solid $colorNormal;
-    color: $colorBasico;
-    padding: $pdng;
-    margin-bottom: $marginBTN;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    span.badge {
-      position: absolute;
-      top: 0;
-      right: 0;
-      font-size: 12px;
-      padding: 3px 6px;
-    }
-  }
-  button.btn-Fire {
-    background-color: $colorFire;
-    border: 1px solid $colorFire;
-  }
-  button.btn-Fire span.badge {
-    background-color: $colorFire;
-  }
+@mixin pokemon-badge-color($color) {
+  background-color: $color;
+  border: 1px solid darken($color, 20%);
+  color: darken($color, 40%);
+  border-radius: 15px;
 }
 
-// Botones normales 
-.Botones {
-  display: flex;
-  flex-wrap: wrap;
+h1,h2,h3,h4,h5,h6, .badge
+{
+  color: white;
+  padding: 10px;
+}
 
+.text-normal {
+  @include pokemon-badge-color($colorNormal);
+}
+
+.text-fire {
+  @include pokemon-badge-color($colorFire);
+}
+
+.text-water {
+  @include pokemon-badge-color($colorWater);
+}
+
+.text-grass {
+  @include pokemon-badge-color($colorGrass);
+}
+
+.text-electric {
+  @include pokemon-badge-color($colorElectric);
+}
+
+.text-ice {
+  @include pokemon-badge-color($colorIce);
+}
+
+.text-fighting {
+  @include pokemon-badge-color($colorFighting);
+}
+
+.text-poison {
+  @include pokemon-badge-color($colorPoison);
+}
+
+.text-ground {
+  @include pokemon-badge-color($colorGround);
+}
+
+.text-flying {
+  @include pokemon-badge-color($colorFlying);
+}
+
+.text-psychi {
+  @include pokemon-badge-color($colorPsychi);
+}
+
+.text-bug {
+  @include pokemon-badge-color($colorBug);
+}
+
+.text-rock {
+  @include pokemon-badge-color($colorRock);
+}
+
+.text-ghost {
+  @include pokemon-badge-color($colorGhost);
+}
+
+.text-dragon {
+  @include pokemon-badge-color($colorDragon);
+}
+
+.text-dark {
+  @include pokemon-badge-color($colorDark);
+}
+
+.text-steel {
+  @include pokemon-badge-color($colorSteel);
+}
+
+.text-hada {
+  @include pokemon-badge-color($colorHada);
+}
+
+
+// Botones 
+@mixin boton-color($color)
+{
+  background-color: $color;
+  border: 1px solid darken($color, 20%);
+  color: darken($color, 40%);
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.Botones-normal {
+  @include boton-color($colorNormal);
+  
   .badge {
-    margin-right: $marginR; 
-    padding: $pdng; 
-    border-radius: 5px; 
-    background-color: $colorNormal; 
-    color: $colorBasico; 
-    margin-bottom: $marginBTN;
-    cursor: pointer;
-    font-size: 20px;
-
-    &.text-Normal {
-      background-color: $colorNormal;
-    }
-    &.text-Fire {
-      background-color: $colorFire;
-    }
-    &.text-Water {
-      background-color: $colorWater;
-    }
-    &.text-Grass {
-      background-color: $colorGrass;
-    }
-    &.text-Electric {
-      background-color: $colorElectric;
-    }
-    &.text-Ice {
-      background-color: $colorIce;
-    }
-    &.text-Fighting {
-      background-color: $colorFighting;
-    }
-    &.text-Poison {
-      background-color: $colorPoison;
-    }
-    &.text-Ground {
-      background-color: $colorGround;
-    }
-    &.text-Flying {
-      background-color: $colorFlying;
-    }
-    &.text-Psychi {
-      background-color: $colorPsychi;
-    }
-    &.text-Bug {
-      background-color: $colorBug;
-    }
-    &.text-Rock {
-      background-color: $colorRock;
-    }
-    &.text-Ghost {
-      background-color: $colorGhost;
-    }
-    &.text-Dragon {
-      background-color: $colorDragon;
-    }
-    &.text-Dark {
-      background-color: $colorDark;
-    }
-    &.text-Steel {
-      background-color: $colorSteel;
-    }
-    &.text-Hada {
-      background-color: $colorHada;
-    }
+    background-color: darken($colorNormal, 20%);
+    border-radius: 10px;
   }
 }
 
-
-
-// Botones redondeados
-.BotonesRedondeados {
-  display: flex;
-  flex-wrap: wrap;
+.Botones-fire {
+  @include boton-color($colorFire);
+  
   .badge {
-    margin-right: $marginR;
-    margin-bottom: $marginBTN;
-    padding: $pdng;
-    border-radius: $BR;
-    color: $colorBasico;
-    font-size: 20px;
-    cursor: pointer;
+    background-color: darken($colorFire, 20%);
+    border-radius: 10px;
   }
-  .rounded {
-    border-radius: 30px;
-  }
+}
 
-  .text-Fire {
-    background-color: $colorFire;
+.Botones-water {
+  @include boton-color($colorWater);
+  
+  .badge {
+    background-color: darken($colorWater, 20%);
+    border-radius: 10px;
   }
-  .text-Water {
-    background-color: $colorWater;
+}
+
+.Botones-grass {
+  @include boton-color($colorGrass);
+  
+  .badge {
+    background-color: darken($colorGrass, 20%);
+    border-radius: 10px;
   }
-  .text-Grass {
-    background-color: $colorGrass;
+}
+
+.Botones-electric {
+  @include boton-color($colorElectric);
+  
+  .badge {
+    background-color: darken($colorElectric, 20%);
+    border-radius: 10px;
   }
-  .text-Electric {
-    background-color: $colorElectric;
+}
+
+.Botones-ice {
+  @include boton-color($colorIce);
+  
+  .badge {
+    background-color: darken($colorIce, 20%);
+    border-radius: 10px;
   }
-  .text-Ice {
-    background-color: $colorIce;
+}
+
+.Botones-fighting {
+  @include boton-color($colorFighting);
+  
+  .badge {
+    background-color: darken($colorFighting, 20%);
+    border-radius: 10px;
   }
-  .text-Fighting {
-    background-color: $colorFighting;
+}
+
+.Botones-poison {
+  @include boton-color($colorPoison);
+  
+  .badge {
+    background-color: darken($colorPoison, 20%);
+    border-radius: 10px;
   }
-  .text-Poison {
-    background-color: $colorPoison;
+}
+
+.Botones-ground {
+  @include boton-color($colorGround);
+  
+  .badge {
+    background-color: darken($colorGround, 20%);
+    border-radius: 10px;
   }
-  .text-Ground {
-    background-color: $colorGround;
+}
+
+.Botones-flying {
+  @include boton-color($colorFlying);
+  
+  .badge {
+    background-color: darken($colorFlying, 20%);
+    border-radius: 10px;
   }
-  .text-Flying {
-    background-color: $colorFlying;
+}
+
+.Botones-psychi {
+  @include boton-color($colorPsychi);
+  
+  .badge {
+    background-color: darken($colorPsychi, 20%);
+    border-radius: 10px;
   }
-  .text-Psychi {
-    background-color: $colorPsychi;
+}
+
+.Botones-bug {
+  @include boton-color($colorBug);
+  
+  .badge {
+    background-color: darken($colorBug, 20%);
+    border-radius: 10px;
   }
-  .text-Bug {
-    background-color: $colorBug;
+}
+
+.Botones-rock {
+  @include boton-color($colorRock);
+  
+  .badge {
+    background-color: darken($colorRock, 20%);
+    border-radius: 10px;
   }
-  .text-Rock {
-    background-color: $colorRock;
+}
+
+.Botones-ghost {
+  @include boton-color($colorGhost);
+  
+  .badge {
+    background-color: darken($colorGhost, 20%);
+    border-radius: 10px;
   }
-  .text-Ghost {
-    background-color: $colorGhost;
+}
+
+.Botones-dragon {
+  @include boton-color($colorDragon);
+  
+  .badge {
+    background-color: darken($colorDragon, 20%);
+    border-radius: 10px;
   }
-  .text-Dragon {
-    background-color: $colorDragon;
+}
+
+.Botones-dark {
+  @include boton-color($colorDark);
+  
+  .badge {
+    background-color: darken($colorDark, 20%);
+    border-radius: 10px;
   }
-  .text-Dark {
-    background-color: $colorDark;
+}
+
+.Botones-steel {
+  @include boton-color($colorSteel);
+  
+  .badge {
+    background-color: darken($colorSteel, 20%);
+    border-radius: 10px;
   }
-  .text-Steel {
-    background-color: $colorSteel;
-  }
-  .text-Hada {
-    background-color: $colorHada;
+}
+
+.Botones-hada {
+  @include boton-color($colorHada);
+  
+  .badge {
+    background-color: darken($colorHada, 20%);
+    border-radius: 10px;
   }
 }
