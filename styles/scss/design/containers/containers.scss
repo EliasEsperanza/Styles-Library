@@ -24,908 +24,384 @@ $breakpoint-large: 992px;
 $breakpoint-extra-large: 1100px;
 $breakpoint-extra-extra-large: 1400px;
 
-//Para cada color de tipo de pokemon Small
-.container-small-Normal {
-  background-color: $colorNormal;
-  width: $breakpoint-small;
+@mixin responsive-container($color, $responsive)
+{
+  border: 1px solid darken($color, 20%);
+  color: darken($color, 40%);
+  background-color: $color;
+  width: $responsive;
   text-align: center;
   margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
+  margin-top: 10px;
+  padding: 5px;
+
+  @media (max-width: $responsive) {
     width: auto;
   }
+}
+
+//Para cada color de tipo de pokemon Small
+.container-small-Normal {
+  @include responsive-container($colorNormal, $breakpoint-small);
 }
 
 .container-small-Fire {
-  background-color: $colorFire;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorFire, $breakpoint-small);
 }
 
 .container-small-Water {
-  background-color: $colorWater;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorWater, $breakpoint-small);
 }
 
 .container-small-Grass {
-  background-color: $colorGrass;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorGrass, $breakpoint-small);
 }
 
 .container-small-Electric {
-  background-color: $colorElectric;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorElectric, $breakpoint-small);
 }
 
 .container-small-Ice {
-  background-color: $colorIce;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorIce, $breakpoint-small);
 }
 
 .container-small-Poison {
-  background-color: $colorPoison;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorPoison, $breakpoint-small);
 }
 
 .container-small-Ground {
-  background-color: $colorGround;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorGround, $breakpoint-small);
 }
 
 .container-small-Flying {
-  background-color: $colorFlying;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorFlying, $breakpoint-small);
 }
 
 .container-small-Psychi {
-  background-color: $colorPsychi;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorPsychi, $breakpoint-small);
 }
 
 .container-small-Bug {
-  background-color: $colorBug;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorBug, $breakpoint-small);
 }
 
 .container-small-Rock {
-  background-color: $colorRock;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorRock, $breakpoint-small);
 }
 
 .container-small-Ghost {
-  background-color: $colorGhost;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorGhost, $breakpoint-small);
 }
 
 .container-small-Dragon {
-  background-color: $colorDragon;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorDragon, $breakpoint-small);
 }
 
 .container-small-Dark {
-  background-color: $colorDark;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorDark, $breakpoint-small);
 }
 
 .container-small-Steel {
-  background-color: $colorSteel;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorSteel, $breakpoint-small);
 }
 
 .container-small-Hada {
-  background-color: $colorHada;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorHada, $breakpoint-small);
 }
 
 .container-small-Fightin {
-  background-color: $colorFighting;
-  width: $breakpoint-small;
-  text-align: center;
-  margin: 0 auto;
-  @media (max-width: $breakpoint-small) {
-    width: auto;
-  }
+  @include responsive-container($colorFighting, $breakpoint-small);
 }
 
 //Para cada color de tipo de pokemon Medium
 .container-medium-Normal {
-  width: $breakpoint-medium;
-  background-color: $colorNormal;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorNormal, $breakpoint-medium);
 }
 
 .container-medium-Fire {
-  width: $breakpoint-medium;
-  background-color: $colorFire;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorFire, $breakpoint-medium);
 }
 
 .container-medium-Water {
-  width: $breakpoint-medium;
-  background-color: $colorWater;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorWater, $breakpoint-medium);
 }
 
 .container-medium-Grass {
-  width: $breakpoint-medium;
-  background-color: $colorGrass;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorGrass, $breakpoint-medium);
 }
 
 .container-medium-Electric {
-  width: $breakpoint-medium;
-  background-color: $colorElectric;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorElectric, $breakpoint-medium);
 }
 
 .container-medium-Ice {
-  width: $breakpoint-medium;
-  background-color: $colorIce;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorIce, $breakpoint-medium);
 }
 
 .container-medium-Fighting {
-  width: $breakpoint-medium;
-  background-color: $colorFighting;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorFighting, $breakpoint-medium);
 }
 
 .container-medium-Poison {
-  width: $breakpoint-medium;
-  background-color: $colorPoison;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorPoison, $breakpoint-medium);
 }
 
 .container-medium-Ground {
-  width: $breakpoint-medium;
-  background-color: $colorGround;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorGround, $breakpoint-medium);
 }
 
 .container-medium-Flying {
-  width: $breakpoint-medium;
-  background-color: $colorFlying;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorFlying, $breakpoint-medium);
 }
 
 .container-medium-Psychi {
-  width: $breakpoint-medium;
-  background-color: $colorPsychi;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorPsychi, $breakpoint-medium);
 }
 
 .container-medium-Bug {
-  width: $breakpoint-medium;
-  background-color: $colorBug;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorBug, $breakpoint-medium);
 }
 
 .container-medium-Rock {
-  width: $breakpoint-medium;
-  background-color: $colorRock;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorRock, $breakpoint-medium);
 }
 
 .container-medium-Ghost {
-  width: $breakpoint-medium;
-  background-color: $colorGhost;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorGhost, $breakpoint-medium);
 }
 
 .container-medium-Dragon {
-  width: $breakpoint-medium;
-  background-color: $colorDragon;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorDragon, $breakpoint-medium);
 }
 
 .container-medium-Dark {
-  width: $breakpoint-medium;
-  background-color: $colorDark;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorDark, $breakpoint-medium);
 }
 
 .container-medium-Steel {
-  width: $breakpoint-medium;
-  background-color: $colorSteel;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorSteel, $breakpoint-medium);
 }
 
 .container-medium-Hada {
-  width: $breakpoint-medium;
-  background-color: $colorHada;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-medium) {
-    width: auto;
-  }
+  @include responsive-container($colorHada, $breakpoint-medium);
 }
 
 //Para cada color de tipo de pokemon Large
 .container-large-Normal {
-  background-color: $colorNormal;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorNormal, $breakpoint-large);
 }
 
 .container-large-Fire {
-  background-color: $colorFire;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorFire, $breakpoint-large);
 }
 
 .container-large-Water {
-  background-color: $colorWater;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorWater, $breakpoint-large);
 }
 
 .container-large-Grass {
-  background-color: $colorGrass;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorGrass, $breakpoint-large);
 }
 
 .container-large-Electric {
-  background-color: $colorElectric;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorElectric, $breakpoint-large);
 }
 
 .container-large-Ice {
-  background-color: $colorIce;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorIce, $breakpoint-large);
 }
 
 .container-large-Fighting {
-  background-color: $colorFighting;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorFighting, $breakpoint-large);
 }
 
 .container-large-Poison {
-  background-color: $colorPoison;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorPoison, $breakpoint-large);
 }
 
 .container-large-Ground {
-  background-color: $colorGround;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorGround, $breakpoint-large);
 }
 
 .container-large-Flying {
-  background-color: $colorFlying;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorFlying, $breakpoint-large);
 }
 
 .container-large-Psychi {
-  background-color: $colorPsychi;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorPsychi, $breakpoint-large);
 }
 
 .container-large-Bug {
-  background-color: $colorBug;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorBug, $breakpoint-large);
 }
 
 .container-large-Rock {
-  background-color: $colorRock;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorRock, $breakpoint-large);
 }
 
 .container-large-Ghost {
-  background-color: $colorGhost;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorGhost, $breakpoint-large);
 }
 
 .container-large-Dragon {
-  background-color: $colorDragon;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorDragon, $breakpoint-large);
 }
 
 .container-large-Dark {
-  background-color: $colorDark;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorDark, $breakpoint-large);
 }
 
 .container-large-Steel {
-  background-color: $colorSteel;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorSteel, $breakpoint-large);
 }
 
 .container-large-Hada {
-  background-color: $colorHada;
-  width: $breakpoint-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-large) {
-    width: auto;
-  }
+  @include responsive-container($colorHada, $breakpoint-large);
 }
 
 
 //Para cada color de tipo de pokemon Extra Large
 .container-xl-Normal {
-  background-color: $colorNormal;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorNormal, $breakpoint-extra-large);
 }
 
 .container-xl-Fire {
-  background-color: $colorFire;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorFire, $breakpoint-extra-large);
 }
 
 .container-xl-Water {
-  background-color: $colorWater;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorWater, $breakpoint-extra-large);
 }
 
 .container-xl-Grass {
-  background-color: $colorGrass;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorGrass, $breakpoint-extra-large);
 }
 
 .container-xl-Electric {
-  background-color: $colorElectric;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorElectric, $breakpoint-extra-large);
 }
 
 .container-xl-Ice {
-  background-color: $colorIce;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorIce, $breakpoint-extra-large);
 }
 
 .container-xl-Fighting {
-  background-color: $colorFighting;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorFighting, $breakpoint-extra-large);
 }
 
 .container-xl-Poison {
-  background-color: $colorPoison;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorPoison, $breakpoint-extra-large);
 }
 
 .container-xl-Ground {
-  background-color: $colorGround;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorGround, $breakpoint-extra-large);
 }
 
 .container-xl-Flying {
-  background-color: $colorFlying;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorFlying, $breakpoint-extra-large);
 }
 
 .container-xl-Psychi {
-  background-color: $colorPsychi;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorPsychi, $breakpoint-extra-large);
 }
 
 .container-xl-Bug {
-  background-color: $colorBug;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorBug, $breakpoint-extra-large);
 }
 
 .container-xl-Rock {
-  background-color: $colorRock;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorRock, $breakpoint-extra-large);
 }
 
 .container-xl-Ghost {
-  background-color: $colorGhost;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorGhost, $breakpoint-extra-large);
 }
 
 .container-xl-Dragon {
-  background-color: $colorDragon;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorDragon, $breakpoint-extra-large);
 }
 
 .container-xl-Dark {
-  background-color: $colorDark;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorDark, $breakpoint-extra-large);
 }
 
 .container-xl-Steel {
-  background-color: $colorSteel;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorSteel, $breakpoint-extra-large);
 }
 
 .container-xl-Hada {
-  background-color: $colorNormal;
-  width: $breakpoint-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (max-width: $breakpoint-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorHada, $breakpoint-extra-large);
 }
 
 //Para cada color de tipo de pokemon Extra Extra Large
 .container-xxl-Normal {
-  background-color: $colorNormal;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorNormal, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Fire {
-  background-color: $colorFire;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorFire, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Water {
-  background-color: $colorWater;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorWater, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Grass {
-  background-color: $colorGrass;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorGrass, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Electric {
-  background-color: $colorElectric;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorElectric, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Ice {
-  background-color: $colorIce;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorIce, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Fithting {
-  background-color: $colorFighting;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorFighting, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Poison {
-  background-color: $colorPoison;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorPoison, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Ground {
-  background-color: $colorGround;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorGround, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Flying {
-  background-color: $colorFlying;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorFlying, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Psychi {
-  background-color: $colorPsychi;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorPsychi, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Bug {
-  background-color: $colorBug;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorBug, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Rock {
-  background-color: $colorRock;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorRock, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Ghost {
-  background-color: $colorGhost;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorGhost, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Dragon {
-  background-color: $colorDragon;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorDragon, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Dark {
-  background-color: $colorDark;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorDark, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Steel {
-  background-color: $colorSteel;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorSteel, $breakpoint-extra-extra-large);
 }
 
 .container-xxl-Hada {
-  background-color: $colorHada;
-  width: $breakpoint-extra-extra-large;
-  margin: 0 auto;
-  text-align: center;
-  @media (min-width: $breakpoint-extra-extra-large) {
-    width: auto;
-  }
+  @include responsive-container($colorHada, $breakpoint-extra-extra-large);
 }
