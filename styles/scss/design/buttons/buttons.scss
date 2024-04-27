@@ -1,984 +1,89 @@
-@import "../../utilities/color-pokemon.scss";
+@import "color-pokemon";
 
-
-.btn {
-    height: 30px;
-    width: 120px;
-    line-height: 7px;
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
+// Mixins para los estilos de los botones
+@mixin button-style($height, $width) {
+    height: $height;
+    width: $width;
+    line-height: 0.5;
+    border: 2px solid transparent;
+    border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
     transition: all 0.3s ease;
     text-transform: uppercase;
-    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 10px;
+    padding:10px;
 }
 
-//CSS BOTONES DE POKEMON***********************************************************************************************************
-.btn-Pokemon-Normal {
-    background-color: $colorNormal;
-    color: white;
-    border: 2px solid darken($colorNormal, 20%);
+// mixin para los botones de Pokémon
+@mixin pokemon-button($background-color, $text-color) {
+    background-color: $background-color;
+    color: $text-color;
+    border: 2px solid darken($background-color, 20%);
     &:hover {
-        background-color: darken($colorNormal, 20%);
-        border-color: darken($colorNormal, 40%);
+        background-color: darken($background-color, 20%);
+        border-color: darken($background-color, 40%);
     }
 }
 
-.btn-Pokemon-Fire {
-    background-color: $colorFire;
-    color: white;
-    border: 2px solid darken($colorFire, 20%);
-    &:hover {
-        background-color: darken($colorFire , 20%);
-        border-color: darken($colorFire, 40%);
-    }
-}
-
-.btn-Pokemon-Water {
-    background-color: $colorWater;
-    color: white;
-    border: 2px solid darken($colorWater, 20%);
-    &:hover {
-        background-color: darken($colorWater, 20%);
-        border-color: darken($colorWater, 40%);
-    }
-}
-
-.btn-Pokemon-Grass {
-    background-color: $colorGrass;
-    color: white;
-    border: 2px solid darken($colorGrass, 20%);
-    &:hover {
-        background-color: darken($colorGrass, 20%);
-        border-color: darken($colorGrass, 40%);
-    }
-}
-
-.btn-Pokemon-Electric {
-    background-color: $colorElectric;
-    color: black;
-    border: 2px solid darken($colorElectric, 20%);
-    &:hover {
-        background-color: darken($colorElectric, 20%);
-        border-color: darken($colorElectric, 40%);
-    }
-}
-
-.btn-Pokemon-Ice {
-    background-color: $colorIce;
-    color: black;
-    border: 2px solid darken($colorIce, 20%);
-    &:hover {
-        background-color: darken($colorIce, 20%);
-        border-color: darken($colorIce, 40%);
-    }
-}
-
-.btn-Pokemon-Fighting {
-    background-color: $colorFighting;
-    color: white;
-    border: 2px solid darken($colorFighting, 20%);
-    &:hover {
-        background-color: darken($colorFighting, 20%);
-        border-color: darken($colorFighting, 40%);
-    }
-}
-
-.btn-Pokemon-Poison {
-    background-color: $colorPoison;
-    color: white;
-    border: 2px solid darken($colorPoison, 20%);
-    &:hover {
-        background-color: darken($colorPoison, 20%);
-        border-color: darken($colorPoison, 40%);
-    }
-}
-
-.btn-Pokemon-Ground {
-    background-color: $colorGround;
-    color: black;
-    border: 2px solid darken($colorGround, 20%);
-    &:hover {
-        background-color: darken($colorGround, 20%);
-        border-color: darken($colorGround, 40%);
-    }
-}
-
-.btn-Pokemon-Flying {
-    background-color: $colorFlying;
-    color: black;
-    border: 2px solid darken($colorFlying, 20%);
-    &:hover {
-        background-color: darken($colorFlying, 20%);
-        border-color: darken($colorFlying, 40%);
-    }
-}
-
-.btn-Pokemon-Psychic {
-    background-color: $colorPsychi;
-    color: white;
-    border: 2px solid darken($colorPsychi, 20%);
-    &:hover {
-        background-color: darken($colorPsychi, 20%);
-        border-color: darken($colorPsychi, 40%);
-    }
-}
-
-.btn-Pokemon-Bug {
-    background-color: $colorBug;
-    color: black;
-    border: 2px solid darken($colorBug, 20%);
-    &:hover {
-        background-color: darken($colorBug, 20%);
-        border-color: darken($colorBug, 40%);
-    }
-}
-
-.btn-Pokemon-Rock {
-    background-color: $colorRock;
-    color: white;
-    border: 2px solid darken($colorRock, 20%);
-    &:hover {
-        background-color: darken($colorRock, 20%);
-        border-color: darken($colorRock, 40%);
-    }
-}
-
-.btn-Pokemon-Ghost {
-    background-color: $colorGhost;
-    color: white;
-    border: 2px solid darken($colorGhost, 20%);
-    &:hover {
-        background-color: darken($colorGhost, 20%);
-        border-color: darken($colorGhost, 40%);
-    }
-}
-
-.btn-Pokemon-Dragon {
-    background-color: $colorDragon;
-    color: white;
-    border: 2px solid darken($colorDragon, 20%);
-    &:hover {
-        background-color: darken($colorDragon, 20%);
-        border-color: darken($colorDragon, 40%);
-    }
-}
-
-.btn-Pokemon-Dark {
-    background-color: $colorDark ;
-    color: white;
-    border: 2px solid darken($colorDark , 20%);
-    &:hover {
-        background-color: darken($colorDark , 20%);
-        border-color: darken($colorDark , 40%);
-    }
-}
-
-.btn-Pokemon-Steel {
-    background-color: $colorSteel;
-    color: black;
-    border: 2px solid darken($colorSteel, 20%);
-    &:hover {
-        background-color: darken($colorSteel, 20%);
-        border-color: darken($colorSteel, 40%);
-    }
-}
-
-.btn-Pokemon-Hada {
-    background-color: $colorHada;
-    color: white;
-    border: 2px solid darken($colorHada, 20%);
-    &:hover {
-        background-color: darken($colorHada, 20%);
-        border-color: darken($colorHada, 40%);
-    }
-}
-
-//CSS BOTONES link DE POKEMON******************************************************************************************
-.btnLink-Pokemon-Normal {
+// mixin para los botones de enlace Pokémon
+@mixin pokemon-link-button($color) {
     background: transparent;
     text-decoration: underline;
-    color: $colorNormal;
+    color: $color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
     &:hover {
-        border: 2px solid darken($colorNormal, 20%);
+        border: 2px solid darken($color, 20%);
     }
 }
 
-.btnLink-Pokemon-Fire {
-    background-color: transparent;
-    color: $colorFire;
-    text-decoration: underline;
-    &:hover {
-        border: 2px solid darken($colorFire, 20%);
-    }
-}
-
-.btnLink-Pokemon-Water {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorWater;
-
-    &:hover {
-        border: 2px solid darken($colorWater, 20%);
-    }
-}
-
-.btnLink-Pokemon-Grass {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorGrass;
-    &:hover {
-        border: 2px solid darken($colorGrass, 20%);
-    }
-}
-
-.btnLink-Pokemon-Electric {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorElectric;
-    &:hover {
-        border: 2px solid darken($colorElectric, 20%);
-    }
-}
-
-.btnLink-Pokemon-Ice {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorIce;
-    &:hover {
-        border: 2px solid darken($colorIce, 20%);
-    }
-}
-
-.btnLink-Pokemon-Fighting {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorFighting;
-    &:hover {
-        border: 2px solid darken($colorFighting, 20%);
-    }
-}
-
-.btnLink-Pokemon-Poison {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorPoison;
-    &:hover {
-        border: 2px solid darken($colorPoison, 20%);
-    }
-}
-
-.btnLink-Pokemon-Ground {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorGround;
-    &:hover {
-        border: 2px solid darken($colorGround, 20%);
-    }
-}
-
-.btnLink-Pokemon-Flying {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorFlying;
-    &:hover {
-        border: 2px solid darken($colorFlying, 20%);
-    }
-}
-
-.btnLink-Pokemon-Psychic {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorPsychi;
-    &:hover {
-        border: 2px solid darken($colorPsychi, 20%);
-    }
-}
-
-.btnLink-Pokemon-Bug {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorBug;
-    &:hover {
-        border: 2px solid darken($colorBug, 20%);
-    }
-}
-
-.btnLink-Pokemon-Rock {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorRock;
-    &:hover {
-        border: 2px solid darken($colorRock, 20%);
-    }
-}
-
-.btnLink-Pokemon-Ghost {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorGhost;
-    &:hover {
-        border: 2px solid darken($colorGhost, 20%);
-    }
-}
-
-.btnLink-Pokemon-Dragon {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorDragon;
-    &:hover {
-        border: 2px solid darken($colorDragon, 20%);
-    }
-}
-
-.btnLink-Pokemon-Dark {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorDark;
-    &:hover {
-        border: 2px solid darken($colorDark, 20%);
-    }
-}
-
-.btnLink-Pokemon-Steel {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorSteel;
-    &:hover {
-        border: 2px solid darken($colorSteel, 20%);
-    }
-}
-
-.btnLink-Pokemon-Hada {
-    background-color: transparent;
-    text-decoration: underline;
-    color: $colorHada;
-    &:hover {
-        border: 2px solid darken($colorSteel, 20%);
-    }
-}
-
-$button-border-width: 4px; // Ancho del borde al presionar
-
-
-//BOTONES TAG STYLE********************************************************************************************************
-.btn-ButtonTag-Normal {
-    background-color: $colorNormal;
+ // Mixin para los botones Tag Style
+ @mixin button-tag-style($color) {
+    background-color: $color;
     color: white;
-    border: 2px solid darken($colorNormal, 20%);
-    text-decoration: none; 
+    border: 2px solid darken($color, 20%);
+    text-decoration: none;
     outline: none;
-    &:hover {
-        background-color: darken($colorNormal, 20%);
-        border-color: darken($colorNormal, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
+&:hover {
+    background-color: darken($color, 20%);
+    border-color: darken($color, 40%);
+}
+&:active {
+    border-width: 4px;
+}
 }
 
-.btn-ButtonTag-Fire {
-    background-color: $colorFire;
+//mixin para los botones outline
+@mixin button-outline-style($color) {
+    background-color: transparent;
+    color: black;
+    border: 2px solid $color; // Borde delgado
+
+// Estilo del borde al hacer clic
+&:active {
+    border: 4px solid darken($color, 10%); // Borde más grueso al hacer clic
+    outline: none;
+}
+
+// Hover
+&:hover {
+    background-color: lighten($color, 10%); // Background al pasar el mouse
+    border-color: darken($color, 10%); // Borde al pasar el mouse
     color: white;
-    border: 2px solid darken($colorFire, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorFire, 20%);
-        border-color: darken($colorFire, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
 }
-
-.btn-ButtonTag-Water {
-    background-color: $colorWater;
-    color: white;
-    border: 2px solid darken($colorWater, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorWater, 20%);
-        border-color: darken($colorWater, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Grass {
-    background-color: $colorGrass;
-    color: white;
-    border: 2px solid darken($colorGrass, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorGrass, 20%);
-        border-color: darken($colorGrass, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Electric {
-    background-color: $colorElectric;
-    color: black;
-    border: 2px solid darken($colorElectric, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorElectric, 20%);
-        border-color: darken($colorElectric, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Ice {
-    background-color: $colorIce;
-    color: black;
-    border: 2px solid darken($colorIce, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorIce, 20%);
-        border-color: darken($colorIce, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Fighting {
-    background-color: $colorFighting;
-    color: white;
-    border: 2px solid darken($colorFighting, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorFighting, 20%);
-        border-color: darken($colorFighting, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Poison {
-    background-color: $colorPoison;
-    color: white;
-    border: 2px solid darken($colorPoison, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorPoison, 20%);
-        border-color: darken($colorPoison, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Ground {
-    background-color: $colorGround;
-    color: black;
-    border: 2px solid darken($colorGround, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorGround, 20%);
-        border-color: darken($colorGround, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Flying {
-    background-color: $colorFlying;
-    color: black;
-    border: 2px solid darken($colorFlying, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorFlying, 20%);
-        border-color: darken($colorFlying, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Psychic {
-    background-color: $colorPsychi;
-    color: white;
-    border: 2px solid darken($colorPsychi, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorPsychi, 20%);
-        border-color: darken($colorPsychi, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Bug {
-    background-color: $colorBug;
-    color: white;
-    border: 2px solid darken($colorBug, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorBug, 20%);
-        border-color: darken($colorBug, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Rock {
-    background-color: $colorRock;
-    color: black;
-    border: 2px solid darken($colorRock, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorRock, 20%);
-        border-color: darken($colorRock, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Ghost {
-    background-color: $colorGhost;
-    color: white;
-    border: 2px solid darken($colorGhost, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorGhost, 20%);
-        border-color: darken($colorGhost, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Dragon {
-    background-color: $colorDragon;
-    color: white;
-    border: 2px solid darken($colorDragon, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorDragon, 20%);
-        border-color: darken($colorDragon, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Dark {
-    background-color: $colorDark;
-    color: white;
-    border: 2px solid darken($colorDark, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorDark, 20%);
-        border-color: darken($colorDark, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Steel {
-    background-color: $colorSteel;
-    color: black;
-    border: 2px solid darken($colorSteel, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorSteel, 20%);
-        border-color: darken($colorSteel, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-.btn-ButtonTag-Hada {
-    background-color: $colorHada;
-    color: white;
-    border: 2px solid darken($colorHada, 20%);
-    text-decoration: none; 
-    outline: none;
-    &:hover {
-        background-color: darken($colorHada, 20%);
-        border-color: darken($colorHada, 40%);
-    }
-    &:active {
-        border-width: $button-border-width;
-    }
-}
-
-//BOTON OUTLINE************************************************************************************
-.btn-outline-Normal {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorNormal; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorNormal, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Normal Hover
-    &:hover {
-        background-color: lighten($colorNormal, 10%); // Background al pasar el mouse
-        border-color: darken($colorNormal, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Fire {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorFire; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorFire, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Fire Hover
-    &:hover {
-        background-color: lighten($colorFire, 10%); // Background al pasar el mouse
-        border-color: darken($colorFire, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Water {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorWater; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorWater, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Water Hover
-    &:hover {
-        background-color: lighten($colorWater, 10%); // Background al pasar el mouse
-        border-color: darken($colorWater, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Grass {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorGrass; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorGrass, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Grass Hover
-    &:hover {
-        background-color: lighten($colorGrass, 10%); // Background al pasar el mouse
-        border-color: darken($colorGrass, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Electric {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorElectric; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorElectric, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Electric Hover
-    &:hover {
-        background-color: lighten($colorElectric, 10%); // Background al pasar el mouse
-        border-color: darken($colorElectric, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Ice {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorIce; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorIce, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Ice Hover
-    &:hover {
-        background-color: lighten($colorIce, 10%); // Background al pasar el mouse
-        border-color: darken($colorIce, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Fighting {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorFighting; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorFighting, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Fighting Hover
-    &:hover {
-        background-color: lighten($colorFighting, 10%); // Background al pasar el mouse
-        border-color: darken($colorFighting, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Poison {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorPoison; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorPoison, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Poison Hover
-    &:hover {
-        background-color: lighten($colorPoison, 10%); // Background al pasar el mouse
-        border-color: darken($colorPoison, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Ground {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorGround; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorGround, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Ground Hover
-    &:hover {
-        background-color: lighten($colorGround, 10%); // Background al pasar el mouse
-        border-color: darken($colorGround, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Flying {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorFlying; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorFlying, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Flying Hover
-    &:hover {
-        background-color: lighten($colorFlying, 10%); // Background al pasar el mouse
-        border-color: darken($colorFlying, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Psychic {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorPsychi; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorPsychi, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Psychic Hover
-    &:hover {
-        background-color: lighten($colorPsychi, 10%); // Background al pasar el mouse
-        border-color: darken($colorPsychi, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Bug {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorBug; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorBug, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Bug Hover
-    &:hover {
-        background-color: lighten($colorBug, 10%); // Background al pasar el mouse
-        border-color: darken($colorBug, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Rock {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorRock; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorRock, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Rock Hover
-    &:hover {
-        background-color: lighten($colorRock, 10%); // Background al pasar el mouse
-        border-color: darken($colorRock, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Ghost {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorGhost; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorGhost, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Ghost Hover
-    &:hover {
-        background-color: lighten($colorGhost, 10%); // Background al pasar el mouse
-        border-color: darken($colorGhost, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Dragon {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorDragon; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorDragon, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Dragon Hover
-    &:hover {
-        background-color: lighten($colorDragon, 10%); // Background al pasar el mouse
-        border-color: darken($colorDragon, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Dark {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorDark; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorDark, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Dark Hover
-    &:hover {
-        background-color: lighten($colorDark, 10%); // Background al pasar el mouse
-        border-color: darken($colorDark, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Steel {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorSteel; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorSteel, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo Steel Hover
-    &:hover {
-        background-color: lighten($colorSteel, 10%); // Background al pasar el mouse
-        border-color: darken($colorSteel, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
-}
-
-.btn-outline-Hada {
-    background-color: transparent;
-    color: black;
-    border: 2px solid $colorHada; // Borde delgado
-
-    // Estilo del borde al hacer clic
-    &:active {
-        border: 4px solid darken($colorHada, 10%); // Borde más grueso al hacer clic
-        outline: none;
-    }
-
-    // Botón de tipo HADA Hover
-    &:hover {
-        background-color: lighten($colorHada, 10%); // Background al pasar el mouse
-        border-color: darken($colorHada, 10%); // Borde al pasar el mouse
-        color: white;
-    } 
 }
 
 
-//TAMAÑOS DE BOTONES******************************************************************************************
+
+
+.btn {
+        @include button-style(30px, 120px);
+}
+    
+    
 .btn-lg {
     height: 40px;
     line-height: 1.5;
@@ -989,7 +94,7 @@ $button-border-width: 4px; // Ancho del borde al presionar
 
 .btn-md {
     height: 30px;
-    line-height: 1.5;
+    line-height: 0.5;
     width: 150px;
     border: 2px solid transparent;
     border-radius: 5px;
@@ -997,11 +102,311 @@ $button-border-width: 4px; // Ancho del borde al presionar
 
 .btn-sm {
     height: 25px;
-    line-height: 1.5;
+    line-height: 0.2;
     width: 100px;
     border: 2px solid transparent;
     border-radius: 5px;
 }
+    
+
+    // Estilos para los botones Pokémon
+.btn-Pokemon-Normal {
+    @include pokemon-button($colorNormal, white);
+}
+
+.btn-Pokemon-Fire {
+    @include pokemon-button($colorFire, white);
+}
+
+.btn-Pokemon-Water {
+    @include pokemon-button($colorWater, white);
+}
+
+.btn-Pokemon-Grass {
+    @include pokemon-button($colorGrass, white);
+}
+
+.btn-Pokemon-Electric {
+    @include pokemon-button($colorElectric, black);
+}
+
+.btn-Pokemon-Ice {
+    @include pokemon-button($colorIce, black);
+}
+
+.btn-Pokemon-Fighting {
+    @include pokemon-button($colorFighting, white);
+}
+
+.btn-Pokemon-Poison {
+    @include pokemon-button($colorPoison, white);
+}
+
+.btn-Pokemon-Ground {
+    @include pokemon-button($colorGround, black);
+}
+
+.btn-Pokemon-Flying {
+    @include pokemon-button($colorFlying, black);
+}
+
+.btn-Pokemon-Psychic {
+    @include pokemon-button($colorPsychi, white);
+}
+
+.btn-Pokemon-Bug {
+    @include pokemon-button($colorBug, black);
+}
+
+.btn-Pokemon-Rock {
+    @include pokemon-button($colorRock, white);
+}
+
+.btn-Pokemon-Ghost {
+    @include pokemon-button($colorGhost, white);
+}
+
+.btn-Pokemon-Dragon {
+    @include pokemon-button($colorDragon, white);
+}
+
+.btn-Pokemon-Dark {
+    @include pokemon-button($colorDark, white);
+}
+
+.btn-Pokemon-Steel {
+    @include pokemon-button($colorSteel, black);
+}
+
+.btn-Pokemon-Hada {
+    @include pokemon-button($colorHada, white);
+}
+
+//CSS BOTONES link DE POKEMON:
+
+// Estilos para los botones de enlace Pokémon
+.btnLink-Pokemon-Normal {
+    @include pokemon-link-button($colorNormal);
+}
+
+.btnLink-Pokemon-Fire {
+    @include pokemon-link-button($colorFire);
+}
+
+.btnLink-Pokemon-Water {
+    @include pokemon-link-button($colorWater);
+}
+
+.btnLink-Pokemon-Grass {
+    @include pokemon-link-button($colorGrass);
+}
+
+.btnLink-Pokemon-Electric {
+    @include pokemon-link-button($colorElectric);
+}
+
+.btnLink-Pokemon-Ice {
+    @include pokemon-link-button($colorIce);
+}
+
+.btnLink-Pokemon-Fighting {
+    @include pokemon-link-button($colorFighting);
+}
+
+.btnLink-Pokemon-Poison {
+    @include pokemon-link-button($colorPoison);
+}
+
+.btnLink-Pokemon-Ground {
+    @include pokemon-link-button($colorGround);
+}
+
+.btnLink-Pokemon-Flying {
+    @include pokemon-link-button($colorFlying);
+}
+
+.btnLink-Pokemon-Psychic {
+    @include pokemon-link-button($colorPsychi);
+}
+
+.btnLink-Pokemon-Bug {
+    @include pokemon-link-button($colorBug);
+}
+
+.btnLink-Pokemon-Rock {
+    @include pokemon-link-button($colorRock);
+}
+
+.btnLink-Pokemon-Ghost {
+    @include pokemon-link-button($colorGhost);
+}
+
+.btnLink-Pokemon-Dragon {
+    @include pokemon-link-button($colorDragon);
+}
+
+.btnLink-Pokemon-Dark {
+    @include pokemon-link-button($colorDark);
+}
+
+.btnLink-Pokemon-Steel {
+    @include pokemon-link-button($colorSteel);
+}
+
+.btnLink-Pokemon-Hada {
+    @include pokemon-link-button($colorHada);
+}
+
+//BOTONES OUTLINEEEEEE
+// Aplicar el estilo  los botones outline
+.btn-outline-Normal {
+    @include button-outline-style($colorNormal);
+}
+
+.btn-outline-Fire {
+    @include button-outline-style($colorFire);
+}
+
+.btn-outline-Water {
+    @include button-outline-style($colorWater);
+}
+
+.btn-outline-Grass {
+    @include button-outline-style($colorGrass);
+}
+
+.btn-outline-Electric {
+    @include button-outline-style($colorElectric);
+}
+
+.btn-outline-Ice {
+    @include button-outline-style($colorIce);
+}
+
+.btn-outline-Fighting {
+    @include button-outline-style($colorFighting);
+}
+
+.btn-outline-Poison {
+    @include button-outline-style($colorPoison);
+}
+
+.btn-outline-Ground {
+    @include button-outline-style($colorGround);
+}
+
+.btn-outline-Flying {
+    @include button-outline-style($colorFlying);
+}
+
+.btn-outline-Psychic {
+    @include button-outline-style($colorPsychi);
+}
+
+.btn-outline-Bug {
+    @include button-outline-style($colorBug);
+}
+
+.btn-outline-Rock {
+    @include button-outline-style($colorRock);
+}
+
+.btn-outline-Ghost {
+    @include button-outline-style($colorGhost);
+}
+
+.btn-outline-Dragon {
+    @include button-outline-style($colorDragon);
+}
+
+.btn-outline-Dark {
+    @include button-outline-style($colorDark);
+}
+
+.btn-outline-Steel {
+    @include button-outline-style($colorSteel);
+}
+
+.btn-outline-Hada {
+    @include button-outline-style($colorHada);
+}
+
+
+//botones tag
+
+    //BOTONES TAG STYLE:
+
+    .btn-ButtonTag-Normal {
+        @include button-tag-style($colorNormal);
+    }   
+
+    .btn-ButtonTag-Fire {
+        @include button-tag-style($colorFire);
+    }
+
+    .btn-ButtonTag-Water {
+        @include button-tag-style($colorWater);
+    }
+
+    .btn-ButtonTag-Grass {
+        @include button-tag-style($colorGrass);
+    }
+
+    .btn-ButtonTag-Electric {
+        @include button-tag-style($colorElectric);
+    }
+
+    .btn-ButtonTag-Ice {
+        @include button-tag-style($colorIce);
+    }
+
+    .btn-ButtonTag-Fighting {
+        @include button-tag-style($colorFighting);
+    }
+
+    .btn-ButtonTag-Poison {
+        @include button-tag-style($colorPoison);
+    }
+
+    .btn-ButtonTag-Ground {
+        @include button-tag-style($colorGround);
+    }
+
+    .btn-ButtonTag-Flying {
+        @include button-tag-style($colorFlying);
+    }
+
+    .btn-ButtonTag-Psychic {
+        @include button-tag-style($colorPsychi);
+    }
+
+    .btn-ButtonTag-Bug {
+        @include button-tag-style($colorBug);
+    }
+
+    .btn-ButtonTag-Rock {
+        @include button-tag-style($colorRock);
+    }
+
+    .btn-ButtonTag-Ghost {
+        @include button-tag-style($colorGhost);
+    }
+
+    .btn-ButtonTag-Dragon {
+        @include button-tag-style($colorDragon);
+    }
+
+    .btn-ButtonTag-Dark {
+        @include button-tag-style($colorDark);
+    }
+
+    .btn-ButtonTag-Steel {
+        @include button-tag-style($colorSteel);
+    }
+
+    .btn-ButtonTag-Hada {
+        @include button-tag-style($colorHada);
+    }
 
 
 
