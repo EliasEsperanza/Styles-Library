@@ -1,0 +1,1161 @@
+@import "color-pokemon";
+
+    @mixin label-styles {
+        display: block; 
+        margin-bottom: 2px; 
+      }
+
+      .form-label-Normal {
+        @include label-styles;
+      }
+      
+      .form-label-Fire {
+        @include label-styles;
+      }
+      .form-label-Grass {
+        @include label-styles;
+      }
+      
+      .form-label-Water {
+        @include label-styles;
+      }
+      
+      .form-label-Rock {
+        @include label-styles;
+      }
+      
+      .form-label-Dragon {
+        @include label-styles;
+      }
+      
+      .form-label-Hada {
+        @include label-styles;
+      }
+      .form-label-Electric {
+        @include label-styles;
+      }
+      
+      .form-label-Ice {
+        @include label-styles;
+      }
+      
+      .form-label-Fighting {
+        @include label-styles;
+      }
+      
+      .form-label-Poison {
+        @include label-styles;
+      }
+      
+      .form-label-Ground {
+        @include label-styles;
+      }
+      
+      .form-label-Flying {
+        @include label-styles;
+      }
+      
+      .form-label-Psychi {
+        @include label-styles;
+      }
+      
+      .form-label-Bug {
+        @include label-styles;
+      }
+      
+      .form-label-Ghost {
+        @include label-styles;
+      }
+      
+      .form-label-Dark {
+        @include label-styles;
+      }
+      
+      .form-label-Steel {
+        @include label-styles;
+      }
+            
+      
+
+    /* Estilos básicos para el input tipo range */
+.form-range-Normal {
+    height: 0.5em;
+    width:  90%;
+    border: 1.5px solid mix($colorNormal, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+     position: relative;
+     margin-bottom: 1em;
+     margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Normal {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Normal::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorNormal;
+      border: 1px solid black;
+    }
+  } 
+  /* Focus outline */
+  .form-range-Normal:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorNormal, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Normal::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+  height: 1.25em;
+    background: $colorNormal; /* Color  para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Normal::-moz-range-thumb {
+    width: 1.25em; 
+  height: 1.25em;
+    background: $colorNormal;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Normal::-ms-range-thumb {
+    width: 1.25em;
+    height: 1.25em;
+    background:$colorNormal;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+/* Estilos básicos para el input tipo range */
+.form-range-Fire {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorFire, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em;
+  margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Fire {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Fire::-webkit-slider-thumb {
+        width: 1em; 
+        height: 1em;
+      background: $colorFire;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Fire:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorFire, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Fire::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorFire; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Fire::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorFire;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Fire::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorFire;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Estilos básicos para el input tipo range */
+.form-range-Water {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorWater, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Water {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Water::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorWater;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Water:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorWater, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Water::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorWater; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Water::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorWater;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Water::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorWater;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+ /* Estilos básicos para el input tipo range */
+.form-range-Grass {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorGrass, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Grass {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Grass::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorGrass;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Grass:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorGrass, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Grass::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorGrass; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Grass::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorGrass;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Grass::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorGrass;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Estilos básicos para el input tipo range */
+.form-range-Electric {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorElectric, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Electric {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Electric::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorElectric;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Electric:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorElectric, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Electric::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorElectric; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Electric::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorElectric;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Electric::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorElectric;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Estilos básicos para el input tipo range */
+.form-range-Ice {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorIce, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Ice {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Ice::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorIce;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Ice:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorIce, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Ice::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorIce; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Ice::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorIce;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Ice::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorIce;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+  /* Estilos básicos para el input tipo range */
+.form-range-Fighting {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorFighting, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Fighting {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Fighting::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorFighting;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Fighting:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorFighting, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Fighting::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorFighting; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Fighting::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorFighting;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Fighting::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorFighting;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Estilos básicos para el input tipo range */
+.form-range-Poison {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorPoison, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 10px;
+    margin-right: 5px;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Poison {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Poison::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorPoison;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Poison:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorPoison, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Poison::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorPoison; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Poison::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorPoison;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Poison::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorPoison;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Estilos básicos para el input tipo range */
+.form-range-Ground {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorGround, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Ground {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Ground::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorGround;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Ground:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorGround, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Ground::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorGround; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Ground::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorGround;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Ground::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorGround;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Estilos básicos para el input tipo range */
+.form-range-Flying {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorFlying, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Flying {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Flying::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorFlying;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Flying:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorFlying, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Flying::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorFlying; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Flying::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorFlying;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Flying::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorFlying;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Estilos básicos para el input tipo range */
+.form-range-Psychi {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorPsychi, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Psychi {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Psychi::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorPsychi;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Psychi:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorPsychi, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Psychi::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorPsychi; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Psychi::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorPsychi;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Psychi::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorPsychi;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  
+  /* Estilos básicos para el input tipo range */
+.form-range-Bug {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorBug, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Bug {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Bug::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorBug;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Bug:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorBug, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Bug::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorBug; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Bug::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorBug;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Bug::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorBug;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  
+  /* Estilos básicos para el input tipo range */
+.form-range-Rock {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorRock, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Rock {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Rock::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;;
+      background: $colorRock;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Rock:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorRock, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Rock::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorRock; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Rock::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorRock;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Rock::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorRock;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Estilos básicos para el input tipo range */
+.form-range-Ghost {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorGhost, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Ghost {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Ghost::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorGhost;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Ghost:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorGhost, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Ghost::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorGhost; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Ghost::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorGhost;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Ghost::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorGhost;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Estilos básicos para el input tipo range */
+.form-range-Dragon {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorDragon, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Dragon {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Dragon::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorDragon;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Dragon:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorDragon, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Dragon::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorDragon; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Dragon::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorDragon;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Dragon::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorDragon;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Estilos básicos para el input tipo range */
+.form-range-Dark {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorDark, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Dark {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Dark::-webkit-slider-thumb {
+        width: 1em;
+        height: 1em;
+      background: $colorDark;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Dark:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorDark, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Dark::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorDark; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Dark::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorDark;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Dark::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorDark;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  /* Estilos básicos para el input tipo range */
+.form-range-Steel {
+    height: 0.5em; 
+    width: 90%; 
+    border: 1.5px solid mix($colorSteel, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Steel {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Steel::-webkit-slider-thumb {
+        width: 1em; 
+        height: 1em;
+      background: $colorSteel;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Steel:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorSteel, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Steel::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorSteel; /* Color para el thumb */
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Estilos para otros navegadores */
+  .form-range-Steel::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorSteel;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Steel::-ms-range-thumb {
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorSteel;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+
+  /* Estilos básicos para el input tipo range */
+.form-range-Hada {
+    height: 0.5em; 
+    width: 90%;
+    border: 1.5px solid mix($colorHada, black, 5%);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    position: relative;
+    margin-bottom: 1em; 
+    margin-right: 0.5em;
+  }
+  
+  /* Estilos específicos para Chrome */
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    .form-range-Hada {
+      -webkit-appearance: none;
+      background: rgb(219, 219, 222);
+    }
+  
+    .form-range-Hada::-webkit-slider-thumb {
+        width: 1em; 
+        height: 1em;
+      background: $colorHada;
+      border: 1px solid black;
+    }
+  }
+  
+  /* Focus outline */
+  .form-range-Hada:focus::-webkit-slider-thumb {
+    outline: 3px solid mix($colorHada, white, 50%);
+  }
+  
+  /* Estilos para el thumb */
+  .form-range-Hada::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25em; 
+    height: 1.25em;
+    background: $colorHada; /* Color para el thumb */
+    border-radius: 50%;
+  }  
+  
+/* Estilos para otros navegadores */
+.form-range-Hada::-moz-range-thumb {
+    width: 1.25em; 
+    height: 1.25em; 
+    background: $colorNormal;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range-Hada::-ms-range-thumb {
+    width: 1.25em;
+    height: 1.25em; 
+    background: $colorNormal;
+    border-radius: 50%;
+    cursor: pointer;
+  }
