@@ -1,0 +1,122 @@
+@import "color-pokemon";
+
+// Mixin para estilos de select
+@mixin select-styles($color, $focusColor) {
+    padding: 4.0px;
+    border: 2px solid $color; 
+    width: auto;
+    height: auto;
+    background-color: white; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    outline: none;
+    border-radius: 5px;
+
+    &:focus {
+        border-width: 3.8px;
+        border-color: darken($color, 10%);
+        border-radius: 5px;
+        outline: none;
+    }
+
+    option {
+        background: white; 
+        color: black;
+    }
+
+    option:checked {
+        background: lighten($color, 10%); 
+        color: black; 
+    }
+}
+
+
+   // Estilo de select para color Normal
+.form-select-Normal {
+    @include select-styles($colorNormal, darken($colorNormal, 10%));
+}
+
+// Estilo de select para color Fire
+.form-select-Fire {
+    @include select-styles($colorFire, darken($colorFire, 10%));
+}
+
+// Estilo de select para color Water
+.form-select-Water {
+    @include select-styles($colorWater, darken($colorWater, 10%));
+}
+
+// Estilo de select para color Grass
+.form-select-Grass {
+    @include select-styles($colorGrass, darken($colorGrass, 10%));
+}
+
+// Estilo de select para color Electric
+.form-select-Electric {
+    @include select-styles($colorElectric, darken($colorElectric, 10%));
+}
+
+// Estilo de select para color Ice
+.form-select-Ice {
+    @include select-styles($colorIce, darken($colorIce, 10%));
+}
+
+// Estilo de select para color Fighting
+.form-select-Fighting {
+    @include select-styles($colorFighting, darken($colorFighting, 10%));
+}
+
+// Estilo de select para color Poison
+.form-select-Poison {
+    @include select-styles($colorPoison, darken($colorPoison, 10%));
+}
+
+// Estilo de select para color Ground
+.form-select-Ground {
+    @include select-styles($colorGround, darken($colorGround, 10%));
+}
+
+// Estilo de select para color Flying
+.form-select-Flying {
+    @include select-styles($colorFlying, darken($colorFlying, 10%));
+}
+
+// Estilo de select para color Psychi
+.form-select-Psychi {
+    @include select-styles($colorPsychi, darken($colorPsychi, 10%));
+}
+
+// Estilo de select para color Bug
+.form-select-Bug {
+    @include select-styles($colorBug, darken($colorBug, 10%));
+}
+
+// Estilo de select para color Rock
+.form-select-Rock {
+    @include select-styles($colorRock, darken($colorRock, 10%));
+}
+
+// Estilo de select para color Ghost
+.form-select-Ghost {
+    @include select-styles($colorGhost, darken($colorGhost, 10%));
+}
+
+// Estilo de select para color Dragon
+.form-select-Dragon {
+    @include select-styles($colorDragon, darken($colorDragon, 10%));
+}
+
+// Estilo de select para color Dark
+.form-select-Dark {
+    @include select-styles($colorDark, darken($colorDark, 10%));
+}
+
+// Estilo de select para color Steel
+.form-select-Steel {
+    @include select-styles($colorSteel, darken($colorSteel, 10%));
+}
+
+// Estilo de select para color Hada
+.form-select-Hada {
+    @include select-styles($colorHada, darken($colorHada, 10%));
+}
