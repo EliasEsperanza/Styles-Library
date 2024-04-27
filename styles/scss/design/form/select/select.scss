@@ -120,3 +120,22 @@
 .form-select-Hada {
     @include select-styles($colorHada, darken($colorHada, 10%));
 }
+
+//TAMA;OS PARA LOS SELECT
+// Estilo de select grande
+.select-lg {
+    font-size: 1.2em; 
+    select {
+        width: 200px; 
+    }
+}
+
+// Estilo de select pequeño
+.select-sm {
+    font-size: 0.85em; 
+    select {
+        width: 100px; 
+    }
+}
+
+
