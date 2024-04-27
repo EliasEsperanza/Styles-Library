@@ -385,13 +385,14 @@ $colorTransparente: transparent;
 //Navbar con formulario
 @mixin formu-controles($color)
 {
-  background-color: $colorTransparente;
+  background-color: white;
   border: 2px solid $color;
   justify-content: center;
   margin: 15px;
   font-size: 15px;
   padding: 5px 10px;
   border-radius: 5px;
+  color: darken($color, 40%);
 
   &:focus {
     outline: none;
@@ -720,4 +721,179 @@ input[type="search"] {
   display: block;
 }
 
-//Estilos al menu fuera de lienzo
+
+//Color schemes
+@mixin color-items($color)
+{
+  background-color: $color;
+  border: 1px solid darken($color, 20%);
+  color: darken($color, 40%);
+  margin: 5px;
+
+  &:hover
+  {
+    opacity: 0.8;
+  }
+}
+
+@mixin all-content-navbar-schemes($color)
+{
+  background-color: $color;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+
+  .navbar {
+    padding: 10px;
+    border-radius: 5px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  //Items
+  .item-dragon {
+    @include color-items($colorDragon);
+  }
+  
+  .item-water {
+    @include color-items($colorWater);
+  }
+  
+  .item-fire {
+    @include color-items($colorFire);
+  }
+  
+  .item-fighting {
+    @include color-items($colorFighting);
+  }
+  
+  .item-normal {
+    @include color-items($colorNormal);
+  }
+  
+  .item-grass {
+    @include color-items($colorGrass);
+  }
+  
+  .item-electric {
+    @include color-items($colorElectric);
+  }
+  
+  .item-ice {
+    @include color-items($colorIce);
+  }
+  
+  .item-poison {
+    @include color-items($colorPoison);
+  }
+  
+  .item-ground {
+    @include color-items($colorGround);
+  }
+  
+  .item-flying {
+    @include color-items($colorFlying);
+  }
+  
+  .item-psychi {
+    @include color-items($colorPsychi);
+  }
+  
+  .item-bug {
+    @include color-items($colorBug);
+  }
+  
+  .item-rock {
+    @include color-items($colorRock);
+  }
+  
+  .item-ghost {
+    @include color-items($colorGhost);
+  }
+  
+  .item-dark {
+    @include color-items($colorDark);
+  }
+  
+  .item-steel {
+    @include color-items($colorSteel);
+  }
+  
+  .item-hada {
+    @include color-items($colorHada);
+  }
+}
+
+.navbar-color-schemes-normal {
+  @include all-content-navbar-schemes($colorNormal);
+}
+
+.navbar-color-schemes-fire {
+  @include all-content-navbar-schemes($colorFire);
+}
+
+.navbar-color-schemes-water {
+  @include all-content-navbar-schemes($colorWater);
+}
+
+.navbar-color-schemes-grass {
+  @include all-content-navbar-schemes($colorGrass);
+}
+
+.navbar-color-schemes-electric {
+  @include all-content-navbar-schemes($colorElectric);
+}
+
+.navbar-color-schemes-ice {
+  @include all-content-navbar-schemes($colorIce);
+}
+
+.navbar-color-schemes-fighting {
+  @include all-content-navbar-schemes($colorFighting);
+}
+
+.navbar-color-schemes-poison {
+  @include all-content-navbar-schemes($colorPoison);
+}
+
+.navbar-color-schemes-ground {
+  @include all-content-navbar-schemes($colorGround);
+}
+
+.navbar-color-schemes-flying {
+  @include all-content-navbar-schemes($colorFlying);
+}
+
+.navbar-color-schemes-psychi {
+  @include all-content-navbar-schemes($colorPsychi);
+}
+
+.navbar-color-schemes-bug {
+  @include all-content-navbar-schemes($colorBug);
+}
+
+.navbar-color-schemes-rock {
+  @include all-content-navbar-schemes($colorRock);
+}
+
+.navbar-color-schemes-ghost {
+  @include all-content-navbar-schemes($colorGhost);
+}
+
+.navbar-color-schemes-dragon {
+  @include all-content-navbar-schemes($colorDragon);
+}
+
+.navbar-color-schemes-dark {
+  @include all-content-navbar-schemes($colorDark);
+}
+
+.navbar-color-schemes-steel {
+  @include all-content-navbar-schemes($colorSteel);
+}
+
+.navbar-color-schemes-hada {
+  @include all-content-navbar-schemes($colorHada);
+}
