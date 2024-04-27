@@ -1,4 +1,4 @@
-@import "color-pokemon";
+@import "../../../utilities/color-pokemon.scss";
 
 // Mixin para estilos de select
 @mixin select-styles($color, $focusColor) {
