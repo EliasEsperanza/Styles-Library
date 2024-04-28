@@ -1,0 +1,176 @@
+@import "color-pokemon";
+
+span,
+input {
+  font-size: 1rem; // Tamaño de fuente por defecto
+}
+// Mixin para estilos de input-group
+@mixin input-group-styles($color) {
+    border: 1px solid $color;
+    & {
+      border-width: 1px;
+      border-style: solid;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      position: relative;
+
+    }
+    
+    // Estilo para los span dentro de los div con clase "Normal"
+    span {
+      flex-shrink: 0; /* Evitar que el span se encoja */
+      display: block;
+      padding: 0.5rem;
+      border-right: 1px solid $color;
+      background-color: mix($color, white, 50%);
+      font-size: 1.5em;
+    }
+    
+    // Estilo para el span que tiene la clase "span-Izquiero"
+    .span-Izquiero {
+      margin-left: 5px;
+      border-left: 1px solid $color;
+      border-right: 1px solid $color;
+    }
+    
+    // Estilo para el span que tiene la clase "span-medio"
+    .span-medio {
+      margin-left: 5px;
+      margin-right: 5px;
+      border-left: 1px solid $color;
+    }
+    
+    // Estilo para el span que tiene la clase "descripcion"
+    .descripcion {
+      display: inline-block;
+      margin: 10px;
+    }
+    
+    // Estilo para los inputs dentro del div
+    input,
+    textarea {
+      flex-grow: 1;
+      border: none;
+      outline: none;
+      width: 100%;
+    }
+    
+    &:focus-within {
+      outline: 2px solid $color;
+    }
+     
+    // Etiqueta de formulario
+    .form-label {
+      font-size: 1rem;
+      color: black;
+      padding: 5px;
+    }
+    
+    // Texto del input
+    .input-group-text {
+      font-size: 1rem;
+      color: black;
+      padding: 5px;
+    }
+}  
+
+
+.input-group-Normal{
+        @include input-group-styles($colorNormal); 
+}
+
+.input-group-Fire{
+        @include input-group-styles($colorFire); 
+
+}
+.input-group-Water {
+    @include input-group-styles($colorWater);
+}
+  
+.input-group-Grass {
+    @include input-group-styles($colorGrass);
+  }
+  
+  .input-group-Electric {
+    @include input-group-styles($colorElectric);
+  }
+  
+  .input-group-Ice {
+    @include input-group-styles($colorIce);
+  }
+  
+  .input-group-Fighting {
+    @include input-group-styles($colorFighting);
+  }
+  
+  .input-group-Poison {
+    @include input-group-styles($colorPoison);
+  }
+  
+  .input-group-Ground {
+    @include input-group-styles($colorGround);
+  }
+  
+  .input-group-Flying {
+    @include input-group-styles($colorFlying);
+  }
+  
+  .input-group-Psychi {
+    @include input-group-styles($colorPsychi);
+  }
+  
+  .input-group-Bug {
+    @include input-group-styles($colorBug);
+  }
+  
+  .input-group-Rock {
+    @include input-group-styles($colorRock);
+  }
+  
+  .input-group-Ghost {
+    @include input-group-styles($colorGhost);
+  }
+  
+  .input-group-Dragon {
+    @include input-group-styles($colorDragon);
+  }
+  
+  .input-group-Dark {
+    @include input-group-styles($colorDark);
+  }
+  
+  .input-group-Steel {
+    @include input-group-styles($colorSteel);
+  }
+  
+  .input-group-Hada {
+    @include input-group-styles($colorHada);
+  }
+
+
+  .input-group-sm {
+    input {
+      font-size: 0.8em; 
+      width: 80%;
+      padding: 0.2em; 
+    } 
+  }
+  .input-group-Hada.input-group-sm .sizing-sm {
+    font-size: 0.7em;
+  }
+
+  .input-group-lg {
+    input {
+      font-size: 1.4em; 
+      width: 80%;
+      padding: 0.2em; 
+    } 
+  }
+  .input-group-Hada.input-group-lg .sizing-lg {
+    font-size: 1.4em;
+  }
+  label.sizing-lg {
+    font-size: 1.4em;
+  }

@@ -1,0 +1,548 @@
+@import "color-pokemon";
+
+// Mixin para estilos de checkbox default
+@mixin checkbox-styles($background-color, $border-color, $outline-color) {
+    input[type="checkbox"] {
+        // Estilo del cuadro
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 20px;
+        height: 20px;
+        background: lighten($background-color, 10%);
+        border: 1px solid darken($border-color, 20%);
+        border-radius: 5px;
+        position: relative;
+
+        // Estilo del borde al ser checked
+        &:checked {
+            outline: 2px solid $outline-color;
+            border: 1px solid darken($outline-color, 20%);
+        }
+
+        // Estilo al pasar el mouse
+        &:hover {
+            background: lighten($background-color, 5%);
+        }
+    }
+
+    // Estilo del icono de verificación
+    input[type="checkbox"]::before {
+        content: '\2714'; // Código para el símbolo de verificación
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 16px; // Tamaño del icono
+        color: black;
+        opacity: 0; // Inicialmente oculto
+    }
+
+    // Mostrar el icono de verificación cuando el checkbox está marcado
+    input[type="checkbox"]:checked::before {
+        opacity: 1;
+    }
+
+    .form-check-label {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 30px; // Igualando la altura del checkbox
+    }
+}
+
+// Mixin para estilos de checkbox Checked
+@mixin checkbox-checked-styles($background-color, $border-color, $outline-color) {
+    input[type="checkbox"] {
+        // Estilo del cuadro
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 20px;
+        height: 20px;
+        background: lighten($background-color, 10%);
+        border: 1px solid darken($border-color, 20%);
+        border-radius: 5px;
+        position: relative;
+
+        // Estilo del borde al ser checked
+        &:checked {
+            outline: 2px solid $outline-color;
+            border-radius: 5px;
+        }
+
+        // Estilo al pasar el mouse
+        &:hover {
+            background: lighten($background-color, 5%);
+        }
+    }
+
+    // Estilo del icono de verificación
+    input[type="checkbox"]::before {
+        content: '\2714'; // Código para el símbolo de verificación
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 16px; // Tamaño del icono
+        color: black;
+        opacity: 0; // Inicialmente oculto
+    }
+
+    // Mostrar el icono de verificación cuando el checkbox está marcado
+    input[type="checkbox"]:checked::before {
+        opacity: 1;
+    }
+
+    // Ajuste del texto para centrarlo verticalmente
+    .form-check-label {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 30px;
+    }
+}
+
+// Mixin para estilos de radio default
+@mixin radio-styles($background-color, $border-color, $outline-color) {
+    input[type="radio"] {
+        // Estilo del círculo
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 15px; // Ancho del radio button
+        height: 15px; // Alto del radio button 
+        background: white;
+        border: 1px solid $border-color;
+        border-radius: 50%; // Hacer el radio button circular
+        position: relative;
+
+        // Estilo del círculo interior al ser seleccionado
+        &:checked::after {
+            content: '';
+            width: 8px; // Ancho del círculo interior 
+            height: 8px; // Alto del círculo interior 
+            background-color: $background-color; // Color del círculo interior
+            border-radius: 50%; // hace que el círculo interior sea circular
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        // Estilo del borde al ser seleccionado
+        &:checked {
+            outline: 2px solid lighten($outline-color,10%);
+            border:1px solid darken($outline-color, 20%);
+        }
+           
+
+    // Ajuste del texto para centrarlo verticalmente
+    .form-check-label {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 10px; // Igualando la altura del radio button
+    }
+}
+}
+
+// Mixin para estilos de radio checked
+@mixin radio-checked-styles($background-color, $border-color, $outline-color) {
+    input[type="radio"] {
+        // Estilo del círculo
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 15px; // Ancho del radio button
+        height: 15px; // Alto del radio button 
+        background: white;
+        border: 1px solid $border-color;
+        border-radius: 50%; // Hacer el radio button circular
+        position: relative;
+
+        // Estilo del círculo interior al ser seleccionado
+        &:checked::after {
+            content: '';
+            width: 8px; // Ancho del círculo interior 
+            height: 8px; // Alto del círculo interior 
+            background-color: $background-color; // Color del círculo interior
+            border-radius: 50%; // Hacer el círculo interior circular
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        // Estilo del borde al ser seleccionado
+        &:checked {
+            outline: 2px solid lighten($outline-color, 10%);
+            border: 1px solid darken($outline-color, 20%);
+        }
+    }
+
+    // Ajuste del texto para centrarlo verticalmente
+    .form-check-label {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 10px; // Igualando la altura del radio button
+    }
+}
+
+
+    // Estilo para el checkbox Default
+
+// uso del mixin para un checkbox de tipo Normal-Default
+    .form-check-Normal-Default {
+        @include checkbox-styles($colorNormal, darken($colorNormal, 20%), $colorNormal);
+    }
+    
+    // uso del mixin para un checkbox de tipo Fire-Default
+    .form-check-Fire-Default {
+        @include checkbox-styles($colorFire, darken($colorFire, 20%), $colorFire);
+    }
+// uso del mixin para un checkbox de tipo Water-Default
+    .form-check-Water-Default {
+        @include checkbox-styles($colorWater, darken($colorWater, 20%), $colorWater);
+    }
+    // uso del mixin para un checkbox de tipo Grass-Default
+    .form-check-Grass-Default {
+        @include checkbox-styles($colorGrass, darken($colorGrass, 20%), $colorGrass);
+    }
+    // uso del mixin para un checkbox de tipo Electric-Default
+    .form-check-Electric-Default {
+        @include checkbox-styles($colorElectric, darken($colorElectric, 20%), $colorElectric);
+    }
+    // uso del mixin para un checkbox de tipo Ice-Default
+    .form-check-Ice-Default {
+        @include checkbox-styles($colorIce, darken($colorIce, 20%), $colorIce);
+    }
+    // uso del mixin para un checkbox de tipo Fighting-Default
+    .form-check-Fighting-Default {
+        @include checkbox-styles($colorFighting, darken($colorFighting, 20%), $colorFighting);
+    }
+    // uso del mixin para un checkbox de tipo Poison-Default
+    .form-check-Poison-Default {
+        @include checkbox-styles($colorPoison, darken($colorPoison, 20%), $colorPoison);
+    }
+    // uso del mixin para un checkbox de tipo Ground-Default
+    .form-check-Ground-Default {
+        @include checkbox-styles($colorGround, darken($colorGround, 20%), $colorGround);
+    }
+    // uso del mixin para un checkbox de tipo Flying-Default
+    .form-check-Flying-Default {
+        @include checkbox-styles($colorFlying, darken($colorFlying, 20%), $colorFlying);
+    }
+    // uso del mixin para un checkbox de tipo Psychi-Default
+    .form-check-Psychi-Default {
+        @include checkbox-styles($colorPsychi, darken($colorPsychi, 20%), $colorPsychi);
+    }
+    // uso del mixin para un checkbox de tipo Bug-Default
+    .form-check-Bug-Default {
+        @include checkbox-styles($colorBug, darken($colorBug, 20%), $colorBug);
+    }
+    // uso del mixin para un checkbox de tipo Rock-Default
+    .form-check-Rock-Default {
+        @include checkbox-styles($colorRock, darken($colorRock, 20%), $colorRock);
+    }
+    // uso del mixin para un checkbox de tipo Ghost-Default
+    .form-check-Ghost-Default {
+        @include checkbox-styles($colorGhost, darken($colorGhost, 20%), $colorGhost);
+    }
+    // uso del mixin para un checkbox de tipo Dragon-Default
+    .form-check-Dragon-Default {
+        @include checkbox-styles($colorDragon, darken($colorDragon, 20%), $colorDragon);
+    }
+    // uso del mixin para un checkbox de tipo Dark-Default
+    .form-check-Dark-Default {
+        @include checkbox-styles($colorDark, darken($colorDark, 20%), $colorDark);
+    }
+    // uso del mixin para un checkbox de tipo Steel-Default
+    .form-check-Steel-Default {
+        @include checkbox-styles($colorSteel, darken($colorSteel, 20%), $colorSteel);
+    }
+    // uso del mixin para un checkbox de tipo Hada-Default
+    .form-check-Hada-Default {
+        @include checkbox-styles($colorHada, darken($colorHada, 20%), $colorHada);
+    }
+
+
+//STYLE DE LOS CHECK-CHEKED
+
+// uso del mixin para un checkbox de tipo Normal-checked
+.form-check-Normal-Checked {
+    @include checkbox-checked-styles($colorNormal, darken($colorNormal, 20%), $colorNormal);
+}
+// uso del mixin para un checkbox de tipo Fire-checked
+.form-check-Fire-Checked {
+    @include checkbox-checked-styles($colorFire, darken($colorFire, 20%), $colorFire);
+}
+// uso del mixin para un checkbox de tipo Water-checked
+.form-check-Water-Checked {
+    @include checkbox-checked-styles($colorWater, darken($colorWater, 20%), $colorWater);
+}
+// Uso del mixin para un checkbox de tipo Grass-checked
+.form-check-Grass-Checked {
+    @include checkbox-checked-styles($colorGrass, darken($colorGrass, 20%), $colorGrass);
+}
+
+// Uso del mixin para un checkbox de tipo Electric-checked
+.form-check-Electric-Checked {
+    @include checkbox-checked-styles($colorElectric, darken($colorElectric, 20%), $colorElectric);
+}
+
+// Uso del mixin para un checkbox de tipo Ice-checked
+.form-check-Ice-Checked {
+    @include checkbox-checked-styles($colorIce, darken($colorIce, 20%), $colorIce);
+}
+
+// Uso del mixin para un checkbox de tipo Fighting-checked
+.form-check-Fighting-Checked {
+    @include checkbox-checked-styles($colorFighting, darken($colorFighting, 20%), $colorFighting);
+}
+
+// Uso del mixin para un checkbox de tipo Poison-checked
+.form-check-Poison-Checked {
+    @include checkbox-checked-styles($colorPoison, darken($colorPoison, 20%), $colorPoison);
+}
+
+// Uso del mixin para un checkbox de tipo Ground-checked
+.form-check-Ground-Checked {
+    @include checkbox-checked-styles($colorGround, darken($colorGround, 20%), $colorGround);
+}
+
+// Uso del mixin para un checkbox de tipo Flying-checked
+.form-check-Flying-Checked {
+    @include checkbox-checked-styles($colorFlying, darken($colorFlying, 20%), $colorFlying);
+}
+
+// Uso del mixin para un checkbox de tipo Psychic-checked
+.form-check-Psychi-Checked {
+    @include checkbox-checked-styles($colorPsychi, darken($colorPsychi, 20%), $colorPsychi);
+}
+
+// Uso del mixin para un checkbox de tipo Bug-checked
+.form-check-Bug-Checked {
+    @include checkbox-checked-styles($colorBug, darken($colorBug, 20%), $colorBug);
+}
+
+// Uso del mixin para un checkbox de tipo Rock-checked
+.form-check-Rock-Checked {
+    @include checkbox-checked-styles($colorRock, darken($colorRock, 20%), $colorRock);
+}
+
+// Uso del mixin para un checkbox de tipo Ghost-checked
+.form-check-Ghost-Checked {
+    @include checkbox-checked-styles($colorGhost, darken($colorGhost, 20%), $colorGhost);
+}
+
+// Uso del mixin para un checkbox de tipo Dragon-checked
+.form-check-Dragon-Checked {
+    @include checkbox-checked-styles($colorDragon, darken($colorDragon, 20%), $colorDragon);
+}
+
+// Uso del mixin para un checkbox de tipo Dark-checked
+.form-check-Dark-Checked {
+    @include checkbox-checked-styles($colorDark, darken($colorDark, 20%), $colorDark);
+}
+
+// Uso del mixin para un checkbox de tipo Steel-checked
+.form-check-Steel-Checked {
+    @include checkbox-checked-styles($colorSteel, darken($colorSteel, 20%), $colorSteel);
+}
+
+// Uso del mixin para un checkbox de tipo Fairy-checked
+.form-check-Hada-Checked {
+    @include checkbox-checked-styles($colorHada, darken($colorHada, 20%), $colorHada);
+}
+    
+
+//ESTILOS PARA LOS RADIO
+
+// Uso del mixin para estilos de radio default
+// Para Normal
+.form-Radio-Normal-Default {
+    @include radio-styles($colorNormal, darken($colorNormal, 20%), $colorNormal);
+}
+
+// Para Fire
+.form-Radio-Fire-Default {
+    @include radio-styles($colorFire, darken($colorFire, 20%), $colorFire);
+}
+
+// Para Water
+.form-Radio-Water-Default {
+    @include radio-styles($colorWater, darken($colorWater, 20%), $colorWater);
+}
+
+// Para Grass
+.form-Radio-Grass-Default {
+    @include radio-styles($colorGrass, darken($colorGrass, 20%), $colorGrass);
+}
+
+// Para Electric
+.form-Radio-Electric-Default {
+    @include radio-styles($colorElectric, darken($colorElectric, 20%), $colorElectric);
+}
+
+// Para Ice
+.form-Radio-Ice-Default {
+    @include radio-styles($colorIce, darken($colorIce, 20%), $colorIce);
+}
+
+// Para Fighting
+.form-Radio-Fighting-Default {
+    @include radio-styles($colorFighting, darken($colorFighting, 20%), $colorFighting);
+}
+
+// Para Poison
+.form-Radio-Poison-Default {
+    @include radio-styles($colorPoison, darken($colorPoison, 20%), $colorPoison);
+}
+
+// Para Ground
+.form-Radio-Ground-Default {
+    @include radio-styles($colorGround, darken($colorGround, 20%), $colorGround);
+}
+
+// Para Flying
+.form-Radio-Flying-Default {
+    @include radio-styles($colorFlying, darken($colorFlying, 20%), $colorFlying);
+}
+
+// Para Psychi
+.form-Radio-Psychi-Default {
+    @include radio-styles($colorPsychi, darken($colorPsychi, 20%), $colorPsychi);
+}
+
+// Para Bug
+.form-Radio-Bug-Default {
+    @include radio-styles($colorBug, darken($colorBug, 20%), $colorBug);
+}
+
+// Para Rock
+.form-Radio-Rock-Default {
+    @include radio-styles($colorRock, darken($colorRock, 20%), $colorRock);
+}
+
+// Para Ghost
+.form-Radio-Ghost-Default {
+    @include radio-styles($colorGhost, darken($colorGhost, 20%), $colorGhost);
+}
+
+// Para Dragon
+.form-Radio-Dragon-Default {
+    @include radio-styles($colorDragon, darken($colorDragon, 20%), $colorDragon);
+}
+
+// Para Dark
+.form-Radio-Dark-Default {
+    @include radio-styles($colorDark, darken($colorDark, 20%), $colorDark);
+}
+
+// Para Steel
+.form-Radio-Steel-Default {
+    @include radio-styles($colorSteel, darken($colorSteel, 20%), $colorSteel);
+}
+
+// Para Hada
+.form-Radio-Hada-Default {
+    @include radio-styles($colorHada, darken($colorHada, 20%), $colorHada);
+}
+
+
+//estilos para los radio-checked
+
+// Para Normal Checked
+.form-Radio-Normal-Checked {
+    @include radio-checked-styles($colorNormal, darken($colorNormal, 20%), $colorNormal);
+}
+
+// Para Fire Checked
+.form-Radio-Fire-Checked {
+    @include radio-checked-styles($colorFire, darken($colorFire, 20%), $colorFire);
+}
+
+// Para Water Checked
+.form-Radio-Water-Checked {
+    @include radio-checked-styles($colorWater, darken($colorWater, 20%), $colorWater);
+}
+
+// Para Normal Checked
+.form-Radio-Grass-Checked {
+    @include radio-checked-styles($colorGrass, darken($colorGrass, 20%), $colorGrass);
+}
+
+// Para Electric Checked
+.form-Radio-Electric-Checked {
+    @include radio-checked-styles($colorElectric, darken($colorElectric, 20%), $colorElectric);
+}
+
+// Para Ice Checked
+.form-Radio-Ice-Checked {
+    @include radio-checked-styles($colorIce, darken($colorIce, 20%), $colorIce);
+}
+// Para Fighting Checked
+.form-Radio-Fighting-Checked {
+    @include radio-checked-styles($colorFighting, darken($colorFighting, 20%), $colorFighting);
+}
+
+// Para Poison Checked
+.form-Radio-Poison-Checked {
+    @include radio-checked-styles($colorPoison, darken($colorPoison, 20%), $colorPoison);
+}
+
+// Para Ground Checked
+.form-Radio-Ground-Checked {
+    @include radio-checked-styles($colorGround, darken($colorGround, 20%), $colorGround);
+}
+// Para Flying Checked
+.form-Radio-Flying-Checked {
+    @include radio-checked-styles($colorFlying, darken($colorFlying, 20%), $colorFlying);
+}
+
+// Para Psychi Checked
+.form-Radio-Psychi-Checked {
+    @include radio-checked-styles($colorPsychi, darken($colorPsychi, 20%), $colorPsychi);
+}
+
+// Para Bug Checked
+.form-Radio-Bug-Checked {
+    @include radio-checked-styles($colorBug, darken($colorBug, 20%), $colorBug);
+}
+// Para Rock Checked
+.form-Radio-Rock-Checked {
+    @include radio-checked-styles($colorRock, darken($colorRock, 20%), $colorRock);
+}
+
+// Para Ghost Checked
+.form-Radio-Ghost-Checked {
+    @include radio-checked-styles($colorGhost, darken($colorGhost, 20%), $colorGhost);
+}
+
+// Para Water Checked
+.form-Radio-Water-Checked {
+    @include radio-checked-styles($colorWater, darken($colorWater, 20%), $colorWater);
+}
+// Para Dragon Checked
+.form-Radio-Dragon-Checked {
+    @include radio-checked-styles($colorDragon, darken($colorDragon, 20%), $colorDragon);
+}
+
+// Para Dark Checked
+.form-Radio-Dark-Checked {
+    @include radio-checked-styles($colorDark, darken($colorDark, 20%), $colorDark);
+}
+
+// Para Steel Checked
+.form-Radio-Steel-Checked {
+    @include radio-checked-styles($colorSteel, darken($colorSteel, 20%), $colorSteel);
+}
+
+// Para Hada Checked
+.form-Radio-Hada-Checked {
+    @include radio-checked-styles($colorHada, darken($colorHada, 20%), $colorHada);
+}
+
+
+.form-check-inline {
+      display: inline-block; 
+      margin-right: 10px; // Espacio entre los elementos
+    }
