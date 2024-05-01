@@ -10,11 +10,9 @@
   PokeStrap es una libreria basada en el estilo de pokemon, esta libreria es creada por y para fans de pokemon!
 </p>
 
-<p align="center">
-  Integrantes:
-  <ul>Arturo Esperanza</ul>
-  <ul>Meybell Ramirez</ul>
-  <ul>Angel Medrano</ul>
-  <ul>Gabriel de la O</ul>
-  <ul>Katia Campos</ul>
-</p>
+<p align="center">Integrantes:</p>
+<p align="center">Arturo Esperanza</p>
+<p align="center">Meybell Ramirez</p>
+<p align="center">Angel Medrano</p>
+<p align="center">Gabriel De La O</p>
+<p align="center">Katia Campos</p>
