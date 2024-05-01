@@ -11,8 +11,8 @@
 </p>
 
 <p align="center">Integrantes:</p>
-<p align="center">Arturo Esperanza</p>
-<p align="center">Meybell Ramirez</p>
-<p align="center">Angel Medrano</p>
-<p align="center">Gabriel De La O</p>
-<p align="center">Katia Campos</p>
+<p align="center">Arturo Elias Torres Esperanza</p>
+<p align="center">Meybell Jacqueline Ramirez Quintanilla</p>
+<p align="center">Angel Jesus Carcamo Medrano</p>
+<p align="center">Gabriel Enrique De La O Aguirre</p>
+<p align="center">Katia Guadalupe Chevez Campos</p>
