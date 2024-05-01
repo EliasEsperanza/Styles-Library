@@ -203,6 +203,14 @@ $colorHada :#d685ad;
   @include pokemon-alert($colorWater);
 }
 
+.alert-Psychi-Icon {
+  @include pokemon-alert($colorPsychi);
+}
+
+.alert-Flying-Icon {
+  @include pokemon-alert($colorFlying);
+}
+
 .alert-Grass-Icon {
   @include pokemon-alert($colorGrass);
 }
