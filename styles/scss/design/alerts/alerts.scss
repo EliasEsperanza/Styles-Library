@@ -190,6 +190,10 @@ $colorHada :#d685ad;
 }
 
 //Parte de los iconos
+.alert i {
+  margin-right: 10px;
+  font-size: 20px;
+}
 
 .alert-Fire-Icon {
   @include pokemon-alert($colorFire);
