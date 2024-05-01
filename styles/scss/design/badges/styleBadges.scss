@@ -31,7 +31,6 @@ $colorHada :#d685ad;
   color: darken($color, 40%);
   border-radius: 15px;
 }
-
 .content
 {
   h1,h2,h3,h4,h5,h6
@@ -137,170 +136,194 @@ h1
 {
   background-color: $color;
   border: 1px solid darken($color, 20%);
-  color: darken($color, 40%);
+ 
   margin-top: 10px;
   padding: 15px;
+
+  a
+  {
+    color: darken($color, 40%);
+    text-decoration: none;
+  }
 }
 
 .Botones-normal {
   @include boton-color($colorNormal);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorNormal, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-fire {
   @include boton-color($colorFire);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorFire, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-water {
   @include boton-color($colorWater);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorWater, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-grass {
   @include boton-color($colorGrass);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorGrass, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-electric {
   @include boton-color($colorElectric);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorElectric, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-ice {
   @include boton-color($colorIce);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorIce, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-fighting {
   @include boton-color($colorFighting);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorFighting, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-poison {
   @include boton-color($colorPoison);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorPoison, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-ground {
   @include boton-color($colorGround);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorGround, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-flying {
   @include boton-color($colorFlying);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorFlying, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-psychi {
   @include boton-color($colorPsychi);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorPsychi, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-bug {
   @include boton-color($colorBug);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorBug, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-rock {
   @include boton-color($colorRock);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorRock, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-ghost {
   @include boton-color($colorGhost);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorGhost, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-dragon {
   @include boton-color($colorDragon);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorDragon, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-dark {
   @include boton-color($colorDark);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorDark, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-steel {
   @include boton-color($colorSteel);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorSteel, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
 .Botones-hada {
   @include boton-color($colorHada);
   
-  .badge {
+  .badge-N {
     background-color: darken($colorHada, 20%);
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
