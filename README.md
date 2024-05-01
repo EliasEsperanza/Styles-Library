@@ -12,9 +12,9 @@
 
 <p align="center">
   Integrantes:
-  Arturo Esperanza
-  Meybell Ramirez
-  Angel Medrano
-  Gabriel de la O
-  Katia Campos
+  <ul>Arturo Esperanza</ul>
+  <ul>Meybell Ramirez</ul>
+  <ul>Angel Medrano</ul>
+  <ul>Gabriel de la O</ul>
+  <ul>Katia Campos</ul>
 </p>
