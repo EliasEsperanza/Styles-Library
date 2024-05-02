@@ -190,6 +190,10 @@ $colorHada :#d685ad;
 }
 
 //Parte de los iconos
+.alert i {
+  margin-right: 10px;
+  font-size: 20px;
+}
 
 .alert-Fire-Icon {
   @include pokemon-alert($colorFire);
@@ -197,6 +201,14 @@ $colorHada :#d685ad;
 
 .alert-Water-Icon {
   @include pokemon-alert($colorWater);
+}
+
+.alert-Psychi-Icon {
+  @include pokemon-alert($colorPsychi);
+}
+
+.alert-Flying-Icon {
+  @include pokemon-alert($colorFlying);
 }
 
 .alert-Grass-Icon {
@@ -261,5 +273,19 @@ $colorHada :#d685ad;
 
 .alert-Hada-Icon {
   @include pokemon-alert($colorHada);
- 
+}
+
+//Responsive
+@media screen and (max-width: 575px) {
+  .alert {
+    width: 90%; // Reducir el ancho de las alertas en pantallas pequeñas
+    margin: 10px;
+  }
+  
+  .alert-Icon {
+    width: 20px; // Reducir el tamaño de los iconos en pantallas pequeñas
+    height: 20px;
+    line-height: 20px;
+    margin: 10px;
+  }
 }
