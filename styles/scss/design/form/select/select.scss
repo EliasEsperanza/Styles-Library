@@ -1,4 +1,5 @@
 @import "../../../utilities/color-pokemon.scss";
+@import "BodyStyle";
 
 // Mixin para estilos de select
 @mixin select-styles($color, $focusColor) {
@@ -122,11 +123,12 @@
 }
 
 //TAMA;OS PARA LOS SELECT
+
 // Estilo de select grande
 .select-lg {
     font-size: 1.2em; 
     select {
-        width: 200px; 
+        width: 12.5em; 
     }
 }
 
@@ -134,7 +136,7 @@
 .select-sm {
     font-size: 0.85em; 
     select {
-        width: 100px; 
+        width: 6.5em; 
     }
 }
 
