@@ -50,8 +50,8 @@ body {
     padding: 20px;
     background: white;
     width: 80%;
-    display: flex; /* Usa flexbox para alinear los elementos internos */
-    flex-direction: column; /* Apila los elementos verticalmente */
+    display: flex;
+    flex-direction: column; 
     align-items: center;
 
     p {
