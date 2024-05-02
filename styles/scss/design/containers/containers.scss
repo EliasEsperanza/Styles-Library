@@ -1,0 +1,407 @@
+$colorNormal : #a8a77a;
+$colorFire : #ee8130;
+$colorWater : #6390f0;
+$colorGrass : #7ac74c;
+$colorElectric : #f7d02c;
+$colorIce : #96d9d6;
+$colorFighting : #c22e28;
+$colorPoison : #a33ea1;
+$colorGround : #e2bf65;
+$colorFlying : #a98ff3;
+$colorPsychi : #f95587;
+$colorBug : #a6b91a;
+$colorRock : #b6a136;
+$colorGhost : #735797;
+$colorDragon : #6f35fc;
+$colorDark : #705746;
+$colorSteel : #b7b7ce;
+$colorHada :#d685ad;
+
+//Estos serian las variables para los diferentes responsive
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-extra-large: 1100px;
+$breakpoint-extra-extra-large: 1400px;
+
+@mixin responsive-container($color, $responsive)
+{
+  border: 1px solid darken($color, 20%);
+  color: darken($color, 40%);
+  background-color: $color;
+  width: $responsive;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 5px;
+
+  @media (max-width: $responsive) {
+    width: auto;
+  }
+}
+
+//Para cada color de tipo de pokemon Small
+.container-small-Normal {
+  @include responsive-container($colorNormal, $breakpoint-small);
+}
+
+.container-small-Fire {
+  @include responsive-container($colorFire, $breakpoint-small);
+}
+
+.container-small-Water {
+  @include responsive-container($colorWater, $breakpoint-small);
+}
+
+.container-small-Grass {
+  @include responsive-container($colorGrass, $breakpoint-small);
+}
+
+.container-small-Electric {
+  @include responsive-container($colorElectric, $breakpoint-small);
+}
+
+.container-small-Ice {
+  @include responsive-container($colorIce, $breakpoint-small);
+}
+
+.container-small-Poison {
+  @include responsive-container($colorPoison, $breakpoint-small);
+}
+
+.container-small-Ground {
+  @include responsive-container($colorGround, $breakpoint-small);
+}
+
+.container-small-Flying {
+  @include responsive-container($colorFlying, $breakpoint-small);
+}
+
+.container-small-Psychi {
+  @include responsive-container($colorPsychi, $breakpoint-small);
+}
+
+.container-small-Bug {
+  @include responsive-container($colorBug, $breakpoint-small);
+}
+
+.container-small-Rock {
+  @include responsive-container($colorRock, $breakpoint-small);
+}
+
+.container-small-Ghost {
+  @include responsive-container($colorGhost, $breakpoint-small);
+}
+
+.container-small-Dragon {
+  @include responsive-container($colorDragon, $breakpoint-small);
+}
+
+.container-small-Dark {
+  @include responsive-container($colorDark, $breakpoint-small);
+}
+
+.container-small-Steel {
+  @include responsive-container($colorSteel, $breakpoint-small);
+}
+
+.container-small-Hada {
+  @include responsive-container($colorHada, $breakpoint-small);
+}
+
+.container-small-Fightin {
+  @include responsive-container($colorFighting, $breakpoint-small);
+}
+
+//Para cada color de tipo de pokemon Medium
+.container-medium-Normal {
+  @include responsive-container($colorNormal, $breakpoint-medium);
+}
+
+.container-medium-Fire {
+  @include responsive-container($colorFire, $breakpoint-medium);
+}
+
+.container-medium-Water {
+  @include responsive-container($colorWater, $breakpoint-medium);
+}
+
+.container-medium-Grass {
+  @include responsive-container($colorGrass, $breakpoint-medium);
+}
+
+.container-medium-Electric {
+  @include responsive-container($colorElectric, $breakpoint-medium);
+}
+
+.container-medium-Ice {
+  @include responsive-container($colorIce, $breakpoint-medium);
+}
+
+.container-medium-Fighting {
+  @include responsive-container($colorFighting, $breakpoint-medium);
+}
+
+.container-medium-Poison {
+  @include responsive-container($colorPoison, $breakpoint-medium);
+}
+
+.container-medium-Ground {
+  @include responsive-container($colorGround, $breakpoint-medium);
+}
+
+.container-medium-Flying {
+  @include responsive-container($colorFlying, $breakpoint-medium);
+}
+
+.container-medium-Psychi {
+  @include responsive-container($colorPsychi, $breakpoint-medium);
+}
+
+.container-medium-Bug {
+  @include responsive-container($colorBug, $breakpoint-medium);
+}
+
+.container-medium-Rock {
+  @include responsive-container($colorRock, $breakpoint-medium);
+}
+
+.container-medium-Ghost {
+  @include responsive-container($colorGhost, $breakpoint-medium);
+}
+
+.container-medium-Dragon {
+  @include responsive-container($colorDragon, $breakpoint-medium);
+}
+
+.container-medium-Dark {
+  @include responsive-container($colorDark, $breakpoint-medium);
+}
+
+.container-medium-Steel {
+  @include responsive-container($colorSteel, $breakpoint-medium);
+}
+
+.container-medium-Hada {
+  @include responsive-container($colorHada, $breakpoint-medium);
+}
+
+//Para cada color de tipo de pokemon Large
+.container-large-Normal {
+  @include responsive-container($colorNormal, $breakpoint-large);
+}
+
+.container-large-Fire {
+  @include responsive-container($colorFire, $breakpoint-large);
+}
+
+.container-large-Water {
+  @include responsive-container($colorWater, $breakpoint-large);
+}
+
+.container-large-Grass {
+  @include responsive-container($colorGrass, $breakpoint-large);
+}
+
+.container-large-Electric {
+  @include responsive-container($colorElectric, $breakpoint-large);
+}
+
+.container-large-Ice {
+  @include responsive-container($colorIce, $breakpoint-large);
+}
+
+.container-large-Fighting {
+  @include responsive-container($colorFighting, $breakpoint-large);
+}
+
+.container-large-Poison {
+  @include responsive-container($colorPoison, $breakpoint-large);
+}
+
+.container-large-Ground {
+  @include responsive-container($colorGround, $breakpoint-large);
+}
+
+.container-large-Flying {
+  @include responsive-container($colorFlying, $breakpoint-large);
+}
+
+.container-large-Psychi {
+  @include responsive-container($colorPsychi, $breakpoint-large);
+}
+
+.container-large-Bug {
+  @include responsive-container($colorBug, $breakpoint-large);
+}
+
+.container-large-Rock {
+  @include responsive-container($colorRock, $breakpoint-large);
+}
+
+.container-large-Ghost {
+  @include responsive-container($colorGhost, $breakpoint-large);
+}
+
+.container-large-Dragon {
+  @include responsive-container($colorDragon, $breakpoint-large);
+}
+
+.container-large-Dark {
+  @include responsive-container($colorDark, $breakpoint-large);
+}
+
+.container-large-Steel {
+  @include responsive-container($colorSteel, $breakpoint-large);
+}
+
+.container-large-Hada {
+  @include responsive-container($colorHada, $breakpoint-large);
+}
+
+
+//Para cada color de tipo de pokemon Extra Large
+.container-xl-Normal {
+  @include responsive-container($colorNormal, $breakpoint-extra-large);
+}
+
+.container-xl-Fire {
+  @include responsive-container($colorFire, $breakpoint-extra-large);
+}
+
+.container-xl-Water {
+  @include responsive-container($colorWater, $breakpoint-extra-large);
+}
+
+.container-xl-Grass {
+  @include responsive-container($colorGrass, $breakpoint-extra-large);
+}
+
+.container-xl-Electric {
+  @include responsive-container($colorElectric, $breakpoint-extra-large);
+}
+
+.container-xl-Ice {
+  @include responsive-container($colorIce, $breakpoint-extra-large);
+}
+
+.container-xl-Fighting {
+  @include responsive-container($colorFighting, $breakpoint-extra-large);
+}
+
+.container-xl-Poison {
+  @include responsive-container($colorPoison, $breakpoint-extra-large);
+}
+
+.container-xl-Ground {
+  @include responsive-container($colorGround, $breakpoint-extra-large);
+}
+
+.container-xl-Flying {
+  @include responsive-container($colorFlying, $breakpoint-extra-large);
+}
+
+.container-xl-Psychi {
+  @include responsive-container($colorPsychi, $breakpoint-extra-large);
+}
+
+.container-xl-Bug {
+  @include responsive-container($colorBug, $breakpoint-extra-large);
+}
+
+.container-xl-Rock {
+  @include responsive-container($colorRock, $breakpoint-extra-large);
+}
+
+.container-xl-Ghost {
+  @include responsive-container($colorGhost, $breakpoint-extra-large);
+}
+
+.container-xl-Dragon {
+  @include responsive-container($colorDragon, $breakpoint-extra-large);
+}
+
+.container-xl-Dark {
+  @include responsive-container($colorDark, $breakpoint-extra-large);
+}
+
+.container-xl-Steel {
+  @include responsive-container($colorSteel, $breakpoint-extra-large);
+}
+
+.container-xl-Hada {
+  @include responsive-container($colorHada, $breakpoint-extra-large);
+}
+
+//Para cada color de tipo de pokemon Extra Extra Large
+.container-xxl-Normal {
+  @include responsive-container($colorNormal, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Fire {
+  @include responsive-container($colorFire, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Water {
+  @include responsive-container($colorWater, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Grass {
+  @include responsive-container($colorGrass, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Electric {
+  @include responsive-container($colorElectric, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Ice {
+  @include responsive-container($colorIce, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Fithting {
+  @include responsive-container($colorFighting, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Poison {
+  @include responsive-container($colorPoison, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Ground {
+  @include responsive-container($colorGround, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Flying {
+  @include responsive-container($colorFlying, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Psychi {
+  @include responsive-container($colorPsychi, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Bug {
+  @include responsive-container($colorBug, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Rock {
+  @include responsive-container($colorRock, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Ghost {
+  @include responsive-container($colorGhost, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Dragon {
+  @include responsive-container($colorDragon, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Dark {
+  @include responsive-container($colorDark, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Steel {
+  @include responsive-container($colorSteel, $breakpoint-extra-extra-large);
+}
+
+.container-xxl-Hada {
+  @include responsive-container($colorHada, $breakpoint-extra-extra-large);
+}

@@ -1,3 +1,26 @@
+@import 'color-pokemon';
+
+$colores: (
+    Ground: $colorGround,
+    Flying: $colorFlying,
+    Psychi: $colorPsychi,
+    Bug: $colorBug,
+    Rock: $colorRock,
+    Dragon: $colorDragon,
+    Dark: $colorDark,
+    Steel: $colorSteel,
+    Hada: $colorHada,
+    Fire: $colorFire,
+    Water: $colorWater,
+    Grass: $colorGrass,
+    Electric: $colorElectric,
+    Ice: $colorIce,
+    Fighting: $colorFighting,
+    Poison: $colorPoison,
+    Ghost: $colorGhost
+);
+$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost;
+
 .text-small{
     font-size: 0.8rem;
 }
@@ -40,4 +63,232 @@
 
 .text-justify{
     text-align: justify;
+}
+
+.text-underline{
+    text-decoration: underline;
+}
+
+.text-line-through{
+    text-decoration: line-through;
+}
+
+.text-overline{
+    text-decoration: overline;
+}
+
+.text-underline-dotted{
+    text-decoration: underline dotted;
+}
+
+.text-underline-double{
+    text-decoration: underline double;
+}
+
+.text-underline-wavy{
+    text-decoration: underline wavy;
+}
+
+.text-underline-dashed{
+    text-decoration: underline dashed;
+}
+
+.text-underline-solid{
+    text-decoration: underline solid;
+}
+
+.text-underline-dotted{
+    text-decoration: underline dotted;
+}
+
+.text-underline-dashed{
+    text-decoration: underline dashed;
+}
+
+.text-underline-solid{
+    text-decoration: underline solid;
+}
+
+.text-underline-double{
+    text-decoration: underline double;
+}
+
+.text-underline-wavy{
+    text-decoration: underline wavy;
+}
+
+.text-underline-thick{
+    text-decoration: underline thick;
+}
+
+.text-underline-thin{
+    text-decoration: underline thin;
+}
+
+.text-underline-medium{
+    text-decoration: underline medium;
+}
+
+.text-underline-light{
+    text-decoration: underline light;
+}
+
+.text-underline-heavy{
+    text-decoration: underline heavy;
+}
+
+.text-underline-3px{
+    text-decoration: underline 3px;
+}
+
+.text-underline-2px{
+    text-decoration: underline 2px;
+}
+
+.text-underline-1px{
+    text-decoration: underline 1px;
+}
+
+.text-underline-4px{
+    text-decoration: underline 4px;
+}
+
+.text-underline-5px{
+    text-decoration: underline 5px;
+}
+
+.text-underline-6px{
+    text-decoration: underline 6px;
+}
+
+.text-underline-7px{
+    text-decoration: underline 7px;
+}
+
+.text-underline-8px{
+    text-decoration: underline 8px;
+}
+
+.text-underline-9px{
+    text-decoration: underline 9px;
+}
+
+.text-underline-10px{
+    text-decoration: underline 10px;
+}
+
+.text-red{
+    color: red;
+}
+
+.text-blue{
+    color: blue;
+}
+
+.text-green{
+    color: green;
+}
+
+.text-yellow{
+    color: yellow;
+}
+
+.text-orange{
+    color: orange;
+}
+
+// // Normal
+// .text-normal {
+//   color: #a8a77a; 
+// }
+
+// // Fuego
+// .text-fire {
+//   color: #ee8130; 
+// }
+
+// // Agua
+// .text-water {
+//   color: #6390f0; 
+// }
+
+// // Planta
+// .text-grass {
+//   color: #7ac74c; 
+// }
+
+// // Eléctrico
+// .text-electric {
+//   color: #f7d02c; 
+// }
+
+// // Hielo
+// .text-ice {
+//   color: #96d9d6; 
+// }
+
+// // Lucha
+// .text-fighting {
+//   color: #c22e28; 
+// }
+
+// // Veneno
+// .text-poison {
+//   color: #a33ea1; 
+// }
+
+// // Tierra
+// .text-ground {
+//   color: #e2bf65; 
+// }
+
+// // Volador
+// .text-flying {
+//   color: #a98ff3; 
+// }
+
+// // Psíquico
+// .text-psychic {
+//   color: #f95587; 
+// }
+
+// // Bicho
+// .text-bug {
+//   color: #a6b91a; 
+// }
+
+// // Roca
+// .text-rock {
+//   color: #b6a136; 
+// }
+
+// // Fantasma
+// .text-ghost {
+//   color: #735797; 
+// }
+
+// // Dragón
+// .text-dragon {
+//   color: #6f35fc; 
+// }
+
+// // Siniestro
+// .text-dark {
+//   color: #705746; 
+// }
+
+// // Acero
+// .text-steel {
+//   color: #b7b7ce; 
+// }
+
+// // Hada
+// .text-fairy {
+//   color: #d685ad; 
+// }
+
+@each $tipo in $tipos{
+    .text-#{$tipo}{
+        color: map-get($colores,$tipo);
+    }
 }

@@ -1,0 +1,57 @@
+@import 'color-pokemon';
+
+$ListadeListas:(
+    colores: (
+        Ground: $colorGround,
+        Flying: $colorFlying,
+        Psychi: $colorPsychi,
+        Bug: $colorBug,
+        Rock: $colorRock,
+        Dragon: $colorDragon,
+        Dark: $colorDark,
+        Steel: $colorSteel,
+        Hada: $colorHada,
+        Fire: $colorFire,
+        Water: $colorWater,
+        Grass: $colorGrass,
+        Electric: $colorElectric,
+        Ice: $colorIce,
+        Fighting: $colorFighting,
+        Poison: $colorPoison,
+        Ghost: $colorGhost
+    ),
+    size :(
+        s:solid,
+        da:dashed,
+        dot:dotted,
+        dou:double
+    ),
+    tama:(
+        xxs:1px,
+        xs:2px,
+        s:3px,
+        m:4px,
+        l:5px,
+        xl:6px,
+        xxl:7px
+    )
+);
+$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost;
+$sizes: s,da,dot,dou;
+$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost;
+$sizes: s, da, dot, dou;
+/* Explicacion time:
+1.En el bucle interno @each, $tamKey y $tamValue representan cada clave y valor del mapa colores.
+2.En el bucle exterior @each, $sizeKey y $sizeValue representan cada clave y valor del mapa size.
+3.En el bucle interno @each, $tipoKey y $tipoValue representan cada clave y valor del mapa colores.
+4.Usamos map-get($ListadeListas, size) y map-get($ListadeListas, colores) para obtener los mapas internos size y colores de ListadeListas.
+5.Finalmente, usamos estas variables para generar las clases de borde con los tamaños y colores correspondientes.*/
+@each $tamKey, $tamaValue in map-get($ListadeListas, tama){
+    @each $sizeKey, $sizeValue in map-get($ListadeListas, size) {
+        @each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
+            .brd-#{$tamKey}-#{$sizeKey}-#{$tipoKey} {
+                border: $tamaValue $sizeValue $tipoValue;
+            }
+        }
+    }
+}

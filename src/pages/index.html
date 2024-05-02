@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeStrap</title>
+  <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="flex">
+        <a href="/">
+          <img class="logo" src="logo.1.png" alt="logo" />
+        </a>
+      </div>
+
+      <h1>
+        <a href="/" class="name">PokeStrap</a>
+      </h1>
+      <div class="flex">
+        <div class="icon" onclick="toggleFloat()">X</div>
+      </div>
+    </nav>
+    <div class="float">
+      <div class="grid-container">
+        <a href="#" class="link">Botones</a>
+        <a href="#" class="link">Formularios</a>
+        <a href="#" class="link">Tarjetas</a>
+        <a href="#" class="link">Alertas</a>
+        <a href="#" class="link">Barras de navegacion</a>
+        <a href="#" class="link">Badges</a>
+        <a href="#" class="link">Containers</a>
+      </div>
+      <hr />
+      <div class="grid-container"></div>
+    </div>
+
+    <script>
+      function toggleFloat() {
+        const floatElement = document.querySelector(".float");
+        floatElement.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

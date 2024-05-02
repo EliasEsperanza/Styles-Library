@@ -1,0 +1,856 @@
+@import "../../utilities/color-pokemon.scss";
+@import "../buttons/buttons.scss";
+@import "../../utilities/text-utils.scss";
+@import "../../utilities/background-utils.scss";
+
+@import "color-pokemon";
+@import "Botones";
+@import "text-utils";
+@import "background-utils";
+
+//mixin de card-body
+@mixin card-body($borderColor) {
+  padding: 0.2em;
+  width: 90%; 
+  color: black;
+  background: white;
+  text-align: start;
+  border: 2px solid darken($borderColor, 20%);
+  
+}
+
+// Mixin para estilos de title
+@mixin card-title($color) {
+  color: $color;
+  font-size: 1.5em; 
+  margin: 0.4em;
+}
+
+// Mixin para estilos de subtitle
+@mixin card-subtitle($color) {
+  color: mix($color, white, 85%);
+  font-size: 1.125em; 
+  font-weight: bold;
+  margin: 0.6em; 
+}
+
+// Mixin para estilos de enlaces de tarjetas
+@mixin card-link($color) {
+  color: $color;
+  text-decoration: underline;
+  font-size: 1em; // Cambiado a em
+  margin: 0.6em; 
+}
+//mixin de los card-body-color
+@mixin card-body-img($color) {
+  width: 90%; 
+  max-width: 13.75em;
+  height: auto;
+  overflow: hidden;
+  border: 0.2em solid darken($color, 20%);
+  text-align: justify;
+}
+//mixin para card-img-top-color
+@mixin card-img-top($color) {
+  border-bottom: 0.1px solid darken($color, 20%);
+  width: 100%;
+  height: auto;
+}
+
+//mxin para los list-group-item-color
+@mixin list-group-item($type, $borderColor) {
+  .list-group-item-#{$type} {
+    margin: 0;
+    padding: 0.6em;
+    width: 100%;
+    border-top: 0.1em solid darken($borderColor, 20%);
+    border-bottom: 0.1em solid darken($borderColor, 20%);
+    border-radius: 0;
+    background-color: white;
+  }
+
+  .card-body-Link-#{$type} {
+    padding: 0.4em;
+  }
+}
+//mixin de card-header
+@mixin card-header($type, $color) {
+  .card-header-#{$type} {
+    border-top: 0.1em  solid darken($color, 20%);
+    border-left: 0.1em  solid darken($color, 20%);
+    border-right: 0.1em  solid darken($color, 20%);
+    background-color: lighten($color, 10%);
+    border-top-right-radius: 0.5em ;
+    border-top-left-radius: 0.5em ;
+    text-align: start;
+    padding: 0.15em;
+    width: 90%;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+}
+//mixin de footer-color
+@mixin card-footer($type, $color) {
+  .card-footer-#{$type} {
+    border-bottom: 0.1em solid darken($color, 20%);
+    border-left: 0.1em solid darken($color, 20%);
+    border-right: 0.1em solid darken($color, 10%);
+    background-color: darken($color, 5%);
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    text-align: start;
+    padding: 0.19em;
+    width: 90%;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fefefe; // Color predeterminado para la mayoría de los casos
+  }
+}
+//mixin de card-header con background
+@mixin card-header-bgc($color) {
+  border-top: 0.1em solid darken($color, 20%);
+  border-left: 0.1em solid darken($color, 20%);
+  border-right:0.1em solid darken($color, 20%);
+  background-color: lighten($color, 10%);
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+  text-align: start;
+  padding: 0.42em;
+  width: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+//mixin de card-body con background
+@mixin card-body-bgc($color) {
+  padding: 0.60em;
+  width: 50%;
+  color: black;
+  background: $color;
+  text-align: start;
+  border: 0.15em solid darken($color, 20%);
+}
+ 
+  .card {
+    margin: 10px;
+    width: auto; 
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+  
+    .text-center {
+      text-align: center;
+    }
+  
+    .text-end {
+      text-align: end;
+    }
+  
+    .text-black {
+      color: black;
+    }
+    
+    .bg-transparent {
+      background: transparent;
+    }
+
+    // Estilos Pokémon Normal
+    .card-body-Normal {
+      @include card-body($colorNormal);
+    }
+  
+    // Estilos Pokémon Fire
+    .card-body-Fire {
+      @include card-body($colorFire);
+    }
+  
+    // Estilos Pokémon Water
+    .card-body-Water {
+      @include card-body($colorWater);
+    }
+  
+    // Estilos Pokémon Grass
+    .card-body-Grass {
+      @include card-body($colorGrass);
+    }
+  
+    // Estilos Pokémon Electric
+    .card-body-Electric {
+      @include card-body($colorElectric);
+    }
+  
+    // Estilos Pokémon Ice
+    .card-body-Ice {
+      @include card-body($colorIce);
+    }
+  
+    // Estilos Pokémon Fighting
+    .card-body-Fighting {
+      @include card-body($colorFighting);
+    }
+  
+    // Estilos Pokémon Poison
+    .card-body-Poison {
+      @include card-body($colorPoison);
+    }
+  
+    // Estilos Pokémon Ground
+    .card-body-Ground {
+      @include card-body($colorGround);
+    }
+  
+    // Estilos Pokémon Flying
+    .card-body-Flying {
+      @include card-body($colorFlying);
+    }
+  
+    // Estilos Pokémon Psychi
+    .card-body-Psychi {
+      @include card-body($colorPsychi);
+    }
+  
+    // Estilos Pokémon Bug
+    .card-body-Bug {
+      @include card-body($colorBug);
+    }
+  
+    // Estilos Pokémon Rock 
+    .card-body-Rock {
+      @include card-body($colorRock);
+    }
+  
+    // Estilos Pokémon Ghost
+    .card-body-Ghost {
+      @include card-body($colorGhost);
+    }
+  
+    // Estilos Pokémon Dragon
+    .card-body-Dragon {
+      @include card-body($colorDragon);
+    }
+  
+    // Estilos Pokémon Dark
+    .card-body-Dark {
+      @include card-body($colorDark);
+    }
+  
+    // Estilos Pokémon Steel
+    .card-body-Steel {
+      @include card-body($colorSteel);
+    }
+  
+    // Estilos Pokémon Hada 
+    .card-body-Hada {
+      @include card-body($colorHada);
+    }
+    
+  }
+
+
+/*Titles, text, and links*/  
+  // Estilos para card-title
+.card-title-Normal {
+  @include card-title($colorNormal);
+}
+
+.card-title-Fire {
+  @include card-title($colorFire);
+}
+
+.card-title-Water {
+  @include card-title($colorWater);
+}
+
+.card-title-Grass {
+  @include card-title($colorGrass);
+}
+
+.card-title-Electric {
+  @include card-title($colorElectric);
+}
+
+.card-title-Ice {
+  @include card-title($colorIce);
+}
+
+.card-title-Fighting {
+  @include card-title($colorFighting);
+}
+
+.card-title-Poison {
+  @include card-title($colorPoison);
+}
+
+.card-title-Ground {
+  @include card-title($colorGround);
+}
+
+.card-title-Flying {
+  @include card-title($colorFlying);
+}
+
+.card-title-Psychi {
+  @include card-title($colorPsychi);
+}
+
+.card-title-Bug {
+  @include card-title($colorBug);
+}
+
+.card-title-Rock {
+  @include card-title($colorRock);
+}
+
+.card-title-Ghost {
+  @include card-title($colorGhost);
+}
+
+.card-title-Dragon {
+  @include card-title($colorDragon);
+}
+
+.card-title-Dark {
+  @include card-title($colorDark);
+}
+
+.card-title-Steel {
+  @include card-title($colorSteel);
+}
+
+.card-title-Hada {
+  @include card-title($colorHada);
+}
+
+// Estilos para card-subtitle
+.card-subtitle-Normal {
+  @include card-subtitle($colorNormal);
+}
+
+.card-subtitle-Fire {
+  @include card-subtitle($colorFire);
+}
+
+.card-subtitle-Water {
+  @include card-subtitle($colorWater);
+}
+
+.card-subtitle-Grass {
+  @include card-subtitle($colorGrass);
+}
+
+.card-subtitle-Electric {
+  @include card-subtitle($colorElectric);
+}
+
+.card-subtitle-Ice {
+  @include card-subtitle($colorIce);
+}
+
+.card-subtitle-Fighting {
+  @include card-subtitle($colorFighting);
+}
+
+.card-subtitle-Poison {
+  @include card-subtitle($colorPoison);
+}
+
+.card-subtitle-Ground {
+  @include card-subtitle($colorGround);
+}
+
+.card-subtitle-Flying {
+  @include card-subtitle($colorFlying);
+}
+
+.card-subtitle-Psychi {
+  @include card-subtitle($colorPsychi);
+}
+
+.card-subtitle-Bug {
+  @include card-subtitle($colorBug);
+}
+
+.card-subtitle-Rock {
+  @include card-subtitle($colorRock);
+}
+
+.card-subtitle-Ghost {
+  @include card-subtitle($colorGhost);
+}
+
+.card-subtitle-Dragon {
+  @include card-subtitle($colorDragon);
+}
+
+.card-subtitle-Dark {
+  @include card-subtitle($colorDark);
+}
+
+.card-subtitle-Steel {
+  @include card-subtitle($colorSteel);
+}
+
+.card-subtitle-Hada {
+  @include card-subtitle($colorHada);
+}
+
+// Texto
+.card-text {
+  color: black;
+  font-size: 16px;
+  margin: 10px;
+}
+.text-center{
+  text-align: center;
+}
+
+.text-end{
+  text-align:end;
+}
+.text-white{
+  color: white;
+}
+
+
+//CARD links
+// Estilos para los enlaces de cada tipo de Pokémon
+.card-link-Normal {
+  @include card-link($colorNormal);
+}
+
+.card-link-Fire {
+  @include card-link($colorFire);
+}
+
+.card-link-Water {
+  @include card-link($colorWater);
+}
+
+.card-link-Grass {
+  @include card-link($colorGrass);
+}
+
+.card-link-Electric {
+  @include card-link($colorElectric);
+}
+
+.card-link-Ice {
+  @include card-link($colorIce);
+}
+
+.card-link-Fighting {
+  @include card-link($colorFighting);
+}
+
+.card-link-Poison {
+  @include card-link($colorPoison);
+}
+
+.card-link-Ground {
+  @include card-link($colorGround);
+}
+
+.card-link-Flying {
+  @include card-link($colorFlying);
+}
+
+.card-link-Psychi {
+  @include card-link($colorPsychi);
+}
+
+.card-link-Bug {
+  @include card-link($colorBug);
+}
+
+.card-link-Rock {
+  @include card-link($colorRock);
+}
+
+.card-link-Ghost {
+  @include card-link($colorGhost);
+}
+
+.card-link-Dragon {
+  @include card-link($colorDragon);
+}
+
+.card-link-Dark {
+  @include card-link($colorDark);
+}
+
+.card-link-Steel {
+  @include card-link($colorSteel);
+}
+
+
+
+/* CARD-IMAGE**********************************************/
+
+.card-img {
+  .card-body-img-Normal {
+    @include card-body-img($colorNormal); 
+  }
+  
+  .card-img-top-Normal {
+    @include card-img-top($colorNormal); 
+  }
+  
+  .card-body-img-Fire {
+    @include card-body-img($colorFire); 
+  }
+  
+  .card-img-top-Fire {
+    @include card-img-top($colorFire); 
+  }
+  
+  .card-body-img-Water {
+    @include card-body-img($colorWater); 
+  }
+  
+  .card-img-top-Water {
+    @include card-img-top($colorWater); 
+  }
+  
+  .card-body-img-Grass {
+    @include card-body-img($colorGrass); 
+  }
+  
+  .card-img-top-Grass {
+    @include card-img-top($colorGrass); 
+  }
+  
+  .card-body-img-Electric {
+    @include card-body-img($colorElectric); 
+  }
+  
+  .card-img-top-Electric {
+    @include card-img-top($colorElectric); 
+  }
+  
+  .card-body-img-Ice {
+    @include card-body-img($colorIce); 
+  }
+  
+  .card-img-top-Ice {
+    @include card-img-top($colorIce); 
+  }
+  
+  .card-body-img-Fighting {
+    @include card-body-img($colorFighting); 
+  }
+  
+  .card-img-top-Fighting {
+    @include card-img-top($colorFighting); 
+  }
+  
+  .card-body-img-Poison {
+    @include card-body-img($colorPoison); 
+  }
+  
+  .card-img-top-Poison {
+    @include card-img-top($colorPoison); 
+  }
+  
+  .card-body-img-Ground {
+    @include card-body-img($colorGround); 
+  }
+  
+  .card-img-top-Ground {
+    @include card-img-top($colorGround); 
+  }
+  
+  .card-body-img-Flying {
+    @include card-body-img($colorFlying); 
+  }
+  
+  .card-img-top-Flying {
+    @include card-img-top($colorFlying); 
+  }
+  
+  .card-body-img-Psychi {
+    @include card-body-img($colorPsychi); 
+  }
+  
+  .card-img-top-Psychi {
+    @include card-img-top($colorPsychi); 
+  }
+  
+  .card-body-img-Bug {
+    @include card-body-img($colorBug); 
+  }
+  
+  .card-img-top-Bug {
+    @include card-img-top($colorBug); 
+  }
+  
+  .card-body-img-Rock {
+    @include card-body-img($colorRock); 
+  }
+  
+  .card-img-top-Rock {
+    @include card-img-top($colorRock); 
+  }
+  
+  .card-body-img-Ghost {
+    @include card-body-img($colorGhost); 
+  }
+  
+  .card-img-top-Ghost {
+    @include card-img-top($colorGhost); 
+  }
+  
+  .card-body-img-Dragon {
+    @include card-body-img($colorDragon); 
+  }
+  
+  .card-img-top-Dragon {
+    @include card-img-top($colorDragon); 
+  }
+  
+  .card-body-img-Dark {
+    @include card-body-img($colorDark); 
+  }
+  
+  .card-img-top-Dark {
+    @include card-img-top($colorDark); 
+  }
+  
+  .card-body-img-Steel {
+    @include card-body-img($colorSteel); 
+  }
+  
+  .card-img-top-Steel {
+    @include card-img-top($colorSteel); 
+  }
+  
+  .card-body-img-Hada {
+    @include card-body-img($colorHada); 
+  }
+  
+  .card-img-top-Hada {
+    @include card-img-top($colorHada); 
+  }
+
+
+  .card-text-img {
+      padding: 5px;
+      word-wrap: break-word; 
+      color: black;
+      margin: 10px;
+    }
+
+}
+
+//CARD COMPLETE
+.list-group {
+  padding: 0px; 
+  list-style-type: none;
+}
+
+
+@include list-group-item(Normal, $colorNormal);
+@include list-group-item(Fire, $colorFire);
+@include list-group-item(Water, $colorWater);
+@include list-group-item(Grass, $colorGrass);
+@include list-group-item(Electric, $colorElectric);
+@include list-group-item(Ice, $colorIce);
+@include list-group-item(Fighting, $colorFighting);
+@include list-group-item(Poison, $colorPoison);
+@include list-group-item(Ground, $colorGround);
+@include list-group-item(Flying, $colorFlying);
+@include list-group-item(Psychi, $colorPsychi);
+@include list-group-item(Bug, $colorBug);
+@include list-group-item(Rock, $colorRock);
+@include list-group-item(Ghost, $colorGhost);
+@include list-group-item(Dragon, $colorDragon);
+@include list-group-item(Dark, $colorDark);
+@include list-group-item(Steel, $colorSteel);
+@include list-group-item(Hada, $colorHada);
+
+//HEADER AND FOOTER
+.Contenedor-btn{
+  padding: 10px;
+ }
+ 
+ @include card-header(Normal, $colorNormal);
+ @include card-header(Fire, $colorFire);
+ @include card-header(Water, $colorWater);
+ @include card-header(Grass, $colorGrass);
+ @include card-header(Electric, $colorElectric);
+ @include card-header(Ice, $colorIce);
+ @include card-header(Fighting, $colorFighting);
+ @include card-header(Poison, $colorPoison);
+ @include card-header(Ground, $colorGround);
+ @include card-header(Flying, $colorFlying);
+ @include card-header(Psychi, $colorPsychi);
+ @include card-header(Bug, $colorBug);
+ @include card-header(Rock, $colorRock);
+ @include card-header(Ghost, $colorGhost);
+ @include card-header(Dragon, $colorDragon);
+ @include card-header(Dark, $colorDark);
+ @include card-header(Steel, $colorSteel);
+ @include card-header(Hada, $colorHada);
+
+//CARD FOOTER
+@include card-footer(Normal, $colorNormal);
+@include card-footer(Fire, $colorFire);
+@include card-footer(Water, $colorWater);
+@include card-footer(Grass, $colorGrass);
+@include card-footer(Electric, $colorElectric);
+@include card-footer(Ice, $colorIce);
+@include card-footer(Fighting, $colorFighting);
+@include card-footer(Poison, $colorPoison);
+@include card-footer(Ground, $colorGround);
+@include card-footer(Flying, $colorFlying);
+@include card-footer(Psychi, $colorPsychi);
+@include card-footer(Bug, $colorBug);
+@include card-footer(Rock, $colorRock);
+@include card-footer(Ghost, $colorGhost);
+@include card-footer(Dragon, $colorDragon);
+@include card-footer(Dark, $colorDark);
+@include card-footer(Steel, $colorSteel);
+@include card-footer(Hada, $colorHada);
+
+//CARD CON BACKGROUND**************************
+.card-header-bgc-Normal {
+  @include card-header-bgc($colorNormal);
+}
+
+.card-header-bgc-Fire {
+  @include card-header-bgc($colorFire);
+}
+
+.card-header-bgc-Water {
+  @include card-header-bgc($colorWater);
+}
+
+.card-header-bgc-Grass {
+  @include card-header-bgc($colorGrass);
+}
+
+.card-header-bgc-Electric {
+  @include card-header-bgc($colorElectric);
+}
+
+.card-header-bgc-Ice {
+  @include card-header-bgc($colorIce);
+}
+
+.card-header-bgc-Fighting {
+  @include card-header-bgc($colorFighting);
+}
+
+.card-header-bgc-Poison {
+  @include card-header-bgc($colorPoison);
+}
+
+.card-header-bgc-Ground {
+  @include card-header-bgc($colorGround);
+}
+
+.card-header-bgc-Flying {
+  @include card-header-bgc($colorFlying);
+}
+
+.card-header-bgc-Psychi {
+  @include card-header-bgc($colorPsychi);
+}
+
+.card-header-bgc-Bug {
+  @include card-header-bgc($colorBug);
+}
+
+.card-header-bgc-Rock {
+  @include card-header-bgc($colorRock);
+}
+
+.card-header-bgc-Ghost {
+  @include card-header-bgc($colorGhost);
+}
+
+.card-header-bgc-Dragon {
+  @include card-header-bgc($colorDragon);
+}
+
+.card-header-bgc-Dark {
+  @include card-header-bgc($colorDark);
+}
+
+.card-header-bgc-Steel {
+  @include card-header-bgc($colorSteel);
+}
+
+.card-header-bgc-Hada {
+  @include card-header-bgc($colorHada);
+}
+.card-body-bgc-Normal {
+  @include card-body-bgc($colorNormal);
+}
+
+.card-body-bgc-Fire {
+  @include card-body-bgc($colorFire);
+}
+
+.card-body-bgc-Water {
+  @include card-body-bgc($colorWater);
+}
+
+.card-body-bgc-Grass {
+  @include card-body-bgc($colorGrass);
+}
+
+.card-body-bgc-Electric {
+  @include card-body-bgc($colorElectric);
+}
+
+.card-body-bgc-Ice {
+  @include card-body-bgc($colorIce);
+}
+
+.card-body-bgc-Fighting {
+  @include card-body-bgc($colorFighting);
+}
+
+.card-body-bgc-Poison {
+  @include card-body-bgc($colorPoison);
+}
+
+.card-body-bgc-Ground {
+  @include card-body-bgc($colorGround);
+}
+
+.card-body-bgc-Flying {
+  @include card-body-bgc($colorFlying);
+}
+
+.card-body-bgc-Psychi {
+  @include card-body-bgc($colorPsychi);
+}
+
+.card-body-bgc-Bug {
+  @include card-body-bgc($colorBug);
+}
+
+.card-body-bgc-Rock {
+  @include card-body-bgc($colorRock);
+}
+
+.card-body-bgc-Ghost {
+  @include card-body-bgc($colorGhost);
+}
+
+.card-body-bgc-Dragon {
+  @include card-body-bgc($colorDragon);
+}
+
+.card-body-bgc-Dark {
+  @include card-body-bgc($colorDark);
+}
+
+.card-body-bgc-Steel {
+  @include card-body-bgc($colorSteel);
+}
+
+.card-body-bgc-Hada {
+  @include card-body-bgc($colorHada);
+}
