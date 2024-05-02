@@ -1,0 +1,110 @@
+
+
+
+// Estilos generales del body
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #3cc2ef, #731deb);
+    font-family: Arial, sans-serif;
+}
+
+// Estilos para el título
+.tituloInicio {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    background: white;
+    h1,p {
+        font-family: 'MiFuente-Solid-Normal', sans-serif;
+        background: none;
+        padding: 5px;
+    }
+}
+
+.titulo {
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: white;
+
+    h1 {
+        font-family: 'MiFuente-Solid-Normal', sans-serif;
+        padding: 10px;
+        background: white;
+    }
+
+    p {
+        font-family: 'MiFuente-solid', sans-serif;
+        margin: 15px;
+        background: white;
+    }
+}
+
+// Estilos para el container de botones
+.BotonesEstilos {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+
+    p {
+        text-align: left;
+    }
+
+    .botones {
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        border: 1px solid black;
+        background: white;
+        width: 70%;
+        a.btn {
+            display: inline-block;
+            width: 59%; 
+            text-align: center; 
+            height: auto;
+        }
+    }
+}
+
+.CodigoBotones {
+    font-size: 16px;
+    width: 69%;
+    height: auto;
+    text-align: start;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 15px;
+    
+    pre.code {
+        background: transparent;
+        margin-left: -100px;
+        justify-content: space-between;
+   }
+
+    .codeAzul,
+    .codeAzulOscuro,
+    .codeRojo {
+        background: transparent;
+    }
+
+    .codeAzul {
+        color: rgb(92, 92, 222);
+    }
+
+    .codeAzulOscuro {
+        color: blue;
+    }
+
+    .codeRojo {
+        color: red;
+    }
+}

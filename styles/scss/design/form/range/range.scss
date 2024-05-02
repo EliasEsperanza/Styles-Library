@@ -1,82 +1,17 @@
 @import "color-pokemon";
+@import "text-utils";
+@import "BodyStyle";
+  
+/*
+::-webkit es para navegadores basados en WebKit, como Google Chrome y Safari.
+::-moz es para navegadores basados en Gecko (Mozilla), como Firefox.
+::-ms  es para navegadores basados en Trident (Microsoft), como Internet Explorer y Microsoft Edge.*/
 
-    @mixin label-styles {
-        display: block; 
-        margin-bottom: 2px; 
-      }
-
-      .form-label-Normal {
-        @include label-styles;
-      }
-      
-      .form-label-Fire {
-        @include label-styles;
-      }
-      .form-label-Grass {
-        @include label-styles;
-      }
-      
-      .form-label-Water {
-        @include label-styles;
-      }
-      
-      .form-label-Rock {
-        @include label-styles;
-      }
-      
-      .form-label-Dragon {
-        @include label-styles;
-      }
-      
-      .form-label-Hada {
-        @include label-styles;
-      }
-      .form-label-Electric {
-        @include label-styles;
-      }
-      
-      .form-label-Ice {
-        @include label-styles;
-      }
-      
-      .form-label-Fighting {
-        @include label-styles;
-      }
-      
-      .form-label-Poison {
-        @include label-styles;
-      }
-      
-      .form-label-Ground {
-        @include label-styles;
-      }
-      
-      .form-label-Flying {
-        @include label-styles;
-      }
-      
-      .form-label-Psychi {
-        @include label-styles;
-      }
-      
-      .form-label-Bug {
-        @include label-styles;
-      }
-      
-      .form-label-Ghost {
-        @include label-styles;
-      }
-      
-      .form-label-Dark {
-        @include label-styles;
-      }
-      
-      .form-label-Steel {
-        @include label-styles;
-      }
-            
-      
-
+.form-label {
+  display: block; 
+  margin-bottom: 2px; 
+}
+ 
     /* Estilos básicos para el input tipo range */
 .form-range-Normal {
     height: 0.5em;
