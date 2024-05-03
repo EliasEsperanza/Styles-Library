@@ -1,0 +1,417 @@
+@import "../../utilities/color-pokemon.scss";
+@import "BodyStyle";
+
+// Mixins para los estilos de los botones
+@mixin button-style($height, $width) {
+    height: $height;
+    width: $width;
+    line-height: 0.5;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 10px;
+    padding:10px;
+}
+
+// mixin para los botones de Pokémon
+@mixin pokemon-button($background-color, $text-color) {
+    background-color: $background-color;
+    color: $text-color;
+    border: 2px solid darken($background-color, 20%);
+    &:hover {
+        background-color: darken($background-color, 20%);
+        border-color: darken($background-color, 40%);
+    }
+}
+
+// mixin para los botones de enlace Pokémon
+@mixin pokemon-link-button($color) {
+    background: transparent;
+    text-decoration: underline;
+    color: $color;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    &:hover {
+        border: 2px solid darken($color, 20%);
+    }
+}
+
+ // Mixin para los botones Tag Style
+ @mixin button-tag-style($color) {
+    background-color: $color;
+    color: white;
+    border: 2px solid darken($color, 20%);
+    text-decoration: none;
+    outline: none;
+&:hover {
+    background-color: darken($color, 20%);
+    border-color: darken($color, 40%);
+}
+&:active {
+    border-width: 4px;
+}
+}
+
+//mixin para los botones outline
+@mixin button-outline-style($color) {
+    background-color: transparent;
+    color: black;
+    border: 2px solid $color; // Borde delgado
+
+// Estilo del borde al hacer clic
+&:active {
+    border: 4px solid darken($color, 10%); // Borde más grueso al hacer clic
+    outline: none;
+}
+
+// Hover
+&:hover {
+    background-color: lighten($color, 10%); // Background al pasar el mouse
+    border-color: darken($color, 10%); // Borde al pasar el mouse
+    color: white;
+}
+}
+
+
+
+
+.btn {
+        @include button-style(30px, 120px);
+}
+    
+    
+.btn-lg {
+    height: 40px;
+    line-height: 1.5;
+    width: 200px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.btn-md {
+    height: 30px;
+    line-height: 0.5;
+    width: 150px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.btn-sm {
+    height: 25px;
+    line-height: 0.2;
+    width: 100px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+    
+
+    // Estilos para los botones Pokémon
+.btn-Pokemon-Normal {
+    @include pokemon-button($colorNormal, white);
+}
+
+.btn-Pokemon-Fire {
+    @include pokemon-button($colorFire, white);
+}
+
+.btn-Pokemon-Water {
+    @include pokemon-button($colorWater, white);
+}
+
+.btn-Pokemon-Grass {
+    @include pokemon-button($colorGrass, white);
+}
+
+.btn-Pokemon-Electric {
+    @include pokemon-button($colorElectric, black);
+}
+
+.btn-Pokemon-Ice {
+    @include pokemon-button($colorIce, black);
+}
+
+.btn-Pokemon-Fighting {
+    @include pokemon-button($colorFighting, white);
+}
+
+.btn-Pokemon-Poison {
+    @include pokemon-button($colorPoison, white);
+}
+
+.btn-Pokemon-Ground {
+    @include pokemon-button($colorGround, black);
+}
+
+.btn-Pokemon-Flying {
+    @include pokemon-button($colorFlying, black);
+}
+
+.btn-Pokemon-Psychic {
+    @include pokemon-button($colorPsychi, white);
+}
+
+.btn-Pokemon-Bug {
+    @include pokemon-button($colorBug, black);
+}
+
+.btn-Pokemon-Rock {
+    @include pokemon-button($colorRock, white);
+}
+
+.btn-Pokemon-Ghost {
+    @include pokemon-button($colorGhost, white);
+}
+
+.btn-Pokemon-Dragon {
+    @include pokemon-button($colorDragon, white);
+}
+
+.btn-Pokemon-Dark {
+    @include pokemon-button($colorDark, white);
+}
+
+.btn-Pokemon-Steel {
+    @include pokemon-button($colorSteel, black);
+}
+
+.btn-Pokemon-Hada {
+    @include pokemon-button($colorHada, white);
+}
+
+//CSS BOTONES link DE POKEMON:
+
+// Estilos para los botones de enlace Pokémon
+.btnLink-Pokemon-Normal {
+    @include pokemon-link-button($colorNormal);
+}
+
+.btnLink-Pokemon-Fire {
+    @include pokemon-link-button($colorFire);
+}
+
+.btnLink-Pokemon-Water {
+    @include pokemon-link-button($colorWater);
+}
+
+.btnLink-Pokemon-Grass {
+    @include pokemon-link-button($colorGrass);
+}
+
+.btnLink-Pokemon-Electric {
+    @include pokemon-link-button($colorElectric);
+}
+
+.btnLink-Pokemon-Ice {
+    @include pokemon-link-button($colorIce);
+}
+
+.btnLink-Pokemon-Fighting {
+    @include pokemon-link-button($colorFighting);
+}
+
+.btnLink-Pokemon-Poison {
+    @include pokemon-link-button($colorPoison);
+}
+
+.btnLink-Pokemon-Ground {
+    @include pokemon-link-button($colorGround);
+}
+
+.btnLink-Pokemon-Flying {
+    @include pokemon-link-button($colorFlying);
+}
+
+.btnLink-Pokemon-Psychic {
+    @include pokemon-link-button($colorPsychi);
+}
+
+.btnLink-Pokemon-Bug {
+    @include pokemon-link-button($colorBug);
+}
+
+.btnLink-Pokemon-Rock {
+    @include pokemon-link-button($colorRock);
+}
+
+.btnLink-Pokemon-Ghost {
+    @include pokemon-link-button($colorGhost);
+}
+
+.btnLink-Pokemon-Dragon {
+    @include pokemon-link-button($colorDragon);
+}
+
+.btnLink-Pokemon-Dark {
+    @include pokemon-link-button($colorDark);
+}
+
+.btnLink-Pokemon-Steel {
+    @include pokemon-link-button($colorSteel);
+}
+
+.btnLink-Pokemon-Hada {
+    @include pokemon-link-button($colorHada);
+}
+
+//BOTONES OUTLINEEEEEE
+// Aplicar el estilo  los botones outline
+.btn-outline-Normal {
+    @include button-outline-style($colorNormal);
+}
+
+.btn-outline-Fire {
+    @include button-outline-style($colorFire);
+}
+
+.btn-outline-Water {
+    @include button-outline-style($colorWater);
+}
+
+.btn-outline-Grass {
+    @include button-outline-style($colorGrass);
+}
+
+.btn-outline-Electric {
+    @include button-outline-style($colorElectric);
+}
+
+.btn-outline-Ice {
+    @include button-outline-style($colorIce);
+}
+
+.btn-outline-Fighting {
+    @include button-outline-style($colorFighting);
+}
+
+.btn-outline-Poison {
+    @include button-outline-style($colorPoison);
+}
+
+.btn-outline-Ground {
+    @include button-outline-style($colorGround);
+}
+
+.btn-outline-Flying {
+    @include button-outline-style($colorFlying);
+}
+
+.btn-outline-Psychic {
+    @include button-outline-style($colorPsychi);
+}
+
+.btn-outline-Bug {
+    @include button-outline-style($colorBug);
+}
+
+.btn-outline-Rock {
+    @include button-outline-style($colorRock);
+}
+
+.btn-outline-Ghost {
+    @include button-outline-style($colorGhost);
+}
+
+.btn-outline-Dragon {
+    @include button-outline-style($colorDragon);
+}
+
+.btn-outline-Dark {
+    @include button-outline-style($colorDark);
+}
+
+.btn-outline-Steel {
+    @include button-outline-style($colorSteel);
+}
+
+.btn-outline-Hada {
+    @include button-outline-style($colorHada);
+}
+
+
+//botones tag
+
+    //BOTONES TAG STYLE:
+
+    .btn-ButtonTag-Normal {
+        @include button-tag-style($colorNormal);
+    }   
+
+    .btn-ButtonTag-Fire {
+        @include button-tag-style($colorFire);
+    }
+
+    .btn-ButtonTag-Water {
+        @include button-tag-style($colorWater);
+    }
+
+    .btn-ButtonTag-Grass {
+        @include button-tag-style($colorGrass);
+    }
+
+    .btn-ButtonTag-Electric {
+        @include button-tag-style($colorElectric);
+    }
+
+    .btn-ButtonTag-Ice {
+        @include button-tag-style($colorIce);
+    }
+
+    .btn-ButtonTag-Fighting {
+        @include button-tag-style($colorFighting);
+    }
+
+    .btn-ButtonTag-Poison {
+        @include button-tag-style($colorPoison);
+    }
+
+    .btn-ButtonTag-Ground {
+        @include button-tag-style($colorGround);
+    }
+
+    .btn-ButtonTag-Flying {
+        @include button-tag-style($colorFlying);
+    }
+
+    .btn-ButtonTag-Psychic {
+        @include button-tag-style($colorPsychi);
+    }
+
+    .btn-ButtonTag-Bug {
+        @include button-tag-style($colorBug);
+    }
+
+    .btn-ButtonTag-Rock {
+        @include button-tag-style($colorRock);
+    }
+
+    .btn-ButtonTag-Ghost {
+        @include button-tag-style($colorGhost);
+    }
+
+    .btn-ButtonTag-Dragon {
+        @include button-tag-style($colorDragon);
+    }
+
+    .btn-ButtonTag-Dark {
+        @include button-tag-style($colorDark);
+    }
+
+    .btn-ButtonTag-Steel {
+        @include button-tag-style($colorSteel);
+    }
+
+    .btn-ButtonTag-Hada {
+        @include button-tag-style($colorHada);
+    }
+
+
+
+
+
+
+

@@ -1,0 +1,325 @@
+$colorNormal : #a8a77a;
+$colorFire : #ee8130;
+$colorWater : #6390f0;
+$colorGrass : #7ac74c;
+$colorElectric : #f7d02c;
+$colorIce : #96d9d6;
+$colorFighting : #c22e28;
+$colorPoison : #a33ea1;
+$colorGround : #e2bf65;
+$colorFlying : #a98ff3;
+$colorPsychi : #f95587;
+$colorBug : #a6b91a;
+$colorRock : #b6a136;
+$colorGhost : #735797;
+$colorDragon : #6f35fc;
+$colorDark : #705746;
+$colorSteel : #b7b7ce;
+$colorHada :#d685ad;
+
+//Encabezados
+
+.content {
+  background-color: rgb(71, 71, 71);
+  padding: 5px;
+  width: 400px;
+}
+
+@mixin pokemon-badge-color($color) {
+  background-color: $color;
+  border: 1px solid darken($color, 20%);
+  color: darken($color, 40%);
+  border-radius: 15px;
+}
+.content
+{
+  h1,h2,h3,h4,h5,h6
+  {
+    color: white;
+    .badge
+    {
+      padding: 10px;
+      @media (max-width: 550px) {
+        padding: 5px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+h1 
+{
+  @media(max-width:550px)
+  {
+    font-size: 28px;
+  }
+}
+
+.text-normal {
+  @include pokemon-badge-color($colorNormal);
+}
+
+.text-fire {
+  @include pokemon-badge-color($colorFire);
+}
+
+.text-water {
+  @include pokemon-badge-color($colorWater);
+}
+
+.text-grass {
+  @include pokemon-badge-color($colorGrass);
+}
+
+.text-electric {
+  @include pokemon-badge-color($colorElectric);
+}
+
+.text-ice {
+  @include pokemon-badge-color($colorIce);
+}
+
+.text-fighting {
+  @include pokemon-badge-color($colorFighting);
+}
+
+.text-poison {
+  @include pokemon-badge-color($colorPoison);
+}
+
+.text-ground {
+  @include pokemon-badge-color($colorGround);
+}
+
+.text-flying {
+  @include pokemon-badge-color($colorFlying);
+}
+
+.text-psychi {
+  @include pokemon-badge-color($colorPsychi);
+}
+
+.text-bug {
+  @include pokemon-badge-color($colorBug);
+}
+
+.text-rock {
+  @include pokemon-badge-color($colorRock);
+}
+
+.text-ghost {
+  @include pokemon-badge-color($colorGhost);
+}
+
+.text-dragon {
+  @include pokemon-badge-color($colorDragon);
+}
+
+.text-dark {
+  @include pokemon-badge-color($colorDark);
+}
+
+.text-steel {
+  @include pokemon-badge-color($colorSteel);
+}
+
+.text-hada {
+  @include pokemon-badge-color($colorHada);
+}
+
+// Botones 
+@mixin boton-color($color)
+{
+  background-color: $color;
+  border: 1px solid darken($color, 20%);
+ 
+  margin-top: 10px;
+  padding: 15px;
+
+  a
+  {
+    color: darken($color, 40%);
+    text-decoration: none;
+  }
+}
+
+.Botones-normal {
+  @include boton-color($colorNormal);
+  
+  .badge-N {
+    background-color: darken($colorNormal, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-fire {
+  @include boton-color($colorFire);
+  
+  .badge-N {
+    background-color: darken($colorFire, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-water {
+  @include boton-color($colorWater);
+  
+  .badge-N {
+    background-color: darken($colorWater, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-grass {
+  @include boton-color($colorGrass);
+  
+  .badge-N {
+    background-color: darken($colorGrass, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-electric {
+  @include boton-color($colorElectric);
+  
+  .badge-N {
+    background-color: darken($colorElectric, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-ice {
+  @include boton-color($colorIce);
+  
+  .badge-N {
+    background-color: darken($colorIce, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-fighting {
+  @include boton-color($colorFighting);
+  
+  .badge-N {
+    background-color: darken($colorFighting, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-poison {
+  @include boton-color($colorPoison);
+  
+  .badge-N {
+    background-color: darken($colorPoison, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-ground {
+  @include boton-color($colorGround);
+  
+  .badge-N {
+    background-color: darken($colorGround, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-flying {
+  @include boton-color($colorFlying);
+  
+  .badge-N {
+    background-color: darken($colorFlying, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-psychi {
+  @include boton-color($colorPsychi);
+  
+  .badge-N {
+    background-color: darken($colorPsychi, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-bug {
+  @include boton-color($colorBug);
+  
+  .badge-N {
+    background-color: darken($colorBug, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-rock {
+  @include boton-color($colorRock);
+  
+  .badge-N {
+    background-color: darken($colorRock, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-ghost {
+  @include boton-color($colorGhost);
+  
+  .badge-N {
+    background-color: darken($colorGhost, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-dragon {
+  @include boton-color($colorDragon);
+  
+  .badge-N {
+    background-color: darken($colorDragon, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-dark {
+  @include boton-color($colorDark);
+  
+  .badge-N {
+    background-color: darken($colorDark, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-steel {
+  @include boton-color($colorSteel);
+  
+  .badge-N {
+    background-color: darken($colorSteel, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.Botones-hada {
+  @include boton-color($colorHada);
+  
+  .badge-N {
+    background-color: darken($colorHada, 20%);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
