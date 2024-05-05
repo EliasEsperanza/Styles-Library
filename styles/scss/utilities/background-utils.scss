@@ -17,9 +17,12 @@ $colores: (
     Ice: $colorIce,
     Fighting: $colorFighting,
     Poison: $colorPoison,
-    Ghost: $colorGhost
+    Ghost: $colorGhost,
+    White1:$colorConDerecho,
+    Black1:$colorSinDerecho,
+    Normal: $colorNormal
 );
-$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost;
+$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost, Black1, White1, Normal;
 
 //basicamente use el mismo que en shadow-utils.scss xD
 @each $tipo in $tipos{

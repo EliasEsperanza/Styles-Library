@@ -3,11 +3,7 @@
 @import "../../utilities/text-utils.scss";
 @import "../../utilities/background-utils.scss";
 
-@import "color-pokemon";
-@import "Botones";
-@import "text-utils";
-@import "background-utils";
-@import "BodyStyle";
+@import "./BodyStyle.scss";
 
 //mixin de card-body
 @mixin card-body($borderColor) {

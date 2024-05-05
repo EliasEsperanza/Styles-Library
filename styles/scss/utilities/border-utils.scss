@@ -18,7 +18,10 @@ $ListadeListas:(
         Ice: $colorIce,
         Fighting: $colorFighting,
         Poison: $colorPoison,
-        Ghost: $colorGhost
+        Ghost: $colorGhost,
+        White1:$colorConDerecho,
+        Black1:$colorSinDerecho,
+        Normal: $colorNormal
     ),
     size :(
         s:solid,
@@ -34,18 +37,17 @@ $ListadeListas:(
         l:5px,
         xl:6px,
         xxl:7px
-    )
+    ),
+    
 );
-$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost;
-$sizes: s,da,dot,dou;
-$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost;
-$sizes: s, da, dot, dou;
+$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost, Black1, White1, Normal;
 /* Explicacion time:
 1.En el bucle interno @each, $tamKey y $tamValue representan cada clave y valor del mapa colores.
 2.En el bucle exterior @each, $sizeKey y $sizeValue representan cada clave y valor del mapa size.
 3.En el bucle interno @each, $tipoKey y $tipoValue representan cada clave y valor del mapa colores.
 4.Usamos map-get($ListadeListas, size) y map-get($ListadeListas, colores) para obtener los mapas internos size y colores de ListadeListas.
 5.Finalmente, usamos estas variables para generar las clases de borde con los tamaños y colores correspondientes.*/
+
 @each $tamKey, $tamaValue in map-get($ListadeListas, tama){
     @each $sizeKey, $sizeValue in map-get($ListadeListas, size) {
         @each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
@@ -53,5 +55,69 @@ $sizes: s, da, dot, dou;
                 border: $tamaValue $sizeValue $tipoValue;
             }
         }
+    }
+}
+@each $tamKey, $tamaValue in map-get($ListadeListas, tama){
+    @each $sizeKey, $sizeValue in map-get($ListadeListas, size) {
+        @each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
+            .brd-top-#{$tamKey}-#{$sizeKey}-#{$tipoKey} {
+                border-top: $tamaValue $sizeValue $tipoValue;
+            }
+        }
+    }
+}
+@each $tamKey, $tamaValue in map-get($ListadeListas, tama){
+    @each $sizeKey, $sizeValue in map-get($ListadeListas, size) {
+        @each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
+            .brd-botton-#{$tamKey}-#{$sizeKey}-#{$tipoKey} {
+                border-bottom: $tamaValue $sizeValue $tipoValue;
+            }
+        }
+    }
+}
+@each $tamKey, $tamaValue in map-get($ListadeListas, tama){
+    @each $sizeKey, $sizeValue in map-get($ListadeListas, size) {
+        @each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
+            .brd-right-#{$tamKey}-#{$sizeKey}-#{$tipoKey} {
+                border-right: $tamaValue $sizeValue $tipoValue;
+            }
+        }
+    }
+}
+@each $tamKey, $tamaValue in map-get($ListadeListas, tama){
+    @each $sizeKey, $sizeValue in map-get($ListadeListas, size) {
+        @each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
+            .brd-left-#{$tamKey}-#{$sizeKey}-#{$tipoKey} {
+                border-left: $tamaValue $sizeValue $tipoValue;
+            }
+        }
+    }
+}
+@each $tipo in $tipos {
+    $colores: map-get($ListadeListas, colores);
+    $color: map-get($colores, $tipo);
+    .brd-#{$tipo} {
+        border: 1px solid $color; /* Obtiene el color según el tipo */
+    }
+}
+
+@each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
+    .brd-left-#{$tipoKey} {
+        border-left: 1px solid $tipoValue;
+    }
+}
+@each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
+    .brd-right-#{$tipoKey} {
+        border-right: 1px solid $tipoValue;
+    }
+}
+@each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
+    .brd-bottom-#{$tipoKey} {
+        border-bottom: 1px solid $tipoValue;
+    }
+}
+@each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
+    .brd-top-#{$tipoKey} {
+        border-top: 1px solid $tipoValue;
     }
 }
