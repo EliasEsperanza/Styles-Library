@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/input.css">
+</head>
+<body>
+  <div class="tituloInicio">
+    <h1>Input group</h1>
+    <p>Amplíe fácilmente los controles de formulario agregando inputs, texto y botones a ambos lados de las entradas de texto, selecciones personalizadas y entradas de archivos personalizados.</p>
+  </div>
+
+    
+    <div class="Estilos">
+      <div class="titulo">
+        <h1>Basic example</h1>  
+        <p>Coloque un complemento o botón a cada lado de una entrada. También puedes colocar uno a ambos lados de una entrada. Recuerde colocar los &ltlabel&gts fuera del grupo de entrada.</p>
+        </div>
+        <div class="Body">
+            
+            <div class="input-group-Normal">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text"  placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              
+              <div class="input-group-Normal ">
+                <input type="text"  placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text span-Izquiero" id="basic-addon2">@example.com</span>
+              </div>
+              
+              <label for="basic-url" class="form-label decripcion">Your vanity URL</label>
+              <div class="input-group-Normal">
+                <span class="input-group-text" id="basic-addon3">https://example.com</span>
+                <input type="text"  id="basic-url" aria-describedby="basic-addon3">
+              </div>
+              
+              <div class="input-group-Normal">
+                <span class="input-group-text">$</span>
+                <input type="text"  aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text span-Izquiero">.00</span>
+              </div>
+              
+              <div class="input-group-Normal">
+                <input type="text"  placeholder="Username" aria-label="Username">
+                <span class="input-group-text span-medio">@</span>
+                <input type="text"  placeholder="Server" aria-label="Server">
+              </div>
+              
+              <div class="input-group-Normal">
+                <span class="input-group-text">With textarea</span>
+                <textarea  aria-label="With textarea"></textarea>
+              </div>
+        </div>
+        <div class="Codigo">
+          <pre class="code">
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span> <span class="colorAzul">id</span><span class="rojo">="basic-addon1"</span><span class="azulOscuro">&gt;</span>@<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">placeholder</span><span class="rojo">="Username"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Username"</span> 
+  <span class="colorAzul">aria-describedby</span><span class="rojo">="basic-addon1"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+          
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">placeholder</span><span class="rojo">="Recipient's username"</span> 
+  <span class="colorAzul">aria-label</span><span class="rojo">="Recipient's username"</span> <span class="colorAzul">aria-describedby</span><span class="rojo">="basic-addon2"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text span-Izquiero"</span> 
+  <span class="colorAzul">id</span><span class="rojo">="basic-addon2"</span><span class="azulOscuro">&gt;</span>@example.com<span class="azulOscuro">&lt;/span&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+          
+<span class="azulOscuro">&lt;label</span> <span class="colorAzul">for</span><span class="rojo">="basic-url"</span> <span class="colorAzul">class</span><span class="rojo">="form-label decripcion"</span><span class="azulOscuro">&gt;
+</span>Your vanity URL<span class="rojo">&lt;/label&gt;</span>
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span> 
+  <span class="colorAzul">id</span><span class="rojo">="basic-addon3"</span><span class="azulOscuro">&gt;</span>https://example.com<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">id</span><span class="rojo">="basic-url"</span> <span class="colorAzul">aria-describedby</span><span class="rojo">="basic-addon3"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+          
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span><span class="azulOscuro">&gt;</span>$<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Amount (to the nearest dollar)"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text span-Izquiero"</span><span class="azulOscuro">&gt;</span>.00<span class="azulOscuro">&lt;/span&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+          
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">placeholder</span><span class="rojo">="Username"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Username"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text span-medio"</span><span class="azulOscuro">&gt;</span>@<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">placeholder</span><span class="rojo">="Server"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Server"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+          
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span><span class="azulOscuro">&gt;</span>With textarea<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;textarea</span> <span class="colorAzul">aria-label</span><span class="rojo">="With textarea"</span><span class="azulOscuro">&gt;&lt;/textarea&gt;</span>
+  <span class="azulOscuro">&lt;/div&gt;</span>
+          </pre>
+        </div>
+    </div>
+
+    <div class="Estilos">
+      <div class="titulo">
+        <h1>Tamaños</h1>  
+        <p>Agregue las clases de tamaño de formulario relativo al propio .input-group-sm y el contenido dentro cambiará de tamaño automáticamente a uno mas pequeño; no es necesario repetir las clases de tamaño de control de formulario en cada elemento.</p>
+        </div>
+        <div class="BodyPeque">
+            <div class="input-group-Hada input-group-sm">
+                <span class="input-group-text sizing-sm " id="basic-addon1">@</span>
+                <input type="text" class=" sizing-sm" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              
+              <div class="input-group-Hada input-group-sm ">
+                <input type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text span-Izquiero sizing-sm" id="basic-addon2">@example.com</span>
+              </div>
+              
+              <label for="basic-url" class="form-label decripcion sizing-sm">Your vanity URL</label>
+              <div class="input-group-Hada input-group-sm">
+                <span class="input-group-text sizing-sm" id="basic-addon3">https://example.com</span>
+                <input type="text" class=" sizing-sm" id="basic-url" aria-describedby="basic-addon3">
+              </div>
+              
+              <div class="input-group-Hada input-group-sm">
+                <span class="input-group-text sizing-sm">$</span>
+                <input type="text"  aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text span-Izquiero sizing-sm">.00</span>
+              </div>
+              
+              <div class="input-group-Hada input-group-sm">
+                <input type="text"  placeholder="Username" aria-label="Username">
+                <span class="input-group-text span-medio">@</span>
+                <input type="text" class=" sizing-sm" placeholder="Server" aria-label="Server">
+              </div>
+              
+              <div class="input-group-Hada input-group-sm">
+                <span class="input-group-text sizing-sm">With textarea</span>
+                <textarea aria-label="With textarea"></textarea>
+              </div>
+        </div>
+        <div class="Codigo">
+          <pre class="code">
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal input-group-sm"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text sizing-sm"</span> <span class="colorAzul">id</span><span class="rojo">="basic-addon1"</span><span class="azulOscuro">&gt;</span>@<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text sizing-sm"</span> <span class="colorAzul">placeholder</span><span class="rojo">="Username"</span> 
+  <span class="colorAzul">aria-label</span><span class="rojo">="Username"</span> <span class="colorAzul">aria-describedby</span><span class="rojo">="basic-addon1"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                    
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal input-group-sm"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">placeholder</span><span class="rojo">="Recipient's username"</span> 
+    <span class="colorAzul">aria-label</span><span class="rojo">="Recipient's username"</span> <span class="colorAzul">aria-describedby</span><span class="rojo">="basic-addon2"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text span-Izquiero sizing-sm"</span> 
+    <span class="colorAzul">id</span><span class="rojo">="basic-addon2"</span><span class="azulOscuro">&gt;</span>@example.com<span class="azulOscuro">&lt;/span&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                    
+<span class="azulOscuro">&lt;label</span> <span class="colorAzul">for</span><span class="rojo">="basic-url"</span> <span class="colorAzul">class</span><span class="rojo">="form-label decripcion sizing-sm"</span><span class="azulOscuro">&gt;
+  </span>Your vanity URL<span class="rojo">&lt;/label&gt;</span>
+  <span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal input-group-sm"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text sizing-sm"</span> 
+    <span class="colorAzul">id</span><span class="rojo">="basic-addon3"</span><span class="azulOscuro">&gt;</span>https://example.com<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="rojo">class</span><span class="rojo">="sizing-sm"</span> 
+  <span class="colorAzul">id</span><span class="rojo">="basic-url"</span> <span class="colorAzul">aria-describedby</span><span class="rojo">="basic-addon3"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                    
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal input-group-sm"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text sizing-sm"</span><span class="azulOscuro">&gt;</span>$<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Amount (to the nearest dollar)"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text span-Izquiero sizing-sm"</span><span class="azulOscuro">&gt;</span>.00<span class="azulOscuro">&lt;/span&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                    
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal input-group-sm"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">placeholder</span><span class="rojo">="Username"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Username"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text span-medio"</span><span class="azulOscuro">&gt;</span>@<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span><span class="colorAzul">class</span><span class="rojo">sizing-sm</span> <span class="colorAzul">placeholder</span><span class="rojo">="Server"</span> 
+  <span class="colorAzul">aria-label</span><span class="rojo">="Server"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                    
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal input-group-sm"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text  sizing-sm"</span><span class="azulOscuro">&gt;</span>With textarea<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;textarea</span> <span class="colorAzul">aria-label</span><span class="rojo">="With textarea"</span><span class="azulOscuro">&gt;&lt;/textarea&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+          </pre>
+        </div>
+    </div>
+
+    <div class="Estilos">
+      <div class="titulo">
+        <h1>Tamaños</h1>  
+        <p>Agregue las clases de tamaño de formulario relativo al propio .input-group-sm y el contenido dentro cambiará de tamaño automáticamente a uno mas grande; no es necesario repetir las clases de tamaño de control de formulario en cada elemento.</p>
+        </div>
+        <div class="BodyAncho">
+            <div class="input-group-Hada input-group-lg">
+                <span class="input-group-text sizing-lg " id="basic-addon1">@</span>
+                <input type="text" class="sizing-lg" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              
+              <div class="input-group-Hada input-group-lg ">
+                <input type="text"  placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text span-Izquiero sizing-lg" id="basic-addon2">@example.com</span>
+              </div>
+              
+              <label for="basic-url" class="form-label decripcion sizing-lg">Your vanity URL</label>
+              <div class="input-group-Hada input-group-lg">
+                <span class="input-group-text sizing-lg" id="basic-addon3">https://example.com</span>
+                <input type="text" class=" sizing-lg" id="basic-url" aria-describedby="basic-addon3">
+              </div>
+              
+              <div class="input-group-Hada input-group-lg">
+                <span class="input-group-text sizing-lg">$</span>
+                <input type="text" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text span-Izquiero sizing-lg">.00</span>
+              </div>
+              
+              <div class="input-group-Hada input-group-lg">
+                <input type="text" placeholder="Username" aria-label="Username">
+                <span class="input-group-text span-medio">@</span>
+                <input type="text" class=" sizing-sm" placeholder="Server" aria-label="Server">
+              </div>
+              
+              <div class="input-group-Hada input-group-lg">
+                <span class="input-group-text sizing-lg">With textarea</span>
+                <textarea  aria-label="With textarea"></textarea>
+              </div>
+        </div>
+        <div class="CodigoGrande">
+          <pre class="code">
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal input-group-lg"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text sizing-lg"</span> <span class="colorAzul">id</span><span class="rojo">="basic-addon1"</span><span class="azulOscuro">&gt;</span>@<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text sizing-lg"</span> <span class="colorAzul">placeholder</span><span class="rojo">="Username"</span> 
+    <span class="colorAzul">aria-label</span><span class="rojo">="Username"</span> <span class="colorAzul">aria-describedby</span><span class="rojo">="basic-addon1"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                              
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal input-group-lg"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">placeholder</span><span class="rojo">="Recipient's username"</span> 
+    <span class="colorAzul">aria-label</span><span class="rojo">="Recipient's username"</span> <span class="colorAzul">aria-describedby</span><span class="rojo">="basic-addon2"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text span-Izquiero sizing-lg"</span> <span class="colorAzul">id</span><span class="rojo">="basic-addon2"</span><span class="azulOscuro">&gt;</span>@example.com
+  <span class="azulOscuro">&lt;/span&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                              
+<span class="azulOscuro">&lt;label</span> <span class="colorAzul">for</span><span class="rojo">="basic-url"</span> <span class="colorAzul">class</span><span class="rojo">="form-label decripcion sizing-lg"</span><span class="azulOscuro">&gt;</span>Your vanity URL<span class="rojo">&lt;/label&gt;</span>
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal input-group-lg"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text sizing-lg"</span> <span class="colorAzul">id</span><span class="rojo">="basic-addon3"</span><span class="azulOscuro">&gt;</span>https://example.com<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="rojo">class</span><span class="rojo">="sizing-lg"</span><span class="colorAzul">id</span><span class="rojo">="basic-url"</span> <span class="colorAzul">aria-describedby</span><span class="rojo">="basic-addon3"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                              
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal input-group-lg"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text sizing-lg"</span><span class="azulOscuro">&gt;</span>$<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Amount (to the nearest dollar)"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text span-Izquiero sizing-lg"</span><span class="azulOscuro">&gt;</span>.00<span class="azulOscuro">&lt;/span&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                              
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal input-group-lg"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">placeholder</span><span class="rojo">="Username"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Username"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text span-medio"</span><span class="azulOscuro">&gt;</span>@<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span><span class="colorAzul">class</span><span class="rojo">sizing-lg</span> <span class="colorAzul">placeholder</span><span class="rojo">="Server"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Server"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                              
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal input-group-lg"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text  sizing-lg"</span><span class="azulOscuro">&gt;</span>With textarea<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;textarea</span> <span class="colorAzul">aria-label</span><span class="rojo">="With textarea"</span><span class="azulOscuro">&gt;&lt;/textarea&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+          </pre>
+        </div>
+    </div>
+
+    <div class="Estilos">
+      <div class="titulo">
+        <h1>Checkboxes and radios</h1>  
+        <p>Coloque cualquier casilla de verificación u opción de radio dentro del complemento de un grupo de entrada en lugar de texto. Recomendamos agregar  .form-check-input-*-Default o .form-radio-input-*-Default cuando no haya texto visible al lado de la entrada.</p>
+        </div>
+
+        <div class="Body">
+
+          <div class="input-group-Normal ">
+            <div class="input-group-text">
+              <div class="form-check-Normal-Default">
+                <input class="form-check-input" type="checkbox" value="" id="customCheckbox">
+              </div>
+            </div>
+            <input type="text"  aria-label="Text input with checkbox">
+          </div>
+          
+          <div class="input-group-Normal">
+            <div class="input-group-text">
+              <div class="form-Radio-Normal-Default">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="customRadio">
+              </div>
+            </div>
+            <input type="text"  aria-label="Text input with radio button">
+          </div>
+          
+        </div>
+        <div class="Codigo">
+          <pre class="code">
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal "</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="form-check-Normal-Default"</span><span class="azulOscuro">&gt;</span>
+      <span class="azulOscuro">&lt;input</span> <span class="colorAzul">class</span><span class="rojo">="form-check-input"</span> <span class="colorAzul">type</span><span class="rojo">="checkbox"</span> <span class="colorAzul">value</span><span class="rojo">=""</span> 
+      <span class="colorAzul">id</span><span class="rojo">="customCheckbox"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;/div&gt;</span>
+  <span class="azulOscuro">&lt;/div&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Text input with checkbox"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="form-Radio-Normal-Default"</span><span class="azulOscuro">&gt;</span>
+      <span class="azulOscuro">&lt;input</span> <span class="colorAzul">class</span><span class="rojo">="form-check-input"</span> <span class="colorAzul">type</span><span class="rojo">="radio"</span> 
+      <span class="colorAzul">name</span><span class="rojo">="flexRadioDefault"</span> <span class="colorAzul">id</span><span class="rojo">="customRadio"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;/div&gt;</span>
+  <span class="azulOscuro">&lt;/div&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Text input with radio button"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+          </pre>
+        </div>
+    </div>
+
+    <div class="Estilos">
+      <div class="titulo">
+        <h1>Multiple inputs</h1>  
+        <p>Si bien se admiten visualmente varios &ltinput&gt, los estilos de validación solo están disponibles para grupos de entrada con un único &ltinput&gt. Si quieres agregar mas input agrega la clase "form-grupo" para que se añada un diseño diferente</p>
+        </div>
+
+        <div class="Body">
+
+          <div class="input-group-Normal">
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name">
+            <input type="text" aria-label="Last name" class="form-grupo">
+          </div> 
+
+        </div>
+        <div class="Codigo">
+          <pre class="code">
+  <span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span><span class="azulOscuro">&gt;</span>First and last name<span class="azulOscuro">&lt;/span&gt;</span>
+    <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">aria-label</span><span class="rojo">="First name"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Last name"</span> <span class="class">class</span><span class="rojo">="form-grupo"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+          </pre>
+        </div>
+      </div>
+
+
+      <div class="Estilos">
+        <div class="titulo">
+          <h1>Multiple addons</h1>  
+          <p>Se admiten varios complementos y se pueden combinar con versiones de casilla de verificación y entrada de radio.</p>
+          </div>
+  
+          <div class="Body">
+
+            <div class="input-group-Normal">
+              <span class="input-group-text">$</span>
+              <span class="input-group-text">0.00</span>
+              <input type="text"  aria-label="Dollar amount (with dot and two decimal places)">
+            </div>
+            
+            <div class="input-group-Normal">
+              <input type="text"  aria-label="Dollar amount (with dot and two decimal places)">
+              <span class="input-group-text">$</span>
+              <span class="input-group-text">0.00</span>
+            </div>
+
+          </div>
+          <div class="Codigo">
+            <pre class="code">
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span><span class="azulOscuro">&gt;</span>$<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span><span class="azulOscuro">&gt;</span>0.00<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Dollar amount"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Dollar amount"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span><span class="azulOscuro">&gt;</span>$<span class="azulOscuro">&lt;/span&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span><span class="azulOscuro">&gt;</span>0.00<span class="azulOscuro">&lt;/span&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+            </pre>
+          </div>
+        </div>
+
+        <div class="Estilos">
+          <div class="titulo">
+            <h1>Buttons addons</h1>  
+            <p>Se admiten añadir botones al inicio y final del input.</p>
+            </div>
+    
+            <div class="Body">
+              <div class="input-group-Normal">
+                <button class="btn btn-Normal btn-Inicio" type="button" id="button-addon1">Button</button>
+                <input type="text"  placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              </div>
+              
+              <div class="input-group-Normal">
+                <input type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-Normal btn-Final" type="button" id="button-addon2">Button</button>
+              </div>
+              
+              <div class="input-group-Normal">
+                <button class="btn btn-Normal btn-Inicio" type="button">Button</button>
+                <button class="btn btn-Normal btn-Inicio" type="button">Button</button>
+                <input type="text"  placeholder="" aria-label="Example text with two button addons">
+              </div>
+              
+              <div class="input-group-Normal">
+                <input type="text"  placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+                <button class="btn btn-Normal btn-Final" type="button">Button</button>
+                <button class="btn btn-Normal btn-Final" type="button">Button</button>
+              </div>
+
+            </div>
+
+            <div class="Body">
+              <div class="input-group-Fire">
+                <button class="btn btn-Fire btn-Inicio" type="button" id="button-addon1">Button</button>
+                <input type="text"  placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+              </div>
+              
+              <div class="input-group-Fire">
+                <input type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-Fire btn-Final" type="button" id="button-addon2">Button</button>
+              </div>
+              
+              <div class="input-group-Fire">
+                <button class="btn btn-Fire btn-Inicio" type="button">Button</button>
+                <button class="btn btn-Fire btn-Inicio" type="button">Button</button>
+                <input type="text"  placeholder="" aria-label="Example text with two button addons">
+              </div>
+              
+              <div class="input-group-Fire">
+                <input type="text"  placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+                <button class="btn btn-Fire btn-Final" type="button">Button</button>
+                <button class="btn btn-Fire btn-Final" type="button">Button</button>
+              </div>
+              
+            </div>
+            <div class="Codigo">
+              <pre class="code">
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;button</span> <span class="colorAzul">class</span><span class="rojo">="btn btn-Normal btn-Inicio"</span> <span class="colorAzul">type</span><span class="rojo">="button"</span> 
+  <span class="colorAzul">id</span><span class="rojo">="button-addon1"</span><span class="azulOscuro">&gt;</span>Button<span class="azulOscuro">&lt;/button&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">placeholder</span><span class="rojo">=""</span> 
+  <span class="colorAzul">aria-label</span><span class="rojo">="Example text with button addon"</span> 
+  <span class="colorAzul">aria-describedby</span><span class="rojo">="button-addon1"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">placeholder</span><span class="rojo">="Recipient's username"</span> 
+  <span class="colorAzul">aria-label</span><span class="rojo">="Recipient's username"</span> <span class="colorAzul">aria-describedby</span><span class="rojo">="button-addon2"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;button</span> <span class="colorAzul">class</span><span class="rojo">="btn btn-Normal btn-Final"</span> <span class="colorAzul">type</span><span class="rojo">="button"</span> 
+  <span class="colorAzul">id</span><span class="rojo">="button-addon2"</span><span class="azulOscuro">&gt;</span>Button<span class="azulOscuro">&lt;/button&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;button</span> <span class="colorAzul">class</span><span class="rojo">="btn btn-Normal btn-Inicio"</span> 
+  <span class="colorAzul">type</span><span class="rojo">="button"</span><span class="azulOscuro">&gt;</span>Button<span class="azulOscuro">&lt;/button&gt;</span>
+  <span class="azulOscuro">&lt;button</span> <span class="colorAzul">class</span><span class="rojo">="btn btn-Normal btn-Inicio"</span> 
+  <span class="colorAzul">type</span><span class="rojo">="button"</span><span class="azulOscuro">&gt;</span>Button<span class="azulOscuro">&lt;/button&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">placeholder</span><span class="rojo">=""</span> 
+  <span class="colorAzul">aria-label</span><span class="rojo">="Example text with two button addons"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="text"</span> <span class="colorAzul">placeholder</span><span class="rojo">="Recipient's username"</span> 
+  <span class="colorAzul">aria-label</span><span class="rojo">="Recipient's username with two button addons"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;button</span> <span class="colorAzul">class</span><span class="rojo">="btn btn-Normal btn-Final"</span> <span class="colorAzul">type</span><span class="rojo">="button"</span><span class="azulOscuro">&gt;</span>Button<span class="azulOscuro">&lt;/button&gt;</span>
+<span class="azulOscuro">&lt;button</span> <span class="colorAzul">class</span><span class="rojo">="btn btn-Normal btn-Final"</span> <span class="colorAzul">type</span><span class="rojo">="button"</span><span class="azulOscuro">&gt;</span>Button<span class="azulOscuro">&lt;/button&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+              </pre>
+            </div>
+          </div>
+
+          <div class="Estilos">
+            <div class="titulo">
+              <h1>Custom forms</h1>  
+              <p>Los grupos de entrada incluyen soporte para selecciones personalizadas </p>
+              </div>
+      
+              <div class="Body">
+                <div class="input-group-Normal">
+                  <span class="input-group-text" for="inputGroupSelect01">Options</span>
+                  <select class="form-select-Normal" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                
+                <div class="input-group-Normal">
+                  <select class="form-select-Normal" id="inputGroupSelect02">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <span class="input-group-text" for="inputGroupSelect02">Options</span>
+                </div>
+                
+                <div class="input-group-Normal">
+                  <button class="btn btn-Normal btn-Inicio " type="button">Button</button>
+                  <select class="form-select-Normal" id="inputGroupSelect03" aria-label="Example select with button addon">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                
+                <div class="input-group-Normal">
+                  <select class="form-select-Normal" id="inputGroupSelect04" aria-label="Example select with button addon">
+                    <option selected>Choose...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <button class="btn btn-Normal btn-Final" type="button">Button</button>
+                </div>
+              </div>
+              <div class="Codigo">
+                <pre class="code">
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span> <span class="colorAzul">for</span><span class="rojo">="inputGroupSelect01"</span><span class="azulOscuro">&gt;</span>Options<span class="azulOscuro">&lt;/span&gt;</span>
+    <span class="azulOscuro">&lt;select</span> <span class="colorAzul">class</span><span class="rojo">="form-select-Normal"</span> <span class="colorAzul">id</span><span class="rojo">="inputGroupSelect01"</span><span class="azulOscuro">&gt;</span>
+      <span class="azulOscuro">&lt;option</span> <span class="colorAzul">selected</span><span class="azulOscuro">&gt;</span>Choose...<span class="azulOscuro">&lt;/option&gt;</span>
+      <span class="azulOscuro">&lt;option</span> <span class="colorAzul">value</span><span class="rojo">="1"</span><span class="azulOscuro">&gt;</span>One<span class="azulOscuro">&lt;/option&gt;</span>
+      <span class="azulOscuro">&lt;option</span> <span class="colorAzul">value</span><span class="rojo">="2"</span><span class="azulOscuro">&gt;</span>Two<span class="azulOscuro">&lt;/option&gt;</span>
+      <span class="azulOscuro">&lt;option</span> <span class="colorAzul">value</span><span class="rojo">="3"</span><span class="azulOscuro">&gt;</span>Three<span class="azulOscuro">&lt;/option&gt;</span>
+    <span class="azulOscuro">&lt;/select&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;select</span> <span class="colorAzul">class</span><span class="rojo">="form-select-Normal"</span> <span class="colorAzul">id</span><span class="rojo">="inputGroupSelect02"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;option</span> <span class="colorAzul">selected</span><span class="azulOscuro">&gt;</span>Choose...<span class="azulOscuro">&lt;/option&gt;</span>
+    <span class="azulOscuro">&lt;option</span> <span class="colorAzul">value</span><span class="rojo">="1"</span><span class="azulOscuro">&gt;</span>One<span class="azulOscuro">&lt;/option&gt;</span>
+    <span class="azulOscuro">&lt;option</span> <span class="colorAzul">value</span><span class="rojo">="2"</span><span class="azulOscuro">&gt;</span>Two<span class="azulOscuro">&lt;/option&gt;</span>
+    <span class="azulOscuro">&lt;option</span> <span class="colorAzul">value</span><span class="rojo">="3"</span><span class="azulOscuro">&gt;</span>Three<span class="azulOscuro">&lt;/option&gt;</span>
+  <span class="azulOscuro">&lt;/select&gt;</span>
+<span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span> <span class="colorAzul">for</span><span class="rojo">="inputGroupSelect02"</span><span class="azulOscuro">&gt;</span>Options<span class="azulOscuro">&lt;/span&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;button</span> <span class="colorAzul">class</span><span class="rojo">="btn btn-Normal btn-Inicio"</span> <span class="colorAzul">type</span><span class="rojo">="button"</span><span class="azulOscuro">&gt;</span>Button<span class="azulOscuro">&lt;/button&gt;</span>
+  <span class="azulOscuro">&lt;select</span> <span class="colorAzul">class</span><span class="rojo">="form-select-Normal"</span> <span class="colorAzul">id</span><span class="rojo">="inputGroupSelect03"</span> 
+  <span class="colorAzul">aria-label</span><span class="rojo">="Example select with button addon"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;option</span> <span class="colorAzul">selected</span><span class="azulOscuro">&gt;</span>Choose...<span class="azulOscuro">&lt;/option&gt;</span>
+      <span class="azulOscuro">&lt;option</span> <span class="colorAzul">value</span><span class="rojo">="1"</span><span class="azulOscuro">&gt;</span>One<span class="azulOscuro">&lt;/option&gt;</span>
+      <span class="azulOscuro">&lt;option</span> <span class="colorAzul">value</span><span class="rojo">="2"</span><span class="azulOscuro">&gt;</span>Two<span class="azulOscuro">&lt;/option&gt;</span>
+      <span class="azulOscuro">&lt;option</span> <span class="colorAzul">value</span><span class="rojo">="3"</span><span class="azulOscuro">&gt;</span>Three<span class="azulOscuro">&lt;/option&gt;</span>
+  <span class="azulOscuro">&lt;/select&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;select</span> <span class="colorAzul">class</span><span class="rojo">="form-select-Normal"</span> <span class="colorAzul">id</span><span class="rojo">="inputGroupSelect04"</span> 
+  <span class="colorAzul">aria-label</span><span class="rojo">="Example select with button addon"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;option</span> <span class="colorAzul">selected</span><span class="azulOscuro">&gt;</span>Choose...<span class="azulOscuro">&lt;/option&gt;</span>
+    <span class="azulOscuro">&lt;option</span> <span class="colorAzul">value</span><span class="rojo">="1"</span><span class="azulOscuro">&gt;</span>One<span class="azulOscuro">&lt;/option&gt;</span>
+    <span class="azulOscuro">&lt;option</span> <span class="colorAzul">value</span><span class="rojo">="2"</span><span class="azulOscuro">&gt;</span>Two<span class="azulOscuro">&lt;/option&gt;</span>
+    <span class="azulOscuro">&lt;option</span> <span class="colorAzul">value</span><span class="rojo">="3"</span><span class="azulOscuro">&gt;</span>Three<span class="azulOscuro">&lt;/option&gt;</span>
+<span class="azulOscuro">&lt;/select&gt;</span>
+<span class="azulOscuro">&lt;button</span> <span class="colorAzul">class</span><span class="rojo">="btn btn-Normal btn-Final"</span> <span class="colorAzul">type</span><span class="rojo">="button"</span><span class="azulOscuro">&gt;</span>Button<span class="azulOscuro">&lt;/button&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                </pre>
+              </div>
+            </div>
+            
+            <div class="Estilos">
+              <div class="titulo">
+                <h1>Custom file input</h1>  
+                <p>Los input de seleccion de archivos en varios diseños personalizados.</p>
+                </div>
+        
+                <div class="Body">
+                  <div class="input-group-Normal ">
+                    <span class="input-group-text" for="inputGroupFile01">Upload</span>
+                    <input type="file" class="form-control" id="inputGroupFile01">
+                  </div>
+                  
+                  <div class="input-group-Normal ">
+                    <input type="file" class="form-control" id="inputGroupFile02">
+                    <span class="input-group-text" for="inputGroupFile01">Upload</span>
+                  </div>
+                  
+                  <div class="input-group-Normal">
+                    <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Button</button>
+                    <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                  </div>
+                  
+                  <div class="input-group-Normal">
+                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                    <button class="btn btn-Normal btn-Final" type="button" id="inputGroupFileAddon04">Button</button>
+                  </div>
+                </div>
+                <div class="Codigo">
+                  <pre class="code">
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span> <span class="colorAzul">for</span><span class="rojo">="inputGroupFile01"</span><span class="azulOscuro">&gt;</span>Upload<span class="azulOscuro">&lt;/span&gt;</span>
+    <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="file"</span> <span class="colorAzul">class</span><span class="rojo">="form-control"</span> <span class="colorAzul">id</span><span class="rojo">="inputGroupFile01"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                  
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="file"</span> <span class="colorAzul">class</span><span class="rojo">="form-control"</span> <span class="colorAzul">id</span><span class="rojo">="inputGroupFile02"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;span</span> <span class="colorAzul">class</span><span class="rojo">="input-group-text"</span> <span class="colorAzul">for</span><span class="rojo">="inputGroupFile01"</span><span class="azulOscuro">&gt;</span>Upload<span class="azulOscuro">&lt;/span&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                  
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;button</span> <span class="colorAzul">class</span><span class="rojo">="btn btn-outline-secondary"</span> <span class="colorAzul">type</span><span class="rojo">="button"</span> 
+  <span class="colorAzul">id</span><span class="rojo">="inputGroupFileAddon03"</span><span class="azulOscuro">&gt;</span>Button<span class="azulOscuro">&lt;/button&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="file"</span> <span class="colorAzul">class</span><span class="rojo">="form-control"</span> <span class="colorAzul">id</span><span class="rojo">="inputGroupFile03"</span> 
+  <span class="colorAzul">aria-describedby</span><span class="rojo">="inputGroupFileAddon03"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Upload"</span><span class="azulOscuro">&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                  
+<span class="azulOscuro">&lt;div</span> <span class="colorAzul">class</span><span class="rojo">="input-group-Normal"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;input</span> <span class="colorAzul">type</span><span class="rojo">="file"</span> <span class="colorAzul">class</span><span class="rojo">="form-control"</span> <span class="colorAzul">id</span><span class="rojo">="inputGroupFile04"</span> 
+  <span class="colorAzul">aria-describedby</span><span class="rojo">="inputGroupFileAddon04"</span> <span class="colorAzul">aria-label</span><span class="rojo">="Upload"</span><span class="azulOscuro">&gt;</span>
+  <span class="azulOscuro">&lt;button</span> <span class="colorAzul">class</span><span class="rojo">="btn btn-Normal btn-Final"</span> <span class="colorAzul">type</span><span class="rojo">="button"</span> 
+  <span class="colorAzul">id</span><span class="rojo">="inputGroupFileAddon04"</span><span class="azulOscuro">&gt;</span>Button<span class="azulOscuro">&lt;/button&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+                  </pre>
+                </div>
+              </div>
+  
+</body>
+</html>
