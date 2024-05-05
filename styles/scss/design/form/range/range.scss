@@ -1,6 +1,6 @@
-@import "color-pokemon";
-@import "text-utils";
-@import "BodyStyle";
+@import "../../../utilities/color-pokemon.scss";
+@import "./BodyStyle";
+@import "../../../utilities/text-utils.scss";
   
 /*
 ::-webkit es para navegadores basados en WebKit, como Google Chrome y Safari.
