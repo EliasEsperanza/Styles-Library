@@ -40,7 +40,7 @@ $ListadeListas:(
     ),
     
 );
-
+$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost, Black1, White1, Normal;
 /* Explicacion time:
 1.En el bucle interno @each, $tamKey y $tamValue representan cada clave y valor del mapa colores.
 2.En el bucle exterior @each, $sizeKey y $sizeValue representan cada clave y valor del mapa size.
@@ -91,5 +91,33 @@ $ListadeListas:(
                 border-left: $tamaValue $sizeValue $tipoValue;
             }
         }
+    }
+}
+@each $tipo in $tipos {
+    $colores: map-get($ListadeListas, colores);
+    $color: map-get($colores, $tipo);
+    .brd-#{$tipo} {
+        border: 1px solid $color; /* Obtiene el color según el tipo */
+    }
+}
+
+@each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
+    .brd-left-#{$tipoKey} {
+        border-left: 1px solid $tipoValue;
+    }
+}
+@each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
+    .brd-right-#{$tipoKey} {
+        border-right: 1px solid $tipoValue;
+    }
+}
+@each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
+    .brd-bottom-#{$tipoKey} {
+        border-bottom: 1px solid $tipoValue;
+    }
+}
+@each $tipoKey, $tipoValue in map-get($ListadeListas, colores) {
+    .brd-top-#{$tipoKey} {
+        border-top: 1px solid $tipoValue;
     }
 }

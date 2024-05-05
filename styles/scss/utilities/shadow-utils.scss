@@ -121,10 +121,13 @@ $colores: (
   Ice: $colorIce,
   Fighting: $colorFighting,
   Poison: $colorPoison,
-  Ghost: $colorGhost
+  Ghost: $colorGhost,
+  White1:$colorConDerecho,
+  Black1:$colorSinDerecho,
+  Normal: $colorNormal
 );
 
-$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost;
+$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost, Black1, White1, Normal;
 
 /*El bucle @each en SASS te permite iterar sobre una lista o un mapa y ejecutar un bloque de código para cada 
 *elemento de esa lista o mapa. Es una forma poderosa de generar código repetitivo de manera más eficiente y
