@@ -1,4 +1,6 @@
 @import "color-pokemon";
+@import "BodyStyle";
+
 
 span,
 input {
@@ -74,103 +76,352 @@ input {
       color: black;
       padding: 5px;
     }
+    .form-grupo{
+      border-left: 1px solid $color;
+
+    }
 }  
+
+/*MIXIN DE INPUT CON CHECK */
+//input check
+@mixin checkbox-square-styles($background-color, $border-color, $outline-color) {
+  input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 20px;
+      height: 20px;
+      background: lighten($background-color, 10%);
+      border: 1px solid darken($border-color, 20%);
+      border-radius: 5px;
+      position: relative;
+      &:checked {
+          outline: 2px solid $outline-color;
+          border: 1px solid darken($outline-color, 20%);
+      }
+      &:hover {
+          background: lighten($background-color, 5%);
+      }
+  }
+  // Estilo del icono de verificación
+  input[type="checkbox"]::before {
+      content: '\2714'; // Código para el símbolo de verificación
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 16px; // Tamaño del icono
+      color: black;
+      opacity: 0; // Inicialmente oculto
+  }
+
+  // Mostrar el icono de verificación cuando el checkbox está marcado
+  input[type="checkbox"]:checked::before {
+      opacity: 1;
+  }
+}
+
+//INPUT RADIO
+@mixin radio-circle-styles($background-color, $border-color, $outline-color) {
+  input[type="radio"] {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 15px;
+      height: 15px;
+      background: white;
+      border: 1px solid $border-color;
+      border-radius: 50%;
+      position: relative;
+      &:checked::after {
+          content: '';
+          width: 8px;
+          height: 8px;
+          background-color: $background-color;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+      &:checked {
+          outline: 2px solid lighten($outline-color, 10%);
+          border: 1px solid darken($outline-color, 20%);
+      }
+  }
+}
+
+//MIXIN DE LOS BOTONES ADENTRO DE LOS INPUT
+@mixin input-group-button($color, $hover-color) {
+  .btn {
+    background: transparent;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &:hover {
+      background: lighten($color, 10%);
+    }
+  }
+
+  .btn-Inicio {
+    border-right: 1px solid $color;
+  }
+
+  .btn-Final {
+    border-left: 1px solid $color;
+  }
+}
+
+//mix de los selct dentro del input
+@mixin input-group-select($color, $focusColor) {
+  .form-select-Normal {
+    padding: 4.0px;
+    font-size: 1.0em;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    width: 100%;
+    border-color: none;
+
+    &:focus {
+      border-color: none;
+      outline: none;
+    }
+
+    option {
+      background: white;
+      color: black;
+    }
+
+    option:checked {
+      background: lighten($color, 10%);
+      color: black;
+    }
+  }
+}
+
+//ESTILO AL INPUT TIPO FILE
+@mixin input-file-styles($background-color, $hover-color) {
+  input[type="file"].form-control {
+    &::-webkit-file-upload-button {
+      background-color: $background-color;
+      padding: 5px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($hover-color, 20%);
+      }
+    }
+  }
+}
+
+   
+
 
 
 .input-group-Normal{
+        @include input-file-styles($colorNormal, $colorNormal);
+        @include checkbox-square-styles($colorNormal, darken($colorNormal, 20%), $colorNormal);
         @include input-group-styles($colorNormal); 
-}
+        @include radio-circle-styles($colorNormal, darken($colorNormal, 20%), $colorNormal);
+        @include input-group-button($colorNormal, lighten($colorNormal, 10%));
+        @include input-group-select($colorNormal, darken($colorNormal, 10%));
+       
+      }
 
 .input-group-Fire{
+        @include checkbox-square-styles($colorFire, darken($colorFire, 20%), $colorFire);
         @include input-group-styles($colorFire); 
-
+        @include radio-circle-styles($colorFire, darken($colorFire, 20%), $colorFire);
+        @include input-group-button($colorFire, lighten($colorFire, 10%));
+        @include input-group-select($colorFire, darken($colorFire, 10%));
+        @include input-file-styles($colorFire, $colorFire);
 }
 .input-group-Water {
+    @include checkbox-square-styles($colorWater, darken($colorWater, 20%), $colorWater);
     @include input-group-styles($colorWater);
+    @include radio-circle-styles($colorWater, darken($colorWater, 20%), $colorWater);
+    @include input-group-button($colorWater, lighten($colorWater, 10%));
+    @include input-group-select($colorWater, darken($colorWater, 10%));
+    @include input-file-styles($colorWater, $colorWater);
 }
   
 .input-group-Grass {
+  @include checkbox-square-styles($colorGrass, darken($colorGrass, 20%), $colorGrass);
     @include input-group-styles($colorGrass);
+    @include radio-circle-styles($colorGrass, darken($colorGrass, 20%), $colorGrass);
+    @include input-group-button($colorGrass, lighten($colorGrass, 10%));
+    @include input-group-select($colorGrass, darken($colorGrass, 10%));
+    @include input-file-styles($colorGrass, $colorGrass);
   }
   
   .input-group-Electric {
+    @include checkbox-square-styles($colorElectric, darken($colorElectric, 20%), $colorElectric);
     @include input-group-styles($colorElectric);
+    @include radio-circle-styles($colorElectric, darken($colorElectric, 20%), $colorElectric);
+    @include input-group-button($colorElectric, lighten($colorElectric, 10%));
+    @include input-group-select($colorElectric, darken($colorElectric, 10%));
+    @include input-file-styles($colorElectric, $colorElectric);
   }
   
   .input-group-Ice {
+    @include checkbox-square-styles($colorIce, darken($colorIce, 20%), $colorIce);
     @include input-group-styles($colorIce);
+    @include radio-circle-styles($colorIce, darken($colorIce, 20%), $colorIce);
+    @include input-group-button($colorIce, lighten($colorIce, 10%));
+    @include input-group-select($colorIce, darken($colorIce, 10%));
+    @include input-file-styles($colorIce, $colorIce);
   }
   
   .input-group-Fighting {
+    @include checkbox-square-styles($colorFighting, darken($colorFighting, 20%), $colorFighting);
     @include input-group-styles($colorFighting);
+    @include radio-circle-styles($colorFighting, darken($colorFighting, 20%), $colorFighting);
+    @include input-group-button($colorFighting, lighten($colorFighting, 10%));
+    @include input-group-select($colorFighting, darken($colorFighting, 10%));
+    @include input-file-styles($colorFighting, $colorFighting);
   }
   
   .input-group-Poison {
+    @include checkbox-square-styles($colorPoison, darken($colorPoison, 20%), $colorPoison);
     @include input-group-styles($colorPoison);
+    @include radio-circle-styles($colorPoison, darken($colorPoison, 20%), $colorPoison);
+    @include input-group-button($colorPoison, lighten($colorPoison, 10%));
+    @include input-group-select($colorPoison, darken($colorPoison, 10%));
+    @include input-file-styles($colorPoison, $colorPoison);
   }
   
   .input-group-Ground {
+    @include checkbox-square-styles($colorGround, darken($colorGround, 20%), $colorGround);
     @include input-group-styles($colorGround);
+    @include radio-circle-styles($colorGround, darken($colorGround, 20%), $colorGround);
+    @include input-group-button($colorGround, lighten($colorGround, 10%));
+    @include input-group-select($colorGround, darken($colorGround, 10%));
+    @include input-file-styles($colorGround, $colorGround);
   }
   
   .input-group-Flying {
+    @include checkbox-square-styles($colorFlying, darken($colorFlying, 20%), $colorFlying);
     @include input-group-styles($colorFlying);
+    @include radio-circle-styles($colorFlying, darken($colorFlying, 20%), $colorFlying);
+    @include input-group-button($colorFlying, lighten($colorFlying, 10%));
+    @include input-group-select($colorFlying, darken($colorFlying, 10%));
+    @include input-file-styles($colorFlying, $colorFlying);
   }
   
   .input-group-Psychi {
+    @include checkbox-square-styles($colorPsychi, darken($colorPsychi, 20%), $colorPsychi);
     @include input-group-styles($colorPsychi);
+    @include radio-circle-styles($colorPsychi, darken($colorPsychi, 20%), $colorPsychi);
+    @include input-group-button($colorPsychi, lighten($colorPsychi, 10%));
+    @include input-group-select($colorPsychi, darken($colorPsychi, 10%));
+    @include input-file-styles($colorPsychi, $colorPsychi);
   }
   
   .input-group-Bug {
+    @include checkbox-square-styles($colorBug, darken($colorBug, 20%), $colorBug);
     @include input-group-styles($colorBug);
+    @include radio-circle-styles($colorBug, darken($colorBug, 20%), $colorBug);
+    @include input-group-button($colorBug, lighten($colorBug, 10%));
+    @include input-group-select($colorBug, darken($colorBug, 10%));
+    @include input-file-styles($colorBug, $colorBug);
   }
   
   .input-group-Rock {
+    @include checkbox-square-styles($colorRock, darken($colorRock, 20%), $colorRock);
     @include input-group-styles($colorRock);
+    @include radio-circle-styles($colorRock, darken($colorRock, 20%), $colorRock);
+    @include input-group-button($colorRock, lighten($colorRock, 10%));
+    @include input-group-select($colorRock, darken($colorRock, 10%));
+    @include input-file-styles($colorRock, $colorRock);
   }
   
   .input-group-Ghost {
+    @include checkbox-square-styles($colorGhost, darken($colorGhost, 20%), $colorGhost);
     @include input-group-styles($colorGhost);
+    @include radio-circle-styles($colorGhost, darken($colorGhost, 20%), $colorGhost);
+    @include input-group-button($colorGhost, lighten($colorGhost, 10%));
+    @include input-group-select($colorGhost, darken($colorGhost, 10%));
+    @include input-file-styles($colorGhost, $colorGhost);
   }
   
   .input-group-Dragon {
+    @include checkbox-square-styles($colorDragon, darken($colorDragon, 20%), $colorDragon);
     @include input-group-styles($colorDragon);
+    @include radio-circle-styles($colorDragon, darken($colorDragon, 20%), $colorDragon);
+    @include input-group-button($colorDragon, lighten($colorDragon, 10%));
+    @include input-group-select($colorDragon, darken($colorDragon, 10%));
+    @include input-file-styles($colorDragon, $colorDragon);
   }
   
   .input-group-Dark {
+    @include checkbox-square-styles($colorDark, darken($colorDark, 20%), $colorDark);
     @include input-group-styles($colorDark);
+    @include radio-circle-styles($colorDark, darken($colorDark, 20%), $colorDark);
+    @include input-group-button($colorDark, lighten($colorDark, 10%));
+    @include input-group-select($colorDark, darken($colorDark, 10%));
+    @include input-file-styles($colorDark, $colorDark);
   }
   
   .input-group-Steel {
+    @include checkbox-square-styles($colorSteel, darken($colorSteel, 20%), $colorSteel);
     @include input-group-styles($colorSteel);
+    @include radio-circle-styles($colorSteel, darken($colorSteel, 20%), $colorSteel);
+    @include input-group-button($colorSteel, lighten($colorSteel, 10%));
+    @include input-group-select($colorSteel, darken($colorSteel, 10%));
+    @include input-file-styles($colorSteel, $colorSteel);
   }
   
   .input-group-Hada {
+    @include checkbox-square-styles($colorHada, darken($colorHada, 20%), $colorHada);
     @include input-group-styles($colorHada);
+    @include radio-circle-styles($colorHada, darken($colorHada, 20%), $colorHada);
+    @include input-group-button($colorHada, lighten($colorHada, 10%));
+    @include input-group-select($colorHada, darken($colorHada, 10%));
+    @include input-file-styles($colorHada, $colorHada);
   }
 
-
-  .input-group-sm {
-    input {
-      font-size: 0.8em; 
-      width: 80%;
-      padding: 0.2em; 
-    } 
+  /*Tamaños para los input*/
+  //tama;o pequeño
+  @mixin input-group-sm-styles {
+    .input-group-sm {
+      input {
+        font-size: 0.8em;
+        width: 80%;
+        padding: 0.2em;
+      }
+      .sizing-sm {
+        font-size: 0.7em;
+      }
+    }
   }
-  .input-group-Hada.input-group-sm .sizing-sm {
-    font-size: 0.7em;
+  label.sizing-sm {
+    font-size: 0.78em;
   }
-
-  .input-group-lg {
-    input {
-      font-size: 1.4em; 
-      width: 80%;
-      padding: 0.2em; 
-    } 
-  }
-  .input-group-Hada.input-group-lg .sizing-lg {
-    font-size: 1.4em;
+  @include input-group-sm-styles;
+  
+  //tamaño grande
+  @mixin input-group-lg-styles {
+    .input-group-lg {
+      input {
+        font-size: 1.4em;
+        width: 80%;
+        padding: 0.2em;
+      }
+      .sizing-lg {
+        font-size: 1.4em;
+      }
+    }
   }
   label.sizing-lg {
     font-size: 1.4em;
   }
+@include input-group-lg-styles;
+
+
