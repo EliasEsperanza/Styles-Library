@@ -1,5 +1,5 @@
 @import "../../utilities/color-pokemon.scss";
-@import "BodyStyle";
+@import "./BodyStyle.scss";
 
 // Mixins para los estilos de los botones
 @mixin button-style($height, $width) {

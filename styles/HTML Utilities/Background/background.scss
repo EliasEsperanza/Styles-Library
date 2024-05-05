@@ -1,6 +1,6 @@
-@import "color-pokemon.scss";
-@import "BodyStyle";
-@import "text-utils";
+@import "../../scss/utilities/color-pokemon.scss";
+@import "./BodyStyle.scss";
+@import "../../scss/utilities/text-utils.scss";
 
 $colores: (
     Ground: $colorGround,
