@@ -17,9 +17,10 @@ $colores: (
     Ice: $colorIce,
     Fighting: $colorFighting,
     Poison: $colorPoison,
-    Ghost: $colorGhost
+    Ghost: $colorGhost,
+    Normal: $colorNormal
 );
-$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost;
+$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost, Normal;
 
 .text-small{
     font-size: 0.8rem;
