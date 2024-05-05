@@ -4,7 +4,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom right, #3cc2ef, #731deb);
+    background-image: linear-gradient(90deg, rgb(62, 25, 113),rgb(72, 105, 206));
     font-family: Arial, sans-serif;
     
   }
@@ -13,7 +13,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
     width: 100%;
-    background: white;
+    background: #f8f8f8;
     h1, p {
       font-family: 'MiFuente-Solid-Normal', sans-serif;
       background: none;
@@ -24,7 +24,7 @@ body {
   .titulo {
     text-align: left;
     width: 100%;
-    background: white;
+    background: #f8f8f8;
     h1 {
       font-family: 'MiFuente-Solid-Normal', sans-serif;
       padding: 10px;
@@ -55,7 +55,7 @@ body {
     width: 69%;
     height: auto;
     text-align: start;
-    background-color: #f8f8f8;
+    background: #f8f8f8;
     border: 1px solid #ddd;
     padding-right: 30px;
     padding-left: 20px;
