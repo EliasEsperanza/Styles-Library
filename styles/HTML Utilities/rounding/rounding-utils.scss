@@ -1,0 +1,83 @@
+@import 'color-pokemon';
+@import "BodyStyle";
+@import "text-utils";
+@import "background";
+.rounded{
+    border-radius: 0.25rem;
+}
+
+.rounded-lg{
+    border-radius: 0.5rem;
+}
+
+.rounded-xl{
+    border-radius: 1rem;
+}
+
+.rounded-2xl{
+    border-radius: 1.5rem;
+}
+
+.rounded-top-left{
+    border-top-left-radius: 0.25rem;
+}
+
+.rounded-top-right{
+    border-top-right-radius: 0.25rem;
+}
+
+.rounded-bottom-left{
+    border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-bottom-right{
+    border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-top{
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.rounded-bottom{
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-left{
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-right{
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-none{
+    border-radius: 0;
+}
+
+.rounded-circle{
+    border-radius: 50%;
+}
+
+.rounded-smooth{
+    border-radius: 0.5rem;
+}
+
+.rounded-sharp{
+    border-radius: 0.1rem;
+}
+
+.rounded-asymmetrical{
+    border-radius: 2rem 0.5rem;
+}
+
+.rounded-parcial{
+    border-radius: 0 1rem 1rem 0;
+}
+
+.rounded-progressive{
+    border-radius: 0 0.5rem 1rem 1.5rem;
+}

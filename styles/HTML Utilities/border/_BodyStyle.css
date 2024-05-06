@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #3e1971, #4869ce);
+  font-family: Arial, sans-serif;
+}
+
+.tituloInicio {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  background: #f8f8f8;
+}
+
+.tituloInicio h1, .tituloInicio p {
+  font-family: 'MiFuente-Solid-Normal', sans-serif;
+  background: none;
+  padding: 5px;
+}
+
+.titulo {
+  text-align: left;
+  width: 100%;
+  background: #f8f8f8;
+}
+
+.titulo h1 {
+  font-family: 'MiFuente-Solid-Normal', sans-serif;
+  padding: 10px;
+  background: white;
+}
+
+.titulo p {
+  font-family: 'MiFuente-solid', sans-serif;
+  margin: 15px;
+  background: white;
+}
+
+.Estilos {
+  margin: 20px auto;
+  padding: 20px;
+  background: #f8f8f8;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Estilos p {
+  text-align: left;
+}
+
+.Codigo {
+  font-size: 16px;
+  width: 69%;
+  height: auto;
+  text-align: start;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.Codigo pre.code {
+  background: transparent;
+  justify-content: space-between;
+}
+
+.Codigo .colorAzul, .Codigo .azulOscuro .rojo {
+  background: transparent;
+}
+
+.Codigo .colorAzul {
+  color: #5c5cde;
+}
+
+.Codigo .azulOscuro {
+  color: blue;
+}
+
+.Codigo .rojo {
+  color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  .Codigo {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+}
+
+.CodigoGrande {
+  font-size: 16px;
+  width: 88%;
+  height: auto;
+  text-align: start;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.CodigoGrande pre.code {
+  background: transparent;
+  justify-content: space-between;
+}
+
+.CodigoGrande .colorAzul, .CodigoGrande .azulOscuro .rojo {
+  background: transparent;
+}
+
+.CodigoGrande .colorAzul {
+  color: #5c5cde;
+}
+
+.CodigoGrande .azulOscuro {
+  color: blue;
+}
+
+.CodigoGrande .rojo {
+  color: red;
+}
+
+.BodyGrande {
+  background: white;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Cambiamos 4 a 2 */
+  grid-gap: 20px;
+  /* Agregamos espacio entre columnas */
+  padding-left: 20px;
+  border: 1px solid black;
+  width: 70%;
+  align-items: center;
+}
+
+.divEjemplo {
+  width: 100px;
+  height: 60px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #f8f8f8;
+}
+
+.divEjemplo2 {
+  width: 200px;
+  height: 60px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #f8f8f8;
+}
