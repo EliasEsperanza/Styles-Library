@@ -1,0 +1,175 @@
+@import 'color-pokemon';
+@import "BodyStyle";
+@import "text-utils";
+@import "background";
+
+/*.sh-leftNormal{
+    box-shadow: -5px 0px 5px $colorNormal;
+}
+.sh-rightNormal{
+    box-shadow: 5px 0px 5px $colorNormal;
+}
+.sh-upNormal{
+    box-shadow: 0 -5px 5px $colorNormal;
+}
+.sh-downNormal{
+    box-shadow: 0 5px 5px $colorNormal;
+}
+
+.sh-leftFire{
+    box-shadow: -5px 0 5px $colorFire;
+}
+.sh-rightFire{
+    box-shadow: 5px 0 5px $colorFire;
+}
+.sh-upFire{
+    box-shadow: 0 -5px 5px $colorFire;
+}
+.sh-downFire{
+    box-shadow: 0 5px 5px $colorFire;
+}
+
+.sh-leftWater{
+    box-shadow: -5px 0 5px $colorWater;
+}
+.sh-rightWater{
+    box-shadow: 5px 0 5px $colorWater;
+}
+.sh-upWater{
+    box-shadow: 0 -5px 5px $colorWater;
+}
+.sh-downWater{
+    box-shadow: 0 5px 5px $colorWater;
+}
+
+.sh-leftGrass{
+    box-shadow: -5px 0 5px $colorGrass;
+}
+.sh-rightGrass{
+    box-shadow: 5px 0 5px $colorGrass;
+}
+.sh-upGrass{
+    box-shadow: 0 -5px 5px $colorGrass;
+}
+.sh-downGrass{
+    box-shadow: 0 5px 5px $colorGrass;
+}
+
+.sh-leftElectric{
+    box-shadow: -5px 0 5px $colorElectric;
+}
+.sh-rightElectric{
+    box-shadow: 5px 0 5px $colorElectric;
+}
+.sh-upElectric{
+    box-shadow: 0 -5px 5px $colorElectric;
+}
+.sh-downElectric{
+    box-shadow: 0 5px 5px $colorElectric;
+}
+
+.sh-leftIce{
+    box-shadow: -5px 0 5px $colorIce;
+}
+.sh-rightIce{
+    box-shadow: 5px 0 5px $colorIce;
+}
+.sh-upIce{
+    box-shadow: 0 -5px 5px $colorIce;
+}
+.sh-downIce{
+    box-shadow: 0 5px 5px $colorIce;
+}
+
+.sh-leftFighting{
+    box-shadow: -5px 0 5px $colorFighting;
+}
+.sh-rightFighting{
+    box-shadow: 5px 0 5px $colorFighting;
+}
+.sh-upFighting{
+    box-shadow: 0 -5px 5px $colorFighting;
+}
+.sh-downFighting{
+    box-shadow: 0 5px 5px $colorFighting;
+}
+
+.sh-leftPoison{
+    box-shadow: -5px 0 5px $colorPoison;
+}
+.sh-rightPoison{
+    box-shadow: 5px 0 5px $colorPoison;
+}
+.sh-upPoison{
+    box-shadow: 0 -5px 5px $colorPoison;
+}
+.sh-downPoison{
+    box-shadow: 0 5px 5px $colorPoison;
+}
+*/
+$colores: (
+    Ground: $colorGround,
+    Flying: $colorFlying,
+    Psychi: $colorPsychi,
+    Bug: $colorBug,
+    Rock: $colorRock,
+    Dragon: $colorDragon,
+    Dark: $colorDark,
+    Steel: $colorSteel,
+    Hada: $colorHada,
+    Fire: $colorFire,
+    Water: $colorWater,
+    Grass: $colorGrass,
+    Electric: $colorElectric,
+    Ice: $colorIce,
+    Fighting: $colorFighting,
+    Poison: $colorPoison,
+    Ghost: $colorGhost,
+    White1:$colorConDerecho,
+    Black1:$colorSinDerecho,
+    Normal: $colorNormal
+);
+
+$tipos: Ground, Flying, Psychi, Bug, Rock, Dragon, Dark, Steel, Hada, Fire, Water, Grass, Electric, Ice, Fighting, Poison, Ghost, Black1, White1, Normal;
+
+/*El bucle @each en SASS te permite iterar sobre una lista o un mapa y ejecutar un bloque de código para cada 
+*elemento de esa lista o mapa. Es una forma poderosa de generar código repetitivo de manera más eficiente y
+*menos propensa a errores.
+*/
+@each $tipo in $tipos {
+    .sh-left-#{$tipo} {
+        box-shadow: -5px 0 5px map-get($colores, $tipo);
+    }
+    .sh-right-#{$tipo} {
+        box-shadow: 5px 0 5px map-get($colores, $tipo);
+    }
+    .sh-up-#{$tipo} {
+        box-shadow: 0 -5px 5px map-get($colores, $tipo);
+    }
+    .sh-down-#{$tipo} {
+        box-shadow: 0 5px 5px map-get($colores, $tipo);
+    }
+    .sh-l-d-#{$tipo}{
+        box-shadow: 5px -5px 10px map-get($colores, $tipo);
+    }
+    .sh-l-u-#{$tipo}{
+        box-shadow: -5px -5px 10px map-get($colores, $tipo);
+    }
+    .sh-r-d-#{$tipo}{
+        box-shadow: 5px 5px 10px map-get($colores, $tipo);
+    }
+    .sh-r-u-#{$tipo}{
+        box-shadow: -5px 5px 10px map-get($colores, $tipo);
+    }
+    .sh-u-d-#{$tipo}{
+        box-shadow: 0px 5px 10px -5px map-get($colores, $tipo),
+                    0px -5px 10px -5px map-get($colores, $tipo);
+    }
+    .sh-l-r-#{$tipo}{
+        box-shadow: 5px 0px 10px -5px map-get($colores, $tipo),
+                    -5px 0px 10px -5px map-get($colores, $tipo);
+    }
+    .sh-g-#{$tipo}{
+        box-shadow: 0px 0px 10px map-get($colores, $tipo);
+    }
+}

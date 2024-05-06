@@ -1,0 +1,935 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #3cc2ef, #731deb);
+  font-family: Arial, sans-serif;
+}
+
+.tituloInicio {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  background: white;
+}
+.tituloInicio h1, .tituloInicio p {
+  font-family: "MiFuente-Solid-Normal", sans-serif;
+  background: none;
+  padding: 5px;
+}
+
+.titulo {
+  text-align: left;
+  width: 100%;
+  background: white;
+}
+.titulo h1 {
+  font-family: "MiFuente-Solid-Normal", sans-serif;
+  padding: 10px;
+  background: white;
+}
+.titulo p {
+  font-family: "MiFuente-solid", sans-serif;
+  margin: 15px;
+  background: white;
+}
+
+.Estilos {
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Estilos p {
+  text-align: left;
+}
+
+.Codigo {
+  font-size: 16px;
+  width: 69%;
+  height: auto;
+  text-align: start;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+.Codigo pre.code {
+  background: transparent;
+  justify-content: space-between;
+}
+.Codigo .colorAzul, .Codigo .azulOscuro .rojo {
+  background: transparent;
+}
+.Codigo .colorAzul {
+  color: rgb(92, 92, 222);
+}
+.Codigo .azulOscuro {
+  color: blue;
+}
+.Codigo .rojo {
+  color: red;
+}
+@media only screen and (max-width: 768px) {
+  .Codigo {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+}
+
+.CodigoGrande {
+  font-size: 16px;
+  width: 88%;
+  height: auto;
+  text-align: start;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+.CodigoGrande pre.code {
+  background: transparent;
+  justify-content: space-between;
+}
+.CodigoGrande .colorAzul, .CodigoGrande .azulOscuro .rojo {
+  background: transparent;
+}
+.CodigoGrande .colorAzul {
+  color: rgb(92, 92, 222);
+}
+.CodigoGrande .azulOscuro {
+  color: blue;
+}
+.CodigoGrande .rojo {
+  color: red;
+}
+
+.BodyGrande {
+  background: white;
+  padding: 20px;
+  display: grid;
+  padding-left: 20px;
+  border: 1px solid black;
+  width: 70%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.divEjemplo {
+  width: 100px;
+  height: 60px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #f8f8f8;
+}
+
+.divEjemplo2 {
+  width: 200px;
+  height: 60px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #f8f8f8;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+.text-large {
+  font-size: 1.2rem;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.text-overline {
+  text-decoration: overline;
+}
+
+.text-underline-dotted {
+  text-decoration: underline dotted;
+}
+
+.text-underline-double {
+  text-decoration: underline double;
+}
+
+.text-underline-wavy {
+  text-decoration: underline wavy;
+}
+
+.text-underline-dashed {
+  text-decoration: underline dashed;
+}
+
+.text-underline-solid {
+  text-decoration: underline solid;
+}
+
+.text-underline-dotted {
+  text-decoration: underline dotted;
+}
+
+.text-underline-dashed {
+  text-decoration: underline dashed;
+}
+
+.text-underline-solid {
+  text-decoration: underline solid;
+}
+
+.text-underline-double {
+  text-decoration: underline double;
+}
+
+.text-underline-wavy {
+  text-decoration: underline wavy;
+}
+
+.text-underline-thick {
+  text-decoration: underline thick;
+}
+
+.text-underline-thin {
+  text-decoration: underline thin;
+}
+
+.text-underline-medium {
+  text-decoration: underline medium;
+}
+
+.text-underline-light {
+  text-decoration: underline light;
+}
+
+.text-underline-heavy {
+  text-decoration: underline heavy;
+}
+
+.text-underline-3px {
+  text-decoration: underline 3px;
+}
+
+.text-underline-2px {
+  text-decoration: underline 2px;
+}
+
+.text-underline-1px {
+  text-decoration: underline 1px;
+}
+
+.text-underline-4px {
+  text-decoration: underline 4px;
+}
+
+.text-underline-5px {
+  text-decoration: underline 5px;
+}
+
+.text-underline-6px {
+  text-decoration: underline 6px;
+}
+
+.text-underline-7px {
+  text-decoration: underline 7px;
+}
+
+.text-underline-8px {
+  text-decoration: underline 8px;
+}
+
+.text-underline-9px {
+  text-decoration: underline 9px;
+}
+
+.text-underline-10px {
+  text-decoration: underline 10px;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-Ground {
+  color: #e2bf65;
+}
+
+.text-Flying {
+  color: #a98ff3;
+}
+
+.text-Psychi {
+  color: #f95587;
+}
+
+.text-Bug {
+  color: #a6b91a;
+}
+
+.text-Rock {
+  color: #b6a136;
+}
+
+.text-Dragon {
+  color: #6f35fc;
+}
+
+.text-Dark {
+  color: #705746;
+}
+
+.text-Steel {
+  color: #b7b7ce;
+}
+
+.text-Hada {
+  color: #d685ad;
+}
+
+.text-Fire {
+  color: #ee8130;
+}
+
+.text-Water {
+  color: #6390f0;
+}
+
+.text-Grass {
+  color: #7ac74c;
+}
+
+.text-Electric {
+  color: #f7d02c;
+}
+
+.text-Ice {
+  color: #96d9d6;
+}
+
+.text-Fighting {
+  color: #c22e28;
+}
+
+.text-Poison {
+  color: #a33ea1;
+}
+
+.text-Ghost {
+  color: #735797;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #3cc2ef, #731deb);
+  font-family: Arial, sans-serif;
+}
+
+.tituloInicio {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  background: white;
+}
+.tituloInicio h1, .tituloInicio p {
+  font-family: "MiFuente-Solid-Normal", sans-serif;
+  background: none;
+  padding: 5px;
+}
+
+.titulo {
+  text-align: left;
+  width: 100%;
+  background: white;
+}
+.titulo h1 {
+  font-family: "MiFuente-Solid-Normal", sans-serif;
+  padding: 10px;
+  background: white;
+}
+.titulo p {
+  font-family: "MiFuente-solid", sans-serif;
+  margin: 15px;
+  background: white;
+}
+
+.Estilos {
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Estilos p {
+  text-align: left;
+}
+
+.Codigo {
+  font-size: 16px;
+  width: 69%;
+  height: auto;
+  text-align: start;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+.Codigo pre.code {
+  background: transparent;
+  justify-content: space-between;
+}
+.Codigo .colorAzul, .Codigo .azulOscuro .rojo {
+  background: transparent;
+}
+.Codigo .colorAzul {
+  color: rgb(92, 92, 222);
+}
+.Codigo .azulOscuro {
+  color: blue;
+}
+.Codigo .rojo {
+  color: red;
+}
+@media only screen and (max-width: 768px) {
+  .Codigo {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+}
+
+.CodigoGrande {
+  font-size: 16px;
+  width: 88%;
+  height: auto;
+  text-align: start;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+.CodigoGrande pre.code {
+  background: transparent;
+  justify-content: space-between;
+}
+.CodigoGrande .colorAzul, .CodigoGrande .azulOscuro .rojo {
+  background: transparent;
+}
+.CodigoGrande .colorAzul {
+  color: rgb(92, 92, 222);
+}
+.CodigoGrande .azulOscuro {
+  color: blue;
+}
+.CodigoGrande .rojo {
+  color: red;
+}
+
+.BodyGrande {
+  background: white;
+  padding: 20px;
+  display: grid;
+  padding-left: 20px;
+  border: 1px solid black;
+  width: 70%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.divEjemplo {
+  width: 100px;
+  height: 60px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #f8f8f8;
+}
+
+.divEjemplo2 {
+  width: 200px;
+  height: 60px;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #f8f8f8;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+.text-large {
+  font-size: 1.2rem;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+.text-overline {
+  text-decoration: overline;
+}
+
+.text-underline-dotted {
+  text-decoration: underline dotted;
+}
+
+.text-underline-double {
+  text-decoration: underline double;
+}
+
+.text-underline-wavy {
+  text-decoration: underline wavy;
+}
+
+.text-underline-dashed {
+  text-decoration: underline dashed;
+}
+
+.text-underline-solid {
+  text-decoration: underline solid;
+}
+
+.text-underline-dotted {
+  text-decoration: underline dotted;
+}
+
+.text-underline-dashed {
+  text-decoration: underline dashed;
+}
+
+.text-underline-solid {
+  text-decoration: underline solid;
+}
+
+.text-underline-double {
+  text-decoration: underline double;
+}
+
+.text-underline-wavy {
+  text-decoration: underline wavy;
+}
+
+.text-underline-thick {
+  text-decoration: underline thick;
+}
+
+.text-underline-thin {
+  text-decoration: underline thin;
+}
+
+.text-underline-medium {
+  text-decoration: underline medium;
+}
+
+.text-underline-light {
+  text-decoration: underline light;
+}
+
+.text-underline-heavy {
+  text-decoration: underline heavy;
+}
+
+.text-underline-3px {
+  text-decoration: underline 3px;
+}
+
+.text-underline-2px {
+  text-decoration: underline 2px;
+}
+
+.text-underline-1px {
+  text-decoration: underline 1px;
+}
+
+.text-underline-4px {
+  text-decoration: underline 4px;
+}
+
+.text-underline-5px {
+  text-decoration: underline 5px;
+}
+
+.text-underline-6px {
+  text-decoration: underline 6px;
+}
+
+.text-underline-7px {
+  text-decoration: underline 7px;
+}
+
+.text-underline-8px {
+  text-decoration: underline 8px;
+}
+
+.text-underline-9px {
+  text-decoration: underline 9px;
+}
+
+.text-underline-10px {
+  text-decoration: underline 10px;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-yellow {
+  color: yellow;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-Ground {
+  color: #e2bf65;
+}
+
+.text-Flying {
+  color: #a98ff3;
+}
+
+.text-Psychi {
+  color: #f95587;
+}
+
+.text-Bug {
+  color: #a6b91a;
+}
+
+.text-Rock {
+  color: #b6a136;
+}
+
+.text-Dragon {
+  color: #6f35fc;
+}
+
+.text-Dark {
+  color: #705746;
+}
+
+.text-Steel {
+  color: #b7b7ce;
+}
+
+.text-Hada {
+  color: #d685ad;
+}
+
+.text-Fire {
+  color: #ee8130;
+}
+
+.text-Water {
+  color: #6390f0;
+}
+
+.text-Grass {
+  color: #7ac74c;
+}
+
+.text-Electric {
+  color: #f7d02c;
+}
+
+.text-Ice {
+  color: #96d9d6;
+}
+
+.text-Fighting {
+  color: #c22e28;
+}
+
+.text-Poison {
+  color: #a33ea1;
+}
+
+.text-Ghost {
+  color: #735797;
+}
+
+.bgc-Ground {
+  background-color: #e2bf65;
+}
+
+.bgc-Flying {
+  background-color: #a98ff3;
+}
+
+.bgc-Psychi {
+  background-color: #f95587;
+}
+
+.bgc-Bug {
+  background-color: #a6b91a;
+}
+
+.bgc-Rock {
+  background-color: #b6a136;
+}
+
+.bgc-Dragon {
+  background-color: #6f35fc;
+}
+
+.bgc-Dark {
+  background-color: #705746;
+}
+
+.bgc-Steel {
+  background-color: #b7b7ce;
+}
+
+.bgc-Hada {
+  background-color: #d685ad;
+}
+
+.bgc-Fire {
+  background-color: #ee8130;
+}
+
+.bgc-Water {
+  background-color: #6390f0;
+}
+
+.bgc-Grass {
+  background-color: #7ac74c;
+}
+
+.bgc-Electric {
+  background-color: #f7d02c;
+}
+
+.bgc-Ice {
+  background-color: #96d9d6;
+}
+
+.bgc-Fighting {
+  background-color: #c22e28;
+}
+
+.bgc-Poison {
+  background-color: #a33ea1;
+}
+
+.bgc-Ghost {
+  background-color: #735797;
+}
+
+.bgc-Black1 {
+  background-color: #000000;
+}
+
+.bgc-White1 {
+  background-color: #f0f0f0;
+}
+
+.bgc-Normal {
+  background-color: #a8a77a;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 1rem;
+}
+
+.rounded-2xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-top-left {
+  border-top-left-radius: 0.25rem;
+}
+
+.rounded-top-right {
+  border-top-right-radius: 0.25rem;
+}
+
+.rounded-bottom-left {
+  border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-bottom-right {
+  border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-top {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.rounded-bottom {
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-left {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.rounded-right {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-none {
+  border-radius: 0;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.rounded-smooth {
+  border-radius: 0.5rem;
+}
+
+.rounded-sharp {
+  border-radius: 0.1rem;
+}
+
+.rounded-asymmetrical {
+  border-radius: 2rem 0.5rem;
+}
+
+.rounded-parcial {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.rounded-progressive {
+  border-radius: 0 0.5rem 1rem 1.5rem;
+}
+
+/*# sourceMappingURL=rounding-utils.css.map */
