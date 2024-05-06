@@ -1,0 +1,71 @@
+body {
+  background: linear-gradient(to bottom right, #3cc2ef, #731deb);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.tituloInicio {
+  text-align: center;
+  margin: 20px auto;
+  width: 84%;
+  background: white;
+}
+.tituloInicio h1, .tituloInicio p {
+  font-family: "MiFuente-Solid-Normal", sans-serif;
+  background: none;
+  padding: 5px;
+}
+
+.titulo {
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background: white;
+}
+.titulo h1 {
+  font-family: "MiFuente-Solid-Normal", sans-serif;
+  padding: 10px;
+  background: white;
+}
+.titulo p {
+  font-family: "MiFuente-solid", sans-serif;
+  margin: 15px;
+  background: white;
+}
+
+.NavEstilos {
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  width: 80%;
+  display: flex; /* Usa flexbox para alinear los elementos internos */
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: center;
+}
+.NavEstilos p {
+  text-align: left;
+}
+
+.Nav {
+  margin: 20px auto;
+  padding: 20px;
+  padding-left: 20px;
+  border: 1px solid black;
+  background: white;
+  width: 80%;
+}
+.Nav .otro {
+  position: relative;
+  right: 100px;
+}
+.Nav .alert {
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+  padding: 10px;
+  height: auto;
+}
+
+/*# sourceMappingURL=BodyStyleNav.css.map */
