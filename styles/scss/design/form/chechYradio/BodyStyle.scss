@@ -4,7 +4,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom right, #3cc2ef, #731deb);
+  background: linear-gradient(90deg, rgb(62, 25, 113),rgb(72, 105, 206));
   font-family: Arial, sans-serif;
 }
 
@@ -12,7 +12,7 @@ body {
   text-align: center;
   margin-bottom: 20px;
   width: 100%;
-  background: white;
+  background: #f8f8f8;
   h1, p {
     font-family: 'MiFuente-Solid-Normal', sans-serif;
     background: none;
@@ -23,7 +23,7 @@ body {
 .titulo {
   text-align: left;
   width: 100%;
-  background: white;
+  background: #f8f8f8;
   h1 {
     font-family: 'MiFuente-Solid-Normal', sans-serif;
     padding: 10px;
@@ -35,7 +35,6 @@ body {
     background: white;
   }
 }
-
 .Estilos {
   margin: 20px auto;
   padding: 20px;
@@ -75,6 +74,11 @@ body {
   .rojo {
     color: red;
   }
+  @media only screen and (max-width: 968px) {
+    width: 90%;
+    max-height: 200px;
+    overflow-y: auto;
+  }
 }
 
 .CodigoAncho {
@@ -102,6 +106,11 @@ body {
   .rojo {
     color: red;
   }
+  @media only screen and (max-width: 968px) {
+    width: 90%;
+    max-height: 200px;
+    overflow-y: auto;
+  }
 }
 
 
@@ -116,6 +125,19 @@ body {
   border: 1px solid black;
   width: 70%;
 }
+
+@media screen and (max-width: 768px) {
+.Estilos {
+    width: 90%; 
+}
+
+.BodyGrande {
+    justify-content: center;
+    margin-right: 0;
+    grid-template-columns: 1fr; 
+}
+}
+
 .BodyAncho {
   background: white;
   padding: 10px;
@@ -125,4 +147,15 @@ body {
   padding-left: 20px;
   border: 1px solid black;
   width: 75%;
+}
+@media screen and (max-width: 768px) {
+  .Estilos {
+      width: 90%; 
+  }
+
+  .BodyAncho {
+      justify-content: center;
+      margin-right: 0;
+      grid-template-columns: 1fr; 
+  }
 }

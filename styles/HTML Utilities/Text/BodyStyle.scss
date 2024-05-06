@@ -4,7 +4,7 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(90deg, rgb(62, 25, 113),rgb(72, 105, 206));
+    background: linear-gradient(90deg, rgb(62, 25, 113),rgb(72, 105, 206));
     font-family: Arial, sans-serif;
     
   }
@@ -122,13 +122,19 @@ body {
     padding-left: 20px;
     border: 1px solid black;
     width: 70%;
+   
   }
   
-
-  .divEjemplo{
-    width: 100%;
-    height: 50px;
-    margin: 10px;
-    text-align: center;
-    line-height: 50px; 
+  .BodyGrande2{
+    background: white;
+    padding: 20px;
+    display: grid; 
+    padding-left: 20px;
+    border: 1px solid black;
+    width: 70%;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
   }
+  
+  
+  
