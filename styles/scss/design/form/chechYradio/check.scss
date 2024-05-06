@@ -1,5 +1,6 @@
 @import "../../../utilities/color-pokemon.scss";
 @import"./BodyStyle";
+@import "../htmlBADGES/Menu/style.scss";
 // Mixin para estilos de checkbox default
 @mixin checkbox-styles($background-color, $border-color, $outline-color) {
     input[type="checkbox"] {
