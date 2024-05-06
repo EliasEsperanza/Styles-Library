@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/scss/design/alerts/alerts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="./js/scrollreveal.js"></script>
+</head>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+
+        <nav class="nav">
+            <div class="logo-container">
+                <img src="/Menu/img/logo.png" alt="Logo" class="logo">
+                    <p class="tituloo">PokeStrap</p>
+            </div>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="menu">
+                <span class="menu-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <ul class="menu" id="menu">
+                <li><a class="decoration" href="../styles/scss/design/buttons/button.html">Botones</a></li>
+                <li><a class="decoration" href="#">Container</a></li>
+                <li><a class="decoration" href="#alertas">Alertas</a></li>
+                <li class="dropdown">
+                    <a class="decoration" href="#">Forms</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../styles/scss/design/form/select/select.html">Select</a></li>
+                        <li><a href="../styles/scss/design/form/chechYradio/check.html">Checks Y radio</a></li>
+                        <li><a href="../styles/scss/design/form/range/range.html">Range</a></li>
+                        <li><a href="../styles/scss/design/form/inputGroup/input.html">Input Group</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="decoration" href="#">Utilities</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#background">Background</a></li>
+                        <li><a href="#border">Border </a></li>
+                        <li><a href="#color">Color </a></li>
+                        <li><a href="#position">Position </a></li>
+                        <li><a href="#rounding">Rounding </a></li>
+                        <li><a href="#shadow">Shadow </a></li>
+                        <li><a href="#spacing">Spacing </a></li>
+                        <li><a href="#text">Text </a></li>
+                    </ul>
+                </li>
+                <li><a class="decoration" href="#navs">Navs</a></li>
+                <li><a class="decoration" href="#badges">Badges</a></li>
+                <li><a class="decoration" href="#cards">Cards</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="tituloInicio">
+        <h1>Alerts</h1>
+        <p>Proporcione mensajes de retroalimentación contextuales para acciones típicas del usuario con un puñado de mensajes de alerta flexibles y disponibles.</p>
+      </div>
+    
+       
+      <div class="Estilos">
+
+        <div class="titulo">
+          <h1>Examples</h1>  
+          <p>Las alertas están disponibles para cualquier longitud de texto. Para lograr un estilo adecuado, utilice una de las 18 clases de colores para las alertas y unas especiales con iconos</p>
+          </div>
+          <div class="BodyGrande">
+    <!--Alertas normales-->
+
+    <div class="alert alert-Water" role="alert">
+        A simple primary alert—check it out!
+    </div>
+
+    <div class="alert alert-Ice" role="alert">
+        A simple secondary alert—check it out!
+    </div>
+
+    <div class="alert alert-Psychi" role="alert">
+        A simple success alert—check it out!
+    </div>
+
+    <div class="alert alert-Hada" role="alert">
+        A simple danger alert—check it out!
+    </div>
+
+    <!--Alertas con Links incluidos-->
+
+    <div class="alert alert-Fighting-Link" role="alert">
+        A simple primary alert—check it out! <a href="#">Echale un vistazo a los pokemones de tipo Water</a>
+    </div>
+
+    <div class="alert alert-Flying-Link" role="alert">
+        A simple secondary alert—check it out! <a href="#">Echale un vistazo a los pokemones de tipo Ice</a>
+    </div>
+
+    <div class="alert alert-Bug-Link" role="alert">
+        A simple success alert—check it out! <a href="#">Echale un vistazo a los pokemones de tipo Psychi</a>
+    </div>
+
+    <div class="alert alert-Rock-Link" role="alert">
+        A simple danger alert—check it out! <a href="#">Echale un vistazo a los pokemones de Hada Ice</a>
+    </div>
+     <!--Alertas con iconos incluidos-->
+
+     <div class="alert alert-Water-Icon" role="alert">
+        <i class="fas fa-water"></i> A simple primary alert—check it out!
+    </div>
+
+    <div class="alert alert-Dragon-Icon" role="alert">
+        <i class="fas fa-dragon"></i> A simple secondary alert—check it out!
+    </div>
+
+    <div class="alert alert-Ghost-Icon" role="alert">
+        <i class="fas fa-ghost"></i> A simple success alert—check it out!
+    </div>
+
+    <div class="alert alert-Electric-Icon" role="alert">
+        <i class="fas fa-bolt"></i> A simple danger alert—check it out!
+    </div>
+
+</div>
+<div class="CodigoGrande">
+    <pre class="code">
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">alert alert-Water"</span><span class="azulOscuro"> role="alert"&gt;</span>
+    A simple primary alert—check it out!
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">alert alert-Ice"</span><span class="azulOscuro"> role="alert"&gt;</span>
+    A simple secondary alert—check it out!
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">alert alert-Psychi"</span><span class="azulOscuro"> role="alert"&gt;</span>
+    A simple success alert—check it out!
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">alert alert-Hada"</span><span class="azulOscuro"> role="alert"&gt;</span>
+    A simple danger alert—check it out!
+<span class="azulOscuro">&lt;/div&gt;</span>
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">alert alert-Fighting-Link"</span><span class="azulOscuro"> role="alert"&gt;</span>
+    A simple primary alert—check it out! 
+    <span class="azulOscuro">&lt;a </span><span class="colorAzul">href="</span><span class="rojo">#</span><span class="colorAzul">"</span><span class="azulOscuro">&gt;</span>Echale un vistazo a los pokemones de tipo Water<span class="azulOscuro">&lt;/a&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">alert alert-Flying-Link"</span><span class="azulOscuro"> role="alert"&gt;</span>
+    A simple secondary alert—check it out! 
+    <span class="azulOscuro">&lt;a </span><span class="colorAzul">href="</span><span class="rojo">#</span><span class="colorAzul">"</span><span class="azulOscuro">&gt;</span>Echale un vistazo a los pokemones de tipo Ice<span class="azulOscuro">&lt;/a&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">alert alert-Bug-Link"</span><span class="azulOscuro"> role="alert"&gt;</span>
+    A simple success alert—check it out! 
+    <span class="azulOscuro">&lt;a </span><span class="colorAzul">href="</span><span class="rojo">#</span><span class="colorAzul">"</span><span class="azulOscuro">&gt;</span>Echale un vistazo a los pokemones de tipo Psychi<span class="azulOscuro">&lt;/a&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">alert alert-Rock-Link"</span><span class="azulOscuro"> role="alert"&gt;</span>
+    A simple danger alert—check it out! 
+    <span class="azulOscuro">&lt;a </span><span class="colorAzul">href="</span><span class="rojo">#</span><span class="colorAzul">"</span><span class="azulOscuro">&gt;</span>Echale un vistazo a los pokemones de Hada Ice<span class="azulOscuro">&lt;/a&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">alert alert-Water-Icon"</span><span class="azulOscuro"> role="alert"&gt;</span>
+    <i class="fas fa-water"></i> A simple primary alert—check it out!
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">alert alert-Dragon-Icon"</span><span class="azulOscuro"> role="alert"&gt;</span>
+    <i class="fas fa-dragon"></i> A simple secondary alert—check it out!
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">alert alert-Ghost-Icon"</span><span class="azulOscuro"> role="alert"&gt;</span>
+    <i class="fas fa-ghost"></i> A simple success alert—check it out!
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">alert alert-Electric-Icon"</span><span class="azulOscuro"> role="alert"&gt;</span>
+    <i class="fas fa-bolt"></i> A simple danger alert—check it out!
+<span class="azulOscuro">&lt;/div&gt;</span>
+    </pre>
+</div>
+</div>
+   
+    <!-- Include FontAwesome library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+    <footer class="footer">
+        <div class="container scroll-footer">
+            <div class="footer-Content ">
+                <img src="./img/logo.png" alt="Logo de PokeStrap">
+                <span class="title">PokeStrap</span>
+              <p class="description">
+                Diseñado y construido <br>
+                con todo el amor del <br>
+                mundo por el equipo de <br>
+                PokeStrap.
+              </p>
+              <p class="version">Actualmente v1.0.5.</p>
+            </div>
+    
+            <div class="footer-Content ">
+                <h3>Links</h3>
+                <ul class="list">
+                    <li><a href="../styles/scss/design/buttons/button.html">Botones</a></li>
+                    <li><a href="../styles/scss/design/form/select/select.html">Selects</a></li>
+                    <li><a href="../styles/scss/design/form/chechYradio/check.html">Checks y Radio</a></li>
+                    <li><a href="../styles/scss/design/form/range/range.html">Range</a></li>
+                    <li><a href="../styles/scss/design/form/inputGroup/input.html">Input Group</a></li>
+                    <li><a href="">Cards</a></li>
+                    <li><a href="">Alertas</a></li>
+                    <li><a href="">Navs</a></li>
+                    <li><a href="">Badges</a></li>
+                </ul>
+            </div>
+            <div class="footer-Content ">
+                <h3>Links</h3>
+                <ul class="list">    
+                    <li><a href="">Container</a></li>
+                    <li><a href="../styles/HTML Utilities/Background/background.html">Background</a></li>
+                    <li><a href="">Border</a></li>
+                    <li><a href="">Color</a></li>
+                    <li><a href="">Position</a></li>
+                    <li><a href="">Rounding</a></li>
+                    <li><a href="">Shadow</a></li>
+                    <li><a href="">Spacing</a></li>
+                    <li><a href="">Text</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 PokeStrap. All rights reserved</p>
+        </div>
+      </footer>
+        <script src="./js/trancisiones.js"></script>
+        <script src="./js/menu.js"></script>
+</body>
+</html>

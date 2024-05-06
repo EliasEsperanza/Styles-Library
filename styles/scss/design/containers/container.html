@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/scss/design/containers/containers.css">
+    <link rel="stylesheet" href="/container.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="./js/scrollreveal.js"></script>
+  </head>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+
+        <nav class="nav">
+            <div class="logo-container">
+                <img src="/Menu/img/logo.png" alt="Logo" class="logo">
+                    <p class="tituloo">PokeStrap</p>
+            </div>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="menu">
+                <span class="menu-icon"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <ul class="menu" id="menu">
+                <li><a class="decoration" href="../styles/scss/design/buttons/button.html">Botones</a></li>
+                <li><a class="decoration" href="#">Container</a></li>
+                <li><a class="decoration" href="#alertas">Alertas</a></li>
+                <li class="dropdown">
+                    <a class="decoration" href="#">Forms</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../styles/scss/design/form/select/select.html">Select</a></li>
+                        <li><a href="../styles/scss/design/form/chechYradio/check.html">Checks Y radio</a></li>
+                        <li><a href="../styles/scss/design/form/range/range.html">Range</a></li>
+                        <li><a href="../styles/scss/design/form/inputGroup/input.html">Input Group</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="decoration" href="#">Utilities</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#background">Background</a></li>
+                        <li><a href="#border">Border </a></li>
+                        <li><a href="#color">Color </a></li>
+                        <li><a href="#position">Position </a></li>
+                        <li><a href="#rounding">Rounding </a></li>
+                        <li><a href="#shadow">Shadow </a></li>
+                        <li><a href="#spacing">Spacing </a></li>
+                        <li><a href="#text">Text </a></li>
+                    </ul>
+                </li>
+                <li><a class="decoration" href="#navs">Navs</a></li>
+                <li><a class="decoration" href="#badges">Badges</a></li>
+                <li><a class="decoration" href="#cards">Cards</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="tituloInicio">
+        <h1>Containers</h1>
+        <p>Los contenedores en términos de desarrollo web se refieren a elementos que se utilizan 
+            para agrupar y organizar contenido dentro de una página.
+        </p>
+      </div>
+    
+       
+      <div class="Estilos">
+
+        <div class="titulo">
+            <h1>Containers</h1>
+            <p>PokeStrap viene con 5 tipos de contenedores diferentes</p>
+            <ul>
+                <li>breakpoint-small: 576px; </li>
+                <li>breakpoint-medium: 768px; </li>
+                <li>breakpoint-large: 992px; </li>
+                <li>breakpoint-extra-large: 1100px; </li>
+                <li>breakpoint-extra-extra-large: 1400px; </li>
+            </ul>
+          </div>
+    
+
+    <!--Containers pequeños-->
+    <div class="titulo">
+       <h1> <strong>Breakpoint-small:</strong> 576px <br> </h1>
+        <p>Este tamaño de contenedor es ideal para dispositivos móviles pequeños, como teléfonos inteligentes en
+        posición vertical. Es el punto en el que comienza a aplicarse el diseño responsivo para dispositivos móviles.
+    </p>
+    </div>
+    <div class="BodyGrande">
+    <div class="container-small-Normal">
+        <p>Tipo de pokemon normales del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-small-Fire">
+        <p>Tipo de pokemon Fire del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-small-Water">
+        <p>Tipo de pokemon Water del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-small-Grass">
+        <p>Tipo de pokemon Dragon del mundo increible de pokemon</p>
+    </div>
+</div>
+<div class="CodigoGrande">
+    <pre class="code">
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-small-Normal"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon normales del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+    
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-small-Fire"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Fire del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+    
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-small-Water"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Water del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+    
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-small-Grass"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Dragon del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+    </pre>
+    </div> 
+</div>
+
+<div class="Estilos">
+
+    <div class="titulo">
+       <h1> <strong>breakpoint-medium:</strong> 768px <br> </h1>
+        <p>Este tamaño de contenedor es adecuado para dispositivos móviles más grandes, como tabletas en posición vertical, y también para pantallas de computadoras portátiles en posición vertical.
+        </p>
+        </div>
+        <div class="BodyGrande">
+    <div class="container-medium-Electric">
+        <p>Tipo de pokemon normales del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-medium-Ice">
+        <p>Tipo de pokemon Fire del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-medium-Fighting">
+        <p>Tipo de pokemon Water del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-medium-Poison">
+        <p>Tipo de pokemon Dragon del mundo increible de pokemon</p>
+    </div>
+</div>
+<div class="CodigoAncho">
+    <pre class="code">
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-medium-Electric"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon normales del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+    
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-medium-Ice"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Fire del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+    
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-medium-Fighting"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Water del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+    
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-medium-Poison"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Dragon del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+    </pre>
+    </div> 
+</div>
+</div>
+
+    <!--Containers largos-->
+    <div class="EstilosGrandes">
+
+        <div class="titulo">
+            <h1><strong>breakpoint-large:</strong> 992px <br> </h1>
+      <p>Este tamaño de contenedor es ideal para pantallas más grandes, como tabletas en posición horizontal y computadoras portátiles. Es el punto en el que comienza a aplicarse el diseño responsivo para dispositivos de tamaño mediano.
+     </p>  
+    </div>
+            
+    <div class="BodyGrande">   
+    <div class="container-large-Ground">
+        <p>Tipo de pokemon normales del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-large-Flying">
+        <p>Tipo de pokemon Fire del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-large-Psychi">
+        <p>Tipo de pokemon Water del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-large-Bug">
+        <p>Tipo de pokemon Dragon del mundo increible de pokemon</p>
+    </div>
+</div>
+<div class="CodigoAncho">
+    <pre class="code">
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-large-Ground"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon normales del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-large-Flying"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Fire del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-large-Psychi"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Water del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-large-Bug"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Dragon del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+    </pre>
+    </div> 
+</div>
+
+<div class="EstilosGrandes">
+
+    <div class="titulo">
+        <h1><strong>breakpoint-extra-large:</strong> 1100px <br></h1>
+        <p>Este tamaño de contenedor es adecuado para pantallas de escritorio medianas y grandes. Es el punto en el que comienza a aplicarse el diseño responsivo para pantallas de escritorio más grandes.
+        </p>
+        </div>
+<div class="BodyEnorme">  
+       
+    <div class="container-xl-Rock">
+        <p>Tipo de pokemon normales del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-xl-Ghost">
+        <p>Tipo de pokemon Fire del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-xl-Dragon">
+        <p>Tipo de pokemon Water del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-xl-Dark">
+        <p>Tipo de pokemon Dragon del mundo increible de pokemon</p>
+    </div>
+</div>
+<div class="CodigoAncho">
+    <pre class="code">
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-xl-Rock"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon normales del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-xl-Ghost"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Fire del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-xl-Dragon"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Water del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-xl-Dark"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Dragon del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+
+    </pre>
+    </div> 
+</div>
+
+
+    <!--Containers extra largos-->
+    <div class="Estilos">
+
+        <div class="titulo">
+            <h1><strong>breakpoint-extra-extra-large:</strong> 1400px <br></h1>
+        <p>Este tamaño de contenedor es ideal para pantallas de escritorio muy grandes y monitores de alta resolución. Es el punto en el que comienza a aplicarse el diseño responsivo para pantallas de escritorio muy grandes.
+        </p>
+    </div>
+    <div class="BodyGrande">  
+
+    <div class="container-xxl-Steel">
+        <p>Tipo de pokemon normales del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-xxl-Hada">
+        <p>Tipo de pokemon Fire del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-xxl-Water">
+        <p>Tipo de pokemon Water del mundo increible de pokemon</p>
+    </div>
+
+    <div class="container-xxl-Dragon">
+        <p>Tipo de pokemon Dragon del mundo increible de pokemon</p>
+    </div>
+</div>
+<div class="CodigoAncho">
+    <pre class="code">
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-xxl-Steel"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon normales del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+    
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-xxl-Hada"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Fire del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+    
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-xxl-Water"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Water del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+    
+<span class="azulOscuro">&lt;div </span><span class="colorAzul">class="</span><span class="rojo">container-xxl-Dragon"</span><span class="azulOscuro">&gt;</span>
+    <span class="azulOscuro">&lt;p&gt;</span>Tipo de pokemon Dragon del mundo increible de pokemon<span class="azulOscuro">&lt;/p&gt;</span>
+<span class="azulOscuro">&lt;/div&gt;</span>
+    
+    </pre>
+    </div> 
+</div>
+
+
+    <footer class="footer">
+        <div class="container scroll-footer">
+            <div class="footer-Content ">
+                <img src="./img/logo.png" alt="Logo de PokeStrap">
+                <span class="title">PokeStrap</span>
+              <p class="description">
+                Diseñado y construido <br>
+                con todo el amor del <br>
+                mundo por el equipo de <br>
+                PokeStrap.
+              </p>
+              <p class="version">Actualmente v1.0.5.</p>
+            </div>
+    
+            <div class="footer-Content ">
+                <h3>Links</h3>
+                <ul class="list">
+                    <li><a href="../styles/scss/design/buttons/button.html">Botones</a></li>
+                    <li><a href="../styles/scss/design/form/select/select.html">Selects</a></li>
+                    <li><a href="../styles/scss/design/form/chechYradio/check.html">Checks y Radio</a></li>
+                    <li><a href="../styles/scss/design/form/range/range.html">Range</a></li>
+                    <li><a href="../styles/scss/design/form/inputGroup/input.html">Input Group</a></li>
+                    <li><a href="">Cards</a></li>
+                    <li><a href="">Alertas</a></li>
+                    <li><a href="">Navs</a></li>
+                    <li><a href="">Badges</a></li>
+                </ul>
+            </div>
+            <div class="footer-Content ">
+                <h3>Links</h3>
+                <ul class="list">    
+                    <li><a href="">Container</a></li>
+                    <li><a href="../styles/HTML Utilities/Background/background.html">Background</a></li>
+                    <li><a href="">Border</a></li>
+                    <li><a href="">Color</a></li>
+                    <li><a href="">Position</a></li>
+                    <li><a href="">Rounding</a></li>
+                    <li><a href="">Shadow</a></li>
+                    <li><a href="">Spacing</a></li>
+                    <li><a href="">Text</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 PokeStrap. All rights reserved</p>
+        </div>
+      </footer>
+        <script src="./js/trancisiones.js"></script>
+        <script src="./js/menu.js"></script>
+</body>
+</html>
